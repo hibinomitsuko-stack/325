@@ -240,12 +240,8 @@
   .profile-photo {
     width: 240px; height: 240px;
     border-radius: 50%;
-    background: linear-gradient(135deg, var(--rose-light), var(--beige));
-    display: flex; align-items: center; justify-content: center;
-    font-family: 'Cormorant Garamond', serif;
-    font-style: italic;
-    font-size: 72px;
-    color: var(--rose-deep);
+    object-fit: cover;
+    display: block;
     box-shadow: 0 10px 30px rgba(201,123,134,0.2);
     border: 4px solid #fff;
   }
@@ -536,7 +532,7 @@
     <h2 class="section-title">講師プロフィール</h2>
     <p class="section-lead">パリコレクションのバックステージで活躍した美容のプロフェッショナル。</p>
     <div class="profile-card">
-      <div class="profile-photo">H</div>
+      <img class="profile-photo" src="images/hisayo.jpg" alt="ひさよ">
       <div>
         <div class="profile-name">ひさよ</div>
         <div class="profile-role">PARIS COLLECTION MAKE-UP ARTIST</div>
