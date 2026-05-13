@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ひさよ｜パリコレメイク経験者が教える更年期美容</title>
+<meta name="description" content="パリコレメイク経験者が教える更年期美容。—5歳若見えヘア＆メイクテクニックで、生涯使えるあなただけの美しさを。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --rose: #c97b86;
+    --rose-deep: #a85a68;
+    --rose-light: #f4dde0;
+    --cream: #fdf7f3;
+    --beige: #f0e4dc;
+    --gold: #b89968;
+    --ink: #3a2a2a;
+    --soft: #6b5757;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Noto Sans JP', sans-serif;
+    color: var(--ink);
+    background: var(--cream);
+    line-height: 1.8;
+    -webkit-font-smoothing: antialiased;
+  }
+  .serif { font-family: 'Noto Serif JP', serif; }
+  .latin { font-family: 'Cormorant Garamond', serif; letter-spacing: 0.05em; }
+
+  /* ===== HERO ===== */
+  .hero {
+    position: relative;
+    min-height: 100vh;
+    background:
+      linear-gradient(135deg, rgba(253,247,243,0.85) 0%, rgba(244,221,224,0.75) 100%),
+      radial-gradient(circle at 20% 20%, rgba(201,123,134,0.15), transparent 60%),
+      radial-gradient(circle at 80% 80%, rgba(184,153,104,0.15), transparent 60%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 24px 60px;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: "";
+    position: absolute; inset: 0;
+    background-image:
+      radial-gradient(circle at 10% 90%, rgba(255,255,255,0.6), transparent 30%),
+      radial-gradient(circle at 90% 10%, rgba(255,255,255,0.5), transparent 30%);
+    pointer-events: none;
+  }
+  .hero-inner {
+    position: relative;
+    max-width: 880px;
+    text-align: center;
+    z-index: 2;
+  }
+  .hero-badge {
+    display: inline-block;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    color: var(--gold);
+    letter-spacing: 0.3em;
+    font-size: 14px;
+    margin-bottom: 24px;
+    padding: 6px 20px;
+    border-top: 1px solid var(--gold);
+    border-bottom: 1px solid var(--gold);
+  }
+  .hero h1 {
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 600;
+    font-size: clamp(28px, 5vw, 46px);
+    line-height: 1.5;
+    color: var(--ink);
+    margin-bottom: 20px;
+  }
+  .hero h1 .name {
+    display: block;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: clamp(48px, 8vw, 72px);
+    color: var(--rose-deep);
+    margin-bottom: 12px;
+    letter-spacing: 0.08em;
+  }
+  .hero .sub {
+    font-size: clamp(15px, 2.2vw, 18px);
+    color: var(--soft);
+    margin-bottom: 36px;
+    letter-spacing: 0.05em;
+  }
+  .hero .main-catch {
+    display: inline-block;
+    font-family: 'Noto Serif JP', serif;
+    font-size: clamp(20px, 3.5vw, 30px);
+    font-weight: 600;
+    color: var(--rose-deep);
+    padding: 18px 32px;
+    background: rgba(255,255,255,0.7);
+    border-radius: 4px;
+    box-shadow: 0 8px 30px rgba(201,123,134,0.15);
+    margin-bottom: 40px;
+  }
+  .hero-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(135deg, var(--rose) 0%, var(--rose-deep) 100%);
+    color: #fff;
+    padding: 18px 48px;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 17px;
+    letter-spacing: 0.1em;
+    box-shadow: 0 12px 30px rgba(168,90,104,0.35);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .hero-cta:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 16px 40px rgba(168,90,104,0.45);
+  }
+
+  /* ===== SECTION ===== */
+  section { padding: 100px 24px; }
+  .container { max-width: 980px; margin: 0 auto; }
+  .section-label {
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    color: var(--gold);
+    letter-spacing: 0.3em;
+    font-size: 14px;
+    margin-bottom: 14px;
+  }
+  .section-title {
+    text-align: center;
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 600;
+    font-size: clamp(24px, 4vw, 34px);
+    color: var(--ink);
+    margin-bottom: 16px;
+    line-height: 1.5;
+  }
+  .section-title .accent { color: var(--rose-deep); }
+  .section-lead {
+    text-align: center;
+    color: var(--soft);
+    font-size: 16px;
+    max-width: 680px;
+    margin: 0 auto 60px;
+  }
+
+  /* ===== TROUBLES ===== */
+  .troubles { background: #fff; }
+  .trouble-list {
+    max-width: 720px;
+    margin: 0 auto;
+    background: var(--cream);
+    border: 1px solid var(--rose-light);
+    border-radius: 12px;
+    padding: 40px 32px;
+  }
+  .trouble-list li {
+    list-style: none;
+    padding: 14px 0 14px 36px;
+    position: relative;
+    font-size: 17px;
+    color: var(--ink);
+    border-bottom: 1px dashed var(--rose-light);
+  }
+  .trouble-list li:last-child { border-bottom: none; }
+  .trouble-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 6px;
+    top: 14px;
+    color: var(--rose);
+    font-weight: 700;
+  }
+
+  /* ===== FEATURES ===== */
+  .features { background: linear-gradient(180deg, var(--cream) 0%, var(--beige) 100%); }
+  .feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 28px;
+  }
+  .feature {
+    background: #fff;
+    border-radius: 16px;
+    padding: 36px 28px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(201,123,134,0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .feature:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 40px rgba(201,123,134,0.15);
+  }
+  .feature-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 36px;
+    color: var(--rose);
+    margin-bottom: 10px;
+  }
+  .feature-title {
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--ink);
+    margin-bottom: 14px;
+    line-height: 1.6;
+  }
+  .feature-desc {
+    font-size: 14px;
+    color: var(--soft);
+    line-height: 1.8;
+  }
+
+  /* ===== PROFILE ===== */
+  .profile { background: #fff; }
+  .profile-card {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    gap: 48px;
+    align-items: center;
+    max-width: 880px;
+    margin: 0 auto;
+    background: var(--cream);
+    border-radius: 20px;
+    padding: 48px;
+  }
+  .profile-photo {
+    width: 240px; height: 240px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--rose-light), var(--beige));
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 72px;
+    color: var(--rose-deep);
+    box-shadow: 0 10px 30px rgba(201,123,134,0.2);
+    border: 4px solid #fff;
+  }
+  .profile-name {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 6px;
+  }
+  .profile-role {
+    color: var(--gold);
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    letter-spacing: 0.15em;
+    margin-bottom: 20px;
+  }
+  .profile-stats {
+    display: flex;
+    gap: 32px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+  }
+  .stat-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 36px;
+    color: var(--rose-deep);
+    font-weight: 600;
+    line-height: 1;
+  }
+  .stat-label {
+    font-size: 12px;
+    color: var(--soft);
+    letter-spacing: 0.1em;
+  }
+  .profile-bio {
+    font-size: 15px;
+    color: var(--soft);
+    line-height: 1.9;
+  }
+
+  /* ===== FORM ===== */
+  .signup {
+    background:
+      linear-gradient(135deg, rgba(201,123,134,0.95), rgba(168,90,104,0.95)),
+      radial-gradient(circle at 30% 30%, rgba(255,255,255,0.2), transparent 60%);
+    color: #fff;
+  }
+  .signup .section-label { color: rgba(255,255,255,0.8); }
+  .signup .section-title { color: #fff; }
+  .signup .section-lead { color: rgba(255,255,255,0.9); }
+
+  .form-card {
+    max-width: 620px;
+    margin: 0 auto;
+    background: #fff;
+    color: var(--ink);
+    padding: 56px 48px;
+    border-radius: 20px;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.2);
+  }
+  .form-group { margin-bottom: 22px; }
+  .form-group label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 8px;
+    letter-spacing: 0.05em;
+  }
+  .form-group label .req {
+    color: var(--rose-deep);
+    font-size: 11px;
+    margin-left: 6px;
+  }
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #e0d4cf;
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: inherit;
+    background: var(--cream);
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: var(--rose);
+    box-shadow: 0 0 0 3px rgba(201,123,134,0.15);
+    background: #fff;
+  }
+  .form-group textarea { min-height: 100px; resize: vertical; }
+  .checkbox-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 14px;
+    color: var(--soft);
+    margin-bottom: 24px;
+  }
+  .checkbox-row input { margin-top: 4px; flex-shrink: 0; }
+  .submit-btn {
+    width: 100%;
+    padding: 18px;
+    background: linear-gradient(135deg, var(--rose) 0%, var(--rose-deep) 100%);
+    color: #fff;
+    border: none;
+    border-radius: 999px;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    cursor: pointer;
+    box-shadow: 0 12px 30px rgba(168,90,104,0.35);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 16px 40px rgba(168,90,104,0.45);
+  }
+  .form-note {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+    color: var(--soft);
+  }
+  .success {
+    display: none;
+    text-align: center;
+    padding: 24px;
+    background: var(--rose-light);
+    color: var(--rose-deep);
+    border-radius: 12px;
+    margin-top: 20px;
+    font-weight: 600;
+  }
+  .success.show { display: block; }
+
+  /* ===== FOOTER ===== */
+  footer {
+    background: #2c1f1f;
+    color: rgba(255,255,255,0.6);
+    text-align: center;
+    padding: 40px 24px;
+    font-size: 13px;
+    letter-spacing: 0.05em;
+  }
+  footer .brand {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    color: var(--rose-light);
+    font-size: 22px;
+    margin-bottom: 8px;
+  }
+
+  /* ===== RESPONSIVE ===== */
+  @media (max-width: 720px) {
+    section { padding: 70px 20px; }
+    .hero { padding: 60px 20px; }
+    .profile-card {
+      grid-template-columns: 1fr;
+      text-align: center;
+      padding: 36px 24px;
+      gap: 28px;
+    }
+    .profile-photo { margin: 0 auto; width: 180px; height: 180px; font-size: 56px; }
+    .profile-stats { justify-content: center; }
+    .form-card { padding: 36px 24px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<header class="hero" id="top">
+  <div class="hero-inner">
+    <span class="hero-badge">PARIS COLLECTION ARTIST</span>
+    <h1>
+      <span class="name">Hisayo</span>
+      <span class="serif">ひさよ｜パリコレメイク経験者が教える更年期美容</span>
+    </h1>
+    <p class="sub">— 大人の女性のための、生涯ものの美しさを —</p>
+    <div class="main-catch">✨ 更年期の —5歳 若見えヘア＆メイクテクニック ✨</div>
+    <div>
+      <a href="#signup" class="hero-cta">無料で申し込む ▸</a>
+    </div>
+  </div>
+</header>
+
+<!-- TROUBLES -->
+<section class="troubles">
+  <div class="container">
+    <div class="section-label">YOUR CONCERNS</div>
+    <h2 class="section-title">こんなお悩み、<span class="accent">ありませんか？</span></h2>
+    <p class="section-lead">更年期に差しかかると、これまでのケアでは追いつかなくなります。<br>でも、本当に大切な美容の "コツ" を知れば、あなたはまだまだ輝ける。</p>
+    <ul class="trouble-list">
+      <li>鏡を見るたびに、肌のハリ・髪のツヤがなくなってきたと感じる</li>
+      <li>今までのメイクが急に「老けて見える」気がする</li>
+      <li>白髪・うねり・パサつきで、髪型が決まらない</li>
+      <li>自分に似合うメイクが分からなくなってきた</li>
+      <li>年齢を重ねても "自分らしく" 美しくありたい</li>
+    </ul>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features">
+  <div class="container">
+    <div class="section-label">WHAT YOU'LL GET</div>
+    <h2 class="section-title">この申込で<span class="accent">得られること</span></h2>
+    <p class="section-lead">パリコレの第一線で培った技術を、更年期世代のあなたに最適化してお届けします。</p>
+    <div class="feature-grid">
+      <div class="feature">
+        <div class="feature-num">01</div>
+        <div class="feature-title">お顔パーツ診断<br>実施中！</div>
+        <div class="feature-desc">あなたの骨格・パーツバランスを丁寧に分析。本当に似合うラインを見つけます。</div>
+      </div>
+      <div class="feature">
+        <div class="feature-num">02</div>
+        <div class="feature-title">更年期に負けない<br>美髪テクニック</div>
+        <div class="feature-desc">白髪・うねり・ボリュームダウンに対応する、毎日続けられるホームケア術。</div>
+      </div>
+      <div class="feature">
+        <div class="feature-num">03</div>
+        <div class="feature-title">生涯使える<br>若見えメイク術</div>
+        <div class="feature-desc">流行に左右されない、あなただけの「—5歳」を叶える普遍のメイク設計。</div>
+      </div>
+      <div class="feature">
+        <div class="feature-num">04</div>
+        <div class="feature-title">美活サロン<br>主宰メソッド</div>
+        <div class="feature-desc">"—5歳若見えメソッド" を体系化した、現役プロのノウハウをそのまま。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROFILE -->
+<section class="profile">
+  <div class="container">
+    <div class="section-label">PROFILE</div>
+    <h2 class="section-title">講師プロフィール</h2>
+    <p class="section-lead">パリコレクションのバックステージで活躍した美容のプロフェッショナル。</p>
+    <div class="profile-card">
+      <div class="profile-photo">H</div>
+      <div>
+        <div class="profile-name">ひさよ</div>
+        <div class="profile-role">PARIS COLLECTION MAKE-UP ARTIST</div>
+        <div class="profile-bio">
+          パリコレクションのバックステージでメイクを担当した経験を持つ、<br>
+          —5歳 "若見えメソッド" 美活サロン主宰。<br>
+          更年期世代の女性が「自分史上もっとも美しい今」を生きるための<br>
+          ヘア＆メイク技術を、これまで300人以上の方へ届けてきました。
+        </div>
+        <div class="profile-stats">
+          <div>
+            <div class="stat-num">25<span style="font-size:18px">+</span></div>
+            <div class="stat-label">YEARS EXPERIENCE<br>美容師歴25年以上</div>
+          </div>
+          <div>
+            <div class="stat-num">300<span style="font-size:18px">+</span></div>
+            <div class="stat-label">CLIENTS SUPPORTED<br>顧客サポート300人以上</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SIGNUP FORM -->
+<section class="signup" id="signup">
+  <div class="container">
+    <div class="section-label">APPLICATION FORM</div>
+    <h2 class="section-title">お申込みフォーム</h2>
+    <p class="section-lead">下記フォームよりお気軽にお申込みください。<br>受付後、3営業日以内に担当よりご連絡いたします。</p>
+
+    <form class="form-card" id="signup-form" novalidate>
+      <div class="form-group">
+        <label for="name">お名前 <span class="req">必須</span></label>
+        <input type="text" id="name" name="name" placeholder="山田 花子" required>
+      </div>
+      <div class="form-group">
+        <label for="kana">フリガナ</label>
+        <input type="text" id="kana" name="kana" placeholder="ヤマダ ハナコ">
+      </div>
+      <div class="form-group">
+        <label for="email">メールアドレス <span class="req">必須</span></label>
+        <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+      </div>
+      <div class="form-group">
+        <label for="tel">電話番号</label>
+        <input type="tel" id="tel" name="tel" placeholder="090-1234-5678">
+      </div>
+      <div class="form-group">
+        <label for="age">年代 <span class="req">必須</span></label>
+        <select id="age" name="age" required>
+          <option value="">選択してください</option>
+          <option>30代</option>
+          <option>40代前半</option>
+          <option>40代後半</option>
+          <option>50代前半</option>
+          <option>50代後半</option>
+          <option>60代</option>
+          <option>70代以上</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="interest">ご興味のある内容 <span class="req">必須</span></label>
+        <select id="interest" name="interest" required>
+          <option value="">選択してください</option>
+          <option>お顔パーツ診断</option>
+          <option>更年期に負けない美髪テクニック</option>
+          <option>若見えメイク術</option>
+          <option>美活サロンへの参加</option>
+          <option>すべて知りたい</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="message">お悩み・ご質問</label>
+        <textarea id="message" name="message" placeholder="現在のお悩み、ご質問などご自由にお書きください"></textarea>
+      </div>
+      <label class="checkbox-row">
+        <input type="checkbox" required>
+        <span>個人情報の取扱いに同意のうえ申込みます。ご記入いただいた情報はご連絡・サービス提供のみに使用いたします。</span>
+      </label>
+      <button type="submit" class="submit-btn">無料で申し込む</button>
+      <p class="form-note">※ お申込みは無料です。しつこい営業は一切いたしません。</p>
+      <div class="success" id="success-msg">
+        ✨ お申込みありがとうございました。<br>3営業日以内にご連絡いたします。
+      </div>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="brand">Hisayo</div>
+  <div>ひさよ｜パリコレメイク経験者が教える更年期美容</div>
+  <div style="margin-top:14px; font-size:12px;">© 2026 Hisayo Beauty Salon. All Rights Reserved.</div>
+</footer>
+
+<script>
+  document.getElementById('signup-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    if (!this.checkValidity()) {
+      this.reportValidity();
+      return;
+    }
+    document.getElementById('success-msg').classList.add('show');
+    this.reset();
+    document.getElementById('success-msg').scrollIntoView({ behavior: 'smooth', block: 'center' });
+  });
+</script>
+
+</body>
+</html>
