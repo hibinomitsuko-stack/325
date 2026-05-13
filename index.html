@@ -282,6 +282,108 @@
     line-height: 1.9;
   }
 
+  /* ===== PRICING ===== */
+  .pricing { background: linear-gradient(180deg, var(--beige) 0%, var(--cream) 100%); }
+  .price-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 32px;
+    max-width: 920px;
+    margin: 0 auto;
+  }
+  .price-card {
+    background: #fff;
+    border-radius: 18px;
+    padding: 40px 32px;
+    box-shadow: 0 10px 30px rgba(201,123,134,0.1);
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+  }
+  .price-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 40px rgba(201,123,134,0.18);
+  }
+  .price-card.featured {
+    background: linear-gradient(160deg, #fff 0%, var(--rose-light) 100%);
+    border: 2px solid var(--rose);
+  }
+  .price-badge {
+    position: absolute;
+    top: -14px;
+    right: 24px;
+    background: var(--rose-deep);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 6px 16px;
+    border-radius: 999px;
+    letter-spacing: 0.1em;
+    box-shadow: 0 4px 12px rgba(168,90,104,0.3);
+  }
+  .price-label {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    letter-spacing: 0.2em;
+    color: var(--gold);
+    font-size: 13px;
+    margin-bottom: 8px;
+  }
+  .price-name {
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 600;
+    font-size: 22px;
+    color: var(--ink);
+    margin-bottom: 20px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--rose-light);
+  }
+  .price-amount-row {
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+    margin-bottom: 10px;
+  }
+  .price-amount-row .duration {
+    font-size: 15px;
+    color: var(--soft);
+    font-weight: 600;
+    min-width: 50px;
+  }
+  .price-amount-row .amount {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--rose-deep);
+    line-height: 1;
+  }
+  .price-amount-row .tax {
+    font-size: 12px;
+    color: var(--soft);
+  }
+  .price-meta {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px dashed var(--rose-light);
+    font-size: 14px;
+    color: var(--soft);
+    line-height: 1.9;
+  }
+  .price-meta li {
+    list-style: none;
+    padding-left: 22px;
+    position: relative;
+  }
+  .price-meta li::before {
+    content: "◆";
+    position: absolute;
+    left: 0;
+    color: var(--rose);
+    font-size: 10px;
+    top: 8px;
+  }
+
   /* ===== TESTIMONIALS ===== */
   .testimonials { background: #fff; }
   .voice-grid {
@@ -552,6 +654,50 @@
             <div class="stat-label">CLIENTS SUPPORTED<br>顧客サポート300人以上</div>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing" id="pricing">
+  <div class="container">
+    <div class="section-label">PRICE LIST</div>
+    <h2 class="section-title">レッスン<span class="accent">料金表</span></h2>
+    <p class="section-lead">あなたのご希望に合わせて、単発・長期の２つのプランをご用意しております。<br>すべてオンライン（Zoom）で受講可能です。</p>
+    <div class="price-grid">
+      <div class="price-card">
+        <div class="price-label">SINGLE LESSON</div>
+        <div class="price-name">単発レッスン</div>
+        <div class="price-amount-row">
+          <span class="duration">60分</span>
+          <span class="amount">¥16,500</span>
+          <span class="tax">（税込）</span>
+        </div>
+        <div class="price-amount-row">
+          <span class="duration">90分</span>
+          <span class="amount">¥19,800</span>
+          <span class="tax">（税込）</span>
+        </div>
+        <ul class="price-meta">
+          <li>Zoom １回</li>
+          <li>サポート期間 ２週間</li>
+        </ul>
+      </div>
+      <div class="price-card featured">
+        <div class="price-badge">おすすめ</div>
+        <div class="price-label">LONG-TERM PROGRAM</div>
+        <div class="price-name">長期レッスン</div>
+        <div class="price-amount-row">
+          <span class="duration">4ヶ月</span>
+          <span class="amount">¥198,000</span>
+          <span class="tax">（税込）</span>
+        </div>
+        <ul class="price-meta">
+          <li>Zoom レッスン 月3回</li>
+          <li>サポート期間 ３ヶ月</li>
+          <li>—5歳若見えメソッドを体系的に習得</li>
+        </ul>
       </div>
     </div>
   </div>
