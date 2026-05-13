@@ -286,105 +286,150 @@
     line-height: 1.9;
   }
 
-  /* ===== FORM ===== */
-  .signup {
+  /* ===== TESTIMONIALS ===== */
+  .testimonials { background: #fff; }
+  .voice-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+    max-width: 920px;
+    margin: 0 auto;
+  }
+  .voice {
+    background: var(--cream);
+    border-radius: 16px;
+    padding: 40px 32px;
+    box-shadow: 0 10px 30px rgba(201,123,134,0.08);
+    position: relative;
+  }
+  .voice-photo {
+    width: 80px; height: 80px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--rose-light), var(--beige));
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 36px;
+    color: var(--rose-deep);
+    border: 3px solid #fff;
+    box-shadow: 0 6px 18px rgba(201,123,134,0.15);
+    margin-bottom: 18px;
+  }
+  .voice-title {
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 600;
+    color: var(--rose-deep);
+    font-size: 18px;
+    margin-bottom: 14px;
+    line-height: 1.6;
+  }
+  .voice-body {
+    font-size: 14px;
+    color: var(--soft);
+    line-height: 1.9;
+    margin-bottom: 16px;
+  }
+  .voice-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    color: var(--gold);
+    font-size: 14px;
+    letter-spacing: 0.1em;
+  }
+
+  /* ===== CONTACT ===== */
+  .contact {
     background:
-      linear-gradient(135deg, rgba(201,123,134,0.95), rgba(168,90,104,0.95)),
-      radial-gradient(circle at 30% 30%, rgba(255,255,255,0.2), transparent 60%);
+      linear-gradient(135deg, rgba(201,123,134,0.95), rgba(168,90,104,0.95));
     color: #fff;
   }
-  .signup .section-label { color: rgba(255,255,255,0.8); }
-  .signup .section-title { color: #fff; }
-  .signup .section-lead { color: rgba(255,255,255,0.9); }
-
-  .form-card {
-    max-width: 620px;
+  .contact .section-label { color: rgba(255,255,255,0.8); }
+  .contact .section-title { color: #fff; }
+  .contact .section-lead { color: rgba(255,255,255,0.9); }
+  .contact-card {
+    max-width: 640px;
     margin: 0 auto;
     background: #fff;
     color: var(--ink);
-    padding: 56px 48px;
+    padding: 48px;
     border-radius: 20px;
     box-shadow: 0 30px 60px rgba(0,0,0,0.2);
   }
-  .form-group { margin-bottom: 22px; }
-  .form-group label {
-    display: block;
+  .contact-row {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    gap: 16px;
+    padding: 18px 0;
+    border-bottom: 1px dashed var(--rose-light);
+    align-items: center;
+  }
+  .contact-row:last-of-type { border-bottom: none; }
+  .contact-label {
     font-size: 13px;
     font-weight: 600;
-    color: var(--ink);
-    margin-bottom: 8px;
-    letter-spacing: 0.05em;
+    color: var(--gold);
+    letter-spacing: 0.1em;
   }
-  .form-group label .req {
-    color: var(--rose-deep);
-    font-size: 11px;
-    margin-left: 6px;
-  }
-  .form-group input,
-  .form-group select,
-  .form-group textarea {
-    width: 100%;
-    padding: 14px 16px;
-    border: 1px solid #e0d4cf;
-    border-radius: 8px;
+  .contact-value {
     font-size: 15px;
-    font-family: inherit;
-    background: var(--cream);
-    transition: border-color 0.2s, box-shadow 0.2s;
+    color: var(--ink);
+    text-decoration: none;
+    word-break: break-all;
   }
-  .form-group input:focus,
-  .form-group select:focus,
-  .form-group textarea:focus {
-    outline: none;
-    border-color: var(--rose);
-    box-shadow: 0 0 0 3px rgba(201,123,134,0.15);
-    background: #fff;
-  }
-  .form-group textarea { min-height: 100px; resize: vertical; }
-  .checkbox-row {
-    display: flex;
-    align-items: flex-start;
+  a.contact-value { color: var(--rose-deep); border-bottom: 1px solid var(--rose-light); }
+  .contact-btn {
+    display: inline-flex;
+    align-items: center;
     gap: 10px;
-    font-size: 14px;
-    color: var(--soft);
-    margin-bottom: 24px;
-  }
-  .checkbox-row input { margin-top: 4px; flex-shrink: 0; }
-  .submit-btn {
-    width: 100%;
-    padding: 18px;
     background: linear-gradient(135deg, var(--rose) 0%, var(--rose-deep) 100%);
     color: #fff;
-    border: none;
+    padding: 16px 40px;
     border-radius: 999px;
-    font-size: 17px;
+    text-decoration: none;
     font-weight: 700;
-    letter-spacing: 0.15em;
-    cursor: pointer;
-    box-shadow: 0 12px 30px rgba(168,90,104,0.35);
+    font-size: 15px;
+    letter-spacing: 0.1em;
+    box-shadow: 0 10px 26px rgba(168,90,104,0.35);
     transition: transform 0.3s, box-shadow 0.3s;
   }
-  .submit-btn:hover {
+  .contact-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 16px 40px rgba(168,90,104,0.45);
+    box-shadow: 0 14px 32px rgba(168,90,104,0.45);
   }
-  .form-note {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 12px;
-    color: var(--soft);
+
+  /* ===== LEGAL ===== */
+  .legal { background: var(--cream); }
+  .legal-table {
+    width: 100%;
+    max-width: 880px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(201,123,134,0.08);
   }
-  .success {
-    display: none;
-    text-align: center;
-    padding: 24px;
+  .legal-table th,
+  .legal-table td {
+    text-align: left;
+    padding: 18px 24px;
+    font-size: 14px;
+    vertical-align: top;
+    line-height: 1.8;
+  }
+  .legal-table th {
+    width: 200px;
     background: var(--rose-light);
     color: var(--rose-deep);
-    border-radius: 12px;
-    margin-top: 20px;
     font-weight: 600;
+    border-bottom: 1px solid #fff;
   }
-  .success.show { display: block; }
+  .legal-table td {
+    color: var(--ink);
+    border-bottom: 1px solid var(--rose-light);
+  }
+  .legal-table tr:last-child th,
+  .legal-table tr:last-child td { border-bottom: none; }
 
   /* ===== FOOTER ===== */
   footer {
@@ -415,7 +460,10 @@
     }
     .profile-photo { margin: 0 auto; width: 180px; height: 180px; font-size: 56px; }
     .profile-stats { justify-content: center; }
-    .form-card { padding: 36px 24px; }
+    .contact-card { padding: 32px 24px; }
+    .contact-row { grid-template-columns: 1fr; gap: 4px; }
+    .legal-table th, .legal-table td { display: block; width: 100%; padding: 14px 20px; }
+    .legal-table th { padding-bottom: 4px; }
   }
 </style>
 </head>
@@ -432,7 +480,7 @@
     <p class="sub">— 大人の女性のための、生涯ものの美しさを —</p>
     <div class="main-catch">✨ 更年期の —5歳 若見えヘア＆メイクテクニック ✨</div>
     <div>
-      <a href="#signup" class="hero-cta">無料で申し込む ▸</a>
+      <a href="#contact" class="hero-cta">お問い合わせはこちら ▸</a>
     </div>
   </div>
 </header>
@@ -516,68 +564,76 @@
   </div>
 </section>
 
-<!-- SIGNUP FORM -->
-<section class="signup" id="signup">
+<!-- TESTIMONIALS -->
+<section class="testimonials">
   <div class="container">
-    <div class="section-label">APPLICATION FORM</div>
-    <h2 class="section-title">お申込みフォーム</h2>
-    <p class="section-lead">下記フォームよりお気軽にお申込みください。<br>受付後、3営業日以内に担当よりご連絡いたします。</p>
+    <div class="section-label">CUSTOMER VOICE</div>
+    <h2 class="section-title">お客様の声：<span class="accent">喜びの声</span></h2>
+    <p class="section-lead">これまでにレッスンを受けてくださった更年期世代のお客様から、たくさんの嬉しいお声をいただいています。</p>
+    <div class="voice-grid">
+      <div class="voice">
+        <div class="voice-photo">A</div>
+        <div class="voice-title">「自分に似合うメイクが見つかりました！」</div>
+        <div class="voice-body">これまで何となくメイクをしていましたが、お顔パーツ診断を受けて自分に本当に合うラインが分かり、毎朝の支度が楽しい時間に変わりました。同年代の友人にも「最近若く見える」と言われ、自信を持って外出できるようになりました。</div>
+        <div class="voice-name">— 50代前半 N様</div>
+      </div>
+      <div class="voice">
+        <div class="voice-photo">M</div>
+        <div class="voice-title">「鏡を見るのが楽しくなりました。」</div>
+        <div class="voice-body">白髪やうねりに悩み、髪型がずっと決まらず憂うつでした。ひさよ先生に教わった美髪ケアを続けるうちに、ツヤが戻り、—5歳メイク術と合わせて鏡の中の自分が見違えるほど。年齢を重ねることが楽しみになりました。</div>
+        <div class="voice-name">— 50代後半 K様</div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <form class="form-card" id="signup-form" novalidate>
-      <div class="form-group">
-        <label for="name">お名前 <span class="req">必須</span></label>
-        <input type="text" id="name" name="name" placeholder="山田 花子" required>
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="section-label">CONTACT</div>
+    <h2 class="section-title">お問い合わせ</h2>
+    <p class="section-lead">ご質問やご相談などございましたら、下記までお気軽にご連絡ください。</p>
+    <div class="contact-card">
+      <div class="contact-row">
+        <span class="contact-label">メールアドレス</span>
+        <a href="mailto:yako12121031@gmail.com" class="contact-value">yako12121031@gmail.com</a>
       </div>
-      <div class="form-group">
-        <label for="kana">フリガナ</label>
-        <input type="text" id="kana" name="kana" placeholder="ヤマダ ハナコ">
+      <div class="contact-row">
+        <span class="contact-label">公式ライン</span>
+        <span class="contact-value">公式LINEからもお気軽にご連絡いただけます</span>
       </div>
-      <div class="form-group">
-        <label for="email">メールアドレス <span class="req">必須</span></label>
-        <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+      <div class="contact-row">
+        <span class="contact-label">受付時間</span>
+        <span class="contact-value">10:00 〜 19:00（不定休）</span>
       </div>
-      <div class="form-group">
-        <label for="tel">電話番号</label>
-        <input type="tel" id="tel" name="tel" placeholder="090-1234-5678">
+      <div style="text-align:center; margin-top: 36px;">
+        <a href="mailto:yako12121031@gmail.com" class="contact-btn">メールでのお問い合わせ ▸</a>
       </div>
-      <div class="form-group">
-        <label for="age">年代 <span class="req">必須</span></label>
-        <select id="age" name="age" required>
-          <option value="">選択してください</option>
-          <option>30代</option>
-          <option>40代前半</option>
-          <option>40代後半</option>
-          <option>50代前半</option>
-          <option>50代後半</option>
-          <option>60代</option>
-          <option>70代以上</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label for="interest">ご興味のある内容 <span class="req">必須</span></label>
-        <select id="interest" name="interest" required>
-          <option value="">選択してください</option>
-          <option>お顔パーツ診断</option>
-          <option>更年期に負けない美髪テクニック</option>
-          <option>若見えメイク術</option>
-          <option>美活サロンへの参加</option>
-          <option>すべて知りたい</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label for="message">お悩み・ご質問</label>
-        <textarea id="message" name="message" placeholder="現在のお悩み、ご質問などご自由にお書きください"></textarea>
-      </div>
-      <label class="checkbox-row">
-        <input type="checkbox" required>
-        <span>個人情報の取扱いに同意のうえ申込みます。ご記入いただいた情報はご連絡・サービス提供のみに使用いたします。</span>
-      </label>
-      <button type="submit" class="submit-btn">無料で申し込む</button>
-      <p class="form-note">※ お申込みは無料です。しつこい営業は一切いたしません。</p>
-      <div class="success" id="success-msg">
-        ✨ お申込みありがとうございました。<br>3営業日以内にご連絡いたします。
-      </div>
-    </form>
+    </div>
+  </div>
+</section>
+
+<!-- LEGAL -->
+<section class="legal" id="legal">
+  <div class="container">
+    <div class="section-label">LEGAL NOTICE</div>
+    <h2 class="section-title">特定商取引法に基づく表記</h2>
+    <table class="legal-table">
+      <tbody>
+        <tr><th>販売事業者名</th><td>鳴海康子</td></tr>
+        <tr><th>運営責任者</th><td>鳴海康子</td></tr>
+        <tr><th>所在地</th><td>〒371-0022　群馬県前橋市千代田町３丁目２−６</td></tr>
+        <tr><th>電話番号</th><td>090-5210-9207</td></tr>
+        <tr><th>メールアドレス</th><td>yako12121031@gmail.com</td></tr>
+        <tr><th>サービス内容</th><td>更年期美容コンサル、ヘア＆メイクレッスン、お顔パーツ診断</td></tr>
+        <tr><th>サービス価格</th><td>各サービスの料金表を参照</td></tr>
+        <tr><th>商品以外に必要な費用</th><td>消費税</td></tr>
+        <tr><th>支払方法</th><td>クレジットカード決済・銀行振り込み</td></tr>
+        <tr><th>引渡し時期</th><td>決済終了後、24時間以内にメールにてご案内いたします</td></tr>
+        <tr><th>返品・交換について</th><td>キャンセルを希望される方は、お申込みから7日以内に電話またはメールにてお問い合わせをお願い致します</td></tr>
+        <tr><th>不良品について</th><td>ご注文内容と異なる、またはデータ等が破損している場合は14日以内にご連絡ください。状況確認後に改めてサービス提供を致します</td></tr>
+      </tbody>
+    </table>
   </div>
 </section>
 
@@ -586,19 +642,6 @@
   <div>ひさよ｜パリコレメイク経験者が教える更年期美容</div>
   <div style="margin-top:14px; font-size:12px;">© 2026 Hisayo Beauty Salon. All Rights Reserved.</div>
 </footer>
-
-<script>
-  document.getElementById('signup-form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    if (!this.checkValidity()) {
-      this.reportValidity();
-      return;
-    }
-    document.getElementById('success-msg').classList.add('show');
-    this.reset();
-    document.getElementById('success-msg').scrollIntoView({ behavior: 'smooth', block: 'center' });
-  });
-</script>
 
 </body>
 </html>
