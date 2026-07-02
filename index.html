@@ -3,797 +3,879 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ひさよ｜パリコレメイク経験者が教える更年期美容</title>
-<meta name="description" content="パリコレメイク経験者が教える更年期美容。—5歳若見えヘア＆メイクテクニックで、生涯使えるあなただけの美しさを。">
+<title>日下部尚美｜品格ヴェールメソッド マナー講座（無料個別相談）</title>
+<meta name="description" content="所作をまとった日から、あなたへの扱われ方が変わる。頑張りすぎてきた女性のための品格ヴェールメソッド。まずは無料個別相談へ。">
+<meta property="og:title" content="所作をまとった日から、あなたへの扱われ方が変わる。｜品格ヴェールメソッド">
+<meta property="og:description" content="頑張りすぎてきた女性のための品格ヴェールメソッド。無料個別相談を受付中。">
+<meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
 <style>
   :root {
-    --rose: #c97b86;
-    --rose-deep: #a85a68;
-    --rose-light: #f4dde0;
-    --cream: #fdf7f3;
-    --beige: #f0e4dc;
-    --gold: #b89968;
-    --ink: #3a2a2a;
-    --soft: #6b5757;
+    --ink: #3b3238;
+    --soft: #6d6169;
+    --plum: #7d5763;
+    --plum-deep: #5c3a46;
+    --rose: #c39aa4;
+    --rose-light: #ecdcdf;
+    --rose-mist: #f6edee;
+    --gold: #b3945d;
+    --gold-light: #d9c69a;
+    --sage: #8f9c8f;
+    --ivory: #faf5ef;
+    --cream: #f3ebe1;
+    --line-green: #06c755;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   html { scroll-behavior: smooth; }
   body {
     font-family: 'Noto Sans JP', sans-serif;
     color: var(--ink);
-    background: var(--cream);
-    line-height: 1.8;
+    background: var(--ivory);
+    line-height: 1.95;
     -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
   }
+  img { max-width: 100%; display: block; }
   .serif { font-family: 'Noto Serif JP', serif; }
-  .latin { font-family: 'Cormorant Garamond', serif; letter-spacing: 0.05em; }
+  .latin { font-family: 'Cormorant Garamond', serif; letter-spacing: 0.06em; }
+
+  /* ===== reveal ===== */
+  .reveal { opacity: 0; transform: translateY(28px); transition: opacity 1s ease, transform 1s ease; }
+  .reveal.on { opacity: 1; transform: none; }
+  @media (prefers-reduced-motion: reduce) {
+    .reveal { opacity: 1 !important; transform: none !important; transition: none; }
+  }
 
   /* ===== HERO ===== */
   .hero {
     position: relative;
     min-height: 100vh;
     background:
-      linear-gradient(135deg, rgba(253,247,243,0.85) 0%, rgba(244,221,224,0.75) 100%),
-      radial-gradient(circle at 20% 20%, rgba(201,123,134,0.15), transparent 60%),
-      radial-gradient(circle at 80% 80%, rgba(184,153,104,0.15), transparent 60%);
+      radial-gradient(circle at 78% 30%, rgba(236,220,223,0.55), transparent 55%),
+      radial-gradient(circle at 12% 82%, rgba(217,198,154,0.28), transparent 50%),
+      linear-gradient(160deg, #fbf7f2 0%, #f4e9e3 55%, #efe1dd 100%);
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 80px 24px 60px;
+    padding: 96px 24px 60px;
     overflow: hidden;
-  }
-  .hero::before {
-    content: "";
-    position: absolute; inset: 0;
-    background-image:
-      radial-gradient(circle at 10% 90%, rgba(255,255,255,0.6), transparent 30%),
-      radial-gradient(circle at 90% 10%, rgba(255,255,255,0.5), transparent 30%);
-    pointer-events: none;
   }
   .hero-inner {
     position: relative;
-    max-width: 880px;
-    text-align: center;
     z-index: 2;
+    max-width: 1120px;
+    margin: 0 auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    align-items: center;
+    gap: 24px;
   }
+  .hero-copy { text-align: left; }
   .hero-badge {
     display: inline-block;
     font-family: 'Cormorant Garamond', serif;
     font-style: italic;
     color: var(--gold);
-    letter-spacing: 0.3em;
-    font-size: 14px;
-    margin-bottom: 24px;
-    padding: 6px 20px;
-    border-top: 1px solid var(--gold);
-    border-bottom: 1px solid var(--gold);
+    letter-spacing: 0.32em;
+    font-size: 13px;
+    margin-bottom: 26px;
+    padding: 7px 0 9px;
+    border-top: 1px solid var(--gold-light);
+    border-bottom: 1px solid var(--gold-light);
   }
   .hero h1 {
     font-family: 'Noto Serif JP', serif;
     font-weight: 600;
-    font-size: clamp(28px, 5vw, 46px);
-    line-height: 1.5;
-    color: var(--ink);
-    margin-bottom: 20px;
+    font-size: clamp(28px, 4.6vw, 48px);
+    line-height: 1.62;
+    color: var(--plum-deep);
+    letter-spacing: 0.02em;
+    margin-bottom: 26px;
   }
-  .hero h1 .name {
-    display: block;
-    font-family: 'Cormorant Garamond', serif;
-    font-style: italic;
-    font-size: clamp(48px, 8vw, 72px);
-    color: var(--rose-deep);
-    margin-bottom: 12px;
-    letter-spacing: 0.08em;
-  }
+  .hero h1 .em { color: var(--plum); }
+  .hero h1 .thin { display:block; font-size: 0.62em; color: var(--ink); font-weight: 500; margin-top: 6px; letter-spacing: 0.04em;}
   .hero .sub {
-    font-size: clamp(15px, 2.2vw, 18px);
+    font-size: clamp(14px, 2vw, 17px);
     color: var(--soft);
-    margin-bottom: 36px;
-    letter-spacing: 0.05em;
+    margin-bottom: 38px;
+    letter-spacing: 0.04em;
+    line-height: 1.9;
   }
-  .hero .main-catch {
-    display: inline-block;
-    font-family: 'Noto Serif JP', serif;
-    font-size: clamp(20px, 3.5vw, 30px);
-    font-weight: 600;
-    color: var(--rose-deep);
-    padding: 18px 32px;
-    background: rgba(255,255,255,0.7);
-    border-radius: 4px;
-    box-shadow: 0 8px 30px rgba(201,123,134,0.15);
-    margin-bottom: 40px;
+  .hero .sub b { color: var(--plum); font-weight: 600; }
+  .hero-photo-wrap {
+    position: relative;
+    display: flex;
+    justify-content: center;
   }
-  .hero-cta {
+  .hero-photo-wrap::before {
+    content: "";
+    position: absolute;
+    width: 300px; height: 300px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255,255,255,0.85), rgba(236,220,223,0.2) 70%, transparent);
+    top: 8%; left: 50%; transform: translateX(-50%);
+    z-index: 0;
+  }
+  .hero-photo {
+    position: relative;
+    z-index: 1;
+    width: min(360px, 82vw);
+    filter: drop-shadow(0 24px 40px rgba(92,58,70,0.22));
+  }
+
+  /* ===== CTA button ===== */
+  .cta-btn {
     display: inline-flex;
     align-items: center;
-    gap: 10px;
-    background: linear-gradient(135deg, var(--rose) 0%, var(--rose-deep) 100%);
+    justify-content: center;
+    gap: 12px;
+    background: linear-gradient(135deg, var(--line-green) 0%, #04a648 100%);
     color: #fff;
-    padding: 18px 48px;
+    padding: 19px 44px;
     border-radius: 999px;
     text-decoration: none;
     font-weight: 700;
-    font-size: 17px;
-    letter-spacing: 0.1em;
-    box-shadow: 0 12px 30px rgba(168,90,104,0.35);
+    font-size: clamp(15px, 2vw, 18px);
+    letter-spacing: 0.06em;
+    box-shadow: 0 14px 32px rgba(6,199,85,0.34);
     transition: transform 0.3s, box-shadow 0.3s;
   }
-  .hero-cta:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 16px 40px rgba(168,90,104,0.45);
+  .cta-btn:hover { transform: translateY(-3px); box-shadow: 0 20px 42px rgba(6,199,85,0.44); }
+  .cta-btn .ico { font-size: 1.15em; }
+  .cta-note { display:block; margin-top: 14px; font-size: 12.5px; color: var(--soft); letter-spacing: 0.04em; }
+  .cta-plum {
+    background: linear-gradient(135deg, var(--plum) 0%, var(--plum-deep) 100%);
+    box-shadow: 0 14px 32px rgba(92,58,70,0.32);
   }
+  .cta-plum:hover { box-shadow: 0 20px 42px rgba(92,58,70,0.42); }
 
-  /* ===== SECTION ===== */
-  section { padding: 100px 24px; }
-  .container { max-width: 980px; margin: 0 auto; }
-  .section-label {
+  /* ===== SECTION base ===== */
+  section { padding: 104px 24px; position: relative; }
+  .container { max-width: 960px; margin: 0 auto; }
+  .narrow { max-width: 760px; }
+  .eyebrow {
     text-align: center;
     font-family: 'Cormorant Garamond', serif;
     font-style: italic;
     color: var(--gold);
     letter-spacing: 0.3em;
-    font-size: 14px;
-    margin-bottom: 14px;
+    font-size: 13px;
+    margin-bottom: 16px;
   }
-  .section-title {
+  .s-title {
     text-align: center;
     font-family: 'Noto Serif JP', serif;
     font-weight: 600;
-    font-size: clamp(24px, 4vw, 34px);
-    color: var(--ink);
-    margin-bottom: 16px;
-    line-height: 1.5;
+    font-size: clamp(23px, 3.8vw, 34px);
+    color: var(--plum-deep);
+    line-height: 1.6;
+    margin-bottom: 20px;
+    letter-spacing: 0.02em;
   }
-  .section-title .accent { color: var(--rose-deep); }
-  .section-lead {
+  .s-title .accent { color: var(--plum); }
+  .s-lead {
     text-align: center;
     color: var(--soft);
-    font-size: 16px;
-    max-width: 680px;
-    margin: 0 auto 60px;
+    font-size: 15.5px;
+    max-width: 660px;
+    margin: 0 auto 56px;
   }
+  .rule { width: 46px; height: 1px; background: var(--gold); margin: 0 auto 30px; }
 
-  /* ===== TROUBLES ===== */
-  .troubles { background: #fff; }
-  .trouble-list {
-    max-width: 720px;
-    margin: 0 auto;
-    background: var(--cream);
+  /* ===== EMPATHY ===== */
+  .empathy { background: #fff; }
+  .check-list {
+    max-width: 680px; margin: 0 auto 44px;
+    background: var(--rose-mist);
     border: 1px solid var(--rose-light);
-    border-radius: 12px;
-    padding: 40px 32px;
+    border-radius: 14px;
+    padding: 40px 34px;
   }
-  .trouble-list li {
+  .check-list li {
     list-style: none;
-    padding: 14px 0 14px 36px;
+    padding: 15px 0 15px 42px;
     position: relative;
-    font-size: 17px;
+    font-size: 16px;
     color: var(--ink);
     border-bottom: 1px dashed var(--rose-light);
-  }
-  .trouble-list li:last-child { border-bottom: none; }
-  .trouble-list li::before {
-    content: "✓";
-    position: absolute;
-    left: 6px;
-    top: 14px;
-    color: var(--rose);
-    font-weight: 700;
-  }
-
-  /* ===== FEATURES ===== */
-  .features { background: linear-gradient(180deg, var(--cream) 0%, var(--beige) 100%); }
-  .feature-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 28px;
-  }
-  .feature {
-    background: #fff;
-    border-radius: 16px;
-    padding: 36px 28px;
-    text-align: center;
-    box-shadow: 0 10px 30px rgba(201,123,134,0.08);
-    transition: transform 0.3s, box-shadow 0.3s;
-  }
-  .feature:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 18px 40px rgba(201,123,134,0.15);
-  }
-  .feature-num {
-    font-family: 'Cormorant Garamond', serif;
-    font-style: italic;
-    font-size: 36px;
-    color: var(--rose);
-    margin-bottom: 10px;
-  }
-  .feature-title {
-    font-family: 'Noto Serif JP', serif;
-    font-weight: 600;
-    font-size: 18px;
-    color: var(--ink);
-    margin-bottom: 14px;
-    line-height: 1.6;
-  }
-  .feature-desc {
-    font-size: 14px;
-    color: var(--soft);
     line-height: 1.8;
   }
+  .check-list li:last-child { border-bottom: none; }
+  .check-list li::before {
+    content: "✓";
+    position: absolute; left: 8px; top: 15px;
+    color: #fff; background: var(--rose);
+    width: 22px; height: 22px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 12px; font-weight: 700;
+  }
+  .empathy-msg {
+    text-align: center;
+    font-family: 'Noto Serif JP', serif;
+    font-size: clamp(17px, 2.6vw, 22px);
+    line-height: 1.9;
+    color: var(--plum-deep);
+    max-width: 680px; margin: 0 auto;
+  }
+  .empathy-msg .small { display:block; font-size: 0.78em; color: var(--soft); font-family:'Noto Sans JP',sans-serif; margin-top: 4px;}
+
+  /* ===== INSIGHT ===== */
+  .insight {
+    background: linear-gradient(160deg, var(--plum-deep) 0%, var(--plum) 100%);
+    color: #fff; text-align: center; overflow: hidden;
+  }
+  .insight::before, .insight::after {
+    content:""; position:absolute; border-radius:50%; opacity:0.14;
+    background: radial-gradient(circle, #fff, transparent 70%);
+  }
+  .insight::before { width:360px; height:360px; top:-120px; right:-100px; }
+  .insight::after { width:300px; height:300px; bottom:-120px; left:-80px; }
+  .insight .container { position: relative; z-index: 2; }
+  .insight-big {
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 600;
+    font-size: clamp(24px, 4.4vw, 40px);
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    margin-bottom: 40px;
+  }
+  .insight-big .u { border-bottom: 2px solid var(--gold-light); padding-bottom: 4px; }
+  .insight-p {
+    font-size: clamp(15px, 2.2vw, 18px);
+    line-height: 2.1;
+    color: rgba(255,255,255,0.9);
+    max-width: 620px; margin: 0 auto;
+  }
+  .insight-p + .insight-p { margin-top: 26px; }
 
   /* ===== PROFILE ===== */
-  .profile { background: #fff; }
-  .profile-card {
+  .profile { background: var(--ivory); }
+  .profile-grid {
     display: grid;
-    grid-template-columns: 240px 1fr;
-    gap: 48px;
-    align-items: center;
-    max-width: 880px;
-    margin: 0 auto;
-    background: var(--cream);
-    border-radius: 20px;
-    padding: 48px;
+    grid-template-columns: 340px 1fr;
+    gap: 52px;
+    align-items: start;
+    max-width: 940px; margin: 0 auto;
   }
-  .profile-photo {
-    width: 240px; height: 240px;
-    border-radius: 50%;
-    object-fit: cover;
-    display: block;
-    box-shadow: 0 10px 30px rgba(201,123,134,0.2);
-    border: 4px solid #fff;
-  }
-  .profile-name {
-    font-family: 'Noto Serif JP', serif;
-    font-size: 28px;
-    font-weight: 600;
-    margin-bottom: 6px;
-  }
-  .profile-role {
-    color: var(--gold);
-    font-family: 'Cormorant Garamond', serif;
-    font-style: italic;
-    letter-spacing: 0.15em;
-    margin-bottom: 20px;
-  }
-  .profile-stats {
-    display: flex;
-    gap: 32px;
-    margin: 20px 0;
-    flex-wrap: wrap;
-  }
-  .stat-num {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 36px;
-    color: var(--rose-deep);
-    font-weight: 600;
-    line-height: 1;
-  }
-  .stat-label {
-    font-size: 12px;
-    color: var(--soft);
-    letter-spacing: 0.1em;
-  }
-  .profile-bio {
-    font-size: 15px;
-    color: var(--soft);
-    line-height: 1.9;
-  }
-
-  /* ===== PRICING ===== */
-  .pricing { background: linear-gradient(180deg, var(--beige) 0%, var(--cream) 100%); }
-  .price-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 32px;
-    max-width: 920px;
-    margin: 0 auto;
-  }
-  .price-card {
-    background: #fff;
+  .profile-photo-col { position: sticky; top: 40px; }
+  .profile-photo-frame {
+    position: relative;
+    background: linear-gradient(160deg, #fff, var(--rose-mist));
     border-radius: 18px;
-    padding: 40px 32px;
-    box-shadow: 0 10px 30px rgba(201,123,134,0.1);
-    position: relative;
-    transition: transform 0.3s, box-shadow 0.3s;
-    display: flex;
-    flex-direction: column;
+    padding: 22px 22px 0;
+    box-shadow: 0 20px 46px rgba(125,87,99,0.16);
+    border: 1px solid var(--rose-light);
+    text-align: center;
   }
-  .price-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 18px 40px rgba(201,123,134,0.18);
+  .profile-photo-frame img { border-radius: 12px 12px 0 0; margin: 0 auto; }
+  .profile-name-plate {
+    padding: 18px 10px 22px;
   }
-  .price-card.featured {
-    background: linear-gradient(160deg, #fff 0%, var(--rose-light) 100%);
-    border: 2px solid var(--rose);
+  .profile-name { font-family:'Noto Serif JP',serif; font-size: 24px; font-weight: 600; color: var(--plum-deep); }
+  .profile-name .rb { font-size: 13px; color: var(--soft); font-weight: 400; letter-spacing: 0.14em; }
+  .profile-role { color: var(--gold); font-family:'Cormorant Garamond',serif; font-style: italic; letter-spacing: 0.14em; font-size: 14px; margin-top: 6px; }
+  .story p { font-size: 15.5px; color: var(--ink); line-height: 2.05; margin-bottom: 22px; }
+  .story p .hl { color: var(--plum); font-weight: 600; }
+  .story .lead-line {
+    font-family:'Noto Serif JP',serif; font-size: 18px; color: var(--plum-deep);
+    font-weight: 600; line-height: 1.9; margin-bottom: 26px;
   }
-  .price-badge {
-    position: absolute;
-    top: -14px;
-    right: 24px;
-    background: var(--rose-deep);
-    color: #fff;
-    font-size: 12px;
-    font-weight: 600;
-    padding: 6px 16px;
-    border-radius: 999px;
-    letter-spacing: 0.1em;
-    box-shadow: 0 4px 12px rgba(168,90,104,0.3);
+  .cert-box {
+    margin-top: 30px;
+    background: #fff;
+    border: 1px solid var(--rose-light);
+    border-radius: 14px;
+    padding: 28px 30px;
   }
-  .price-label {
-    font-family: 'Cormorant Garamond', serif;
-    font-style: italic;
-    letter-spacing: 0.2em;
-    color: var(--gold);
-    font-size: 13px;
-    margin-bottom: 8px;
+  .cert-box h4 {
+    font-family:'Noto Serif JP',serif; font-size: 15px; color: var(--plum-deep);
+    letter-spacing: 0.12em; margin-bottom: 16px; display:flex; align-items:center; gap:10px;
   }
-  .price-name {
-    font-family: 'Noto Serif JP', serif;
-    font-weight: 600;
-    font-size: 22px;
-    color: var(--ink);
-    margin-bottom: 20px;
-    padding-bottom: 16px;
-    border-bottom: 1px solid var(--rose-light);
+  .cert-box h4::before { content:""; width:20px; height:1px; background: var(--gold);}
+  .cert-box ul { list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 10px 24px; }
+  .cert-box li { position: relative; padding-left: 20px; font-size: 14px; color: var(--soft); }
+  .cert-box li::before { content:"✦"; position:absolute; left:0; color: var(--gold); font-size: 11px; top: 3px; }
+
+  /* ===== FUTURE ===== */
+  .future { position: relative; color: #fff; }
+  .future-bg {
+    position:absolute; inset:0; z-index:0;
+    background: linear-gradient(rgba(60,42,48,0.72), rgba(92,58,70,0.78)), url('images/lounge.jpg') center/cover;
   }
-  .price-term {
-    display: inline-block;
-    align-self: flex-start;
-    background: var(--rose-light);
-    color: var(--rose-deep);
-    font-size: 13px;
-    font-weight: 600;
-    padding: 5px 14px;
-    border-radius: 999px;
-    margin-bottom: 18px;
-    letter-spacing: 0.05em;
+  .future .container { position: relative; z-index: 2; }
+  .future .eyebrow { color: var(--gold-light); }
+  .future .s-title { color: #fff; }
+  .future-list {
+    max-width: 720px; margin: 0 auto 44px;
+    display: grid; gap: 14px;
   }
-  .price-amount-row {
-    display: flex;
-    align-items: baseline;
-    gap: 14px;
-    margin-bottom: 10px;
-  }
-  .price-amount-row .duration {
-    font-size: 15px;
-    color: var(--soft);
-    font-weight: 600;
-    min-width: 50px;
-  }
-  .price-amount-row .amount {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 30px;
-    font-weight: 600;
-    color: var(--rose-deep);
-    line-height: 1;
-  }
-  .price-amount-row .tax {
-    font-size: 12px;
-    color: var(--soft);
-  }
-  .price-meta {
-    margin-top: 20px;
-    padding-top: 20px;
-    border-top: 1px dashed var(--rose-light);
-    font-size: 14px;
-    color: var(--soft);
-    line-height: 1.9;
-  }
-  .price-meta li {
+  .future-list li {
     list-style: none;
-    padding-left: 22px;
-    position: relative;
-  }
-  .price-meta li::before {
-    content: "◆";
-    position: absolute;
-    left: 0;
-    color: var(--rose);
-    font-size: 10px;
-    top: 8px;
-  }
-
-  /* ===== TESTIMONIALS ===== */
-  .testimonials { background: #fff; }
-  .voice-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 32px;
-    max-width: 920px;
-    margin: 0 auto;
-  }
-  .voice {
-    background: var(--cream);
-    border-radius: 16px;
-    padding: 40px 32px;
-    box-shadow: 0 10px 30px rgba(201,123,134,0.08);
-    position: relative;
-  }
-  .voice-photo {
-    width: 140px; height: 140px;
-    border-radius: 50%;
-    object-fit: cover;
-    background: linear-gradient(135deg, var(--rose-light), var(--beige));
-    display: block;
-    border: 4px solid #fff;
-    box-shadow: 0 8px 22px rgba(201,123,134,0.2);
-    margin: 0 auto 22px;
-  }
-  .voice-title {
-    font-family: 'Noto Serif JP', serif;
-    font-weight: 600;
-    color: var(--rose-deep);
-    font-size: 18px;
-    margin-bottom: 14px;
-    line-height: 1.6;
-  }
-  .voice-body {
-    font-size: 14px;
-    color: var(--soft);
-    line-height: 1.9;
-    margin-bottom: 16px;
-  }
-  .voice-name {
-    font-family: 'Cormorant Garamond', serif;
-    font-style: italic;
-    color: var(--gold);
-    font-size: 14px;
-    letter-spacing: 0.1em;
-  }
-
-  /* ===== CONTACT ===== */
-  .contact {
-    background:
-      linear-gradient(135deg, rgba(201,123,134,0.95), rgba(168,90,104,0.95));
-    color: #fff;
-  }
-  .contact .section-label { color: rgba(255,255,255,0.8); }
-  .contact .section-title { color: #fff; }
-  .contact .section-lead { color: rgba(255,255,255,0.9); }
-  .contact-card {
-    max-width: 640px;
-    margin: 0 auto;
-    background: #fff;
-    color: var(--ink);
-    padding: 48px;
-    border-radius: 20px;
-    box-shadow: 0 30px 60px rgba(0,0,0,0.2);
-  }
-  .contact-row {
-    display: grid;
-    grid-template-columns: 140px 1fr;
-    gap: 16px;
-    padding: 18px 0;
-    border-bottom: 1px dashed var(--rose-light);
-    align-items: center;
-  }
-  .contact-row:last-of-type { border-bottom: none; }
-  .contact-label {
-    font-size: 13px;
-    font-weight: 600;
-    color: var(--gold);
-    letter-spacing: 0.1em;
-  }
-  .contact-value {
-    font-size: 15px;
-    color: var(--ink);
-    text-decoration: none;
-    word-break: break-all;
-  }
-  a.contact-value { color: var(--rose-deep); border-bottom: 1px solid var(--rose-light); }
-  .contact-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    background: linear-gradient(135deg, var(--rose) 0%, var(--rose-deep) 100%);
-    color: #fff;
-    padding: 16px 40px;
-    border-radius: 999px;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 15px;
-    letter-spacing: 0.1em;
-    box-shadow: 0 10px 26px rgba(168,90,104,0.35);
-    transition: transform 0.3s, box-shadow 0.3s;
-  }
-  .contact-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 14px 32px rgba(168,90,104,0.45);
-  }
-
-  /* ===== LEGAL ===== */
-  .legal { background: var(--cream); }
-  .legal-table {
-    width: 100%;
-    max-width: 880px;
-    margin: 0 auto;
-    border-collapse: collapse;
-    background: #fff;
+    background: rgba(255,255,255,0.12);
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(255,255,255,0.22);
     border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 8px 24px rgba(201,123,134,0.08);
+    padding: 16px 22px 16px 52px;
+    position: relative;
+    font-size: 15.5px;
+    line-height: 1.7;
   }
-  .legal-table th,
-  .legal-table td {
-    text-align: left;
-    padding: 18px 24px;
+  .future-list li::before {
+    content:"❋"; position:absolute; left:20px; top:15px; color: var(--gold-light); font-size: 15px;
+  }
+  .future-close {
+    text-align:center; font-family:'Noto Serif JP',serif;
+    font-size: clamp(17px,2.6vw,21px); line-height: 1.9; color:#fff;
+    max-width: 620px; margin: 0 auto;
+  }
+
+  /* ===== METHOD ===== */
+  .method { background: #fff; }
+  .vs-box {
+    max-width: 700px; margin: 0 auto 60px;
+    display: grid; gap: 16px;
+  }
+  .vs-row {
+    display: grid; grid-template-columns: 44px 1fr; gap: 16px; align-items: center;
+    padding: 20px 26px; border-radius: 12px; font-size: 16px; line-height: 1.7;
+  }
+  .vs-x { background: #f4f0ee; color: var(--soft); }
+  .vs-o { background: var(--rose-mist); color: var(--plum-deep); border: 1px solid var(--rose-light); font-weight: 500; }
+  .vs-mark { font-size: 28px; text-align:center; line-height: 1; }
+  .vs-x .vs-mark { color: #c4b7b3; }
+  .vs-o .vs-mark { color: var(--rose); }
+  .pillar-head { text-align:center; font-family:'Noto Serif JP',serif; font-size:18px; color:var(--plum-deep); letter-spacing:0.14em; margin-bottom:32px; }
+  .pillars { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; margin-bottom: 56px; }
+  .pillar {
+    background: linear-gradient(170deg, #fff, var(--ivory));
+    border: 1px solid var(--rose-light);
+    border-radius: 16px; padding: 34px 26px; text-align: center;
+    box-shadow: 0 12px 30px rgba(125,87,99,0.07);
+    transition: transform .3s, box-shadow .3s;
+  }
+  .pillar:hover { transform: translateY(-6px); box-shadow: 0 20px 40px rgba(125,87,99,0.14); }
+  .pillar-num { font-family:'Cormorant Garamond',serif; font-style: italic; font-size: 32px; color: var(--gold); }
+  .pillar-jp { font-family:'Noto Serif JP',serif; font-size: 21px; font-weight: 600; color: var(--plum-deep); margin: 6px 0 16px; letter-spacing: 0.1em; }
+  .pillar-jp::after { content:""; display:block; width:30px; height:1px; background:var(--gold); margin: 12px auto 0; }
+  .pillar-desc { font-size: 14px; color: var(--soft); line-height: 1.95; }
+  .program-card {
+    max-width: 720px; margin: 0 auto;
+    background: linear-gradient(160deg, var(--plum-deep), var(--plum));
+    border-radius: 18px; padding: 40px 40px; color: #fff;
+    box-shadow: 0 20px 44px rgba(92,58,70,0.24);
+  }
+  .program-card h4 { font-family:'Noto Serif JP',serif; text-align:center; font-size: 19px; letter-spacing: 0.14em; margin-bottom: 26px; color:#fff;}
+  .program-card h4 .latin { display:block; font-style:italic; color: var(--gold-light); font-size: 13px; letter-spacing: 0.24em; margin-bottom: 6px; }
+  .program-plans { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-bottom: 26px; }
+  .plan {
+    background: rgba(255,255,255,0.1); border:1px solid rgba(255,255,255,0.2);
+    border-radius: 12px; padding: 22px 20px; text-align:center;
+  }
+  .plan .pn { font-family:'Noto Serif JP',serif; font-size: 18px; font-weight:600; }
+  .plan .pt { font-size: 13px; color: var(--gold-light); letter-spacing: 0.1em; margin-top: 4px; }
+  .program-feat { list-style:none; display:grid; gap:10px; border-top: 1px solid rgba(255,255,255,0.2); padding-top: 22px; }
+  .program-feat li { position: relative; padding-left: 24px; font-size: 14.5px; color: rgba(255,255,255,0.92); }
+  .program-feat li::before { content:"◆"; position:absolute; left:0; color: var(--gold-light); font-size: 10px; top: 6px; }
+
+  /* ===== COMPARISON ===== */
+  .compare { background: linear-gradient(180deg, var(--cream) 0%, var(--ivory) 100%); }
+  .table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 0 auto; max-width: 900px; }
+  .cmp-table {
+    width: 100%; min-width: 640px; border-collapse: separate; border-spacing: 0;
+    background: #fff; border-radius: 14px; overflow: hidden;
+    box-shadow: 0 14px 36px rgba(125,87,99,0.1);
     font-size: 14px;
-    vertical-align: top;
-    line-height: 1.8;
   }
-  .legal-table th {
-    width: 200px;
-    background: var(--rose-light);
-    color: var(--rose-deep);
-    font-weight: 600;
-    border-bottom: 1px solid #fff;
+  .cmp-table th, .cmp-table td { padding: 16px 14px; text-align: center; border-bottom: 1px solid var(--rose-light); }
+  .cmp-table thead th { background: var(--cream); color: var(--soft); font-weight: 600; font-size: 13px; letter-spacing: 0.04em; }
+  .cmp-table thead th.ours { background: var(--plum-deep); color: #fff; position: relative; }
+  .cmp-table thead th.ours span { display:block; font-size: 11px; color: var(--gold-light); font-weight: 400; margin-top: 2px; }
+  .cmp-table tbody th { background: var(--rose-mist); color: var(--plum-deep); font-weight: 600; text-align: left; padding-left: 20px; white-space: nowrap; }
+  .cmp-table td.ours { background: #fbf3f4; color: var(--plum-deep); font-weight: 600; }
+  .cmp-table tr:last-child th, .cmp-table tr:last-child td { border-bottom: none; }
+  .cmp-table .yes { color: var(--line-green); font-weight: 700; }
+  .cmp-table .no { color: #bfa9a9; }
+  .cmp-note { text-align:center; font-size: 12.5px; color: var(--soft); margin-top: 18px; }
+
+  /* ===== VOICES ===== */
+  .voices { background: #fff; }
+  .voice-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
+  .voice {
+    background: var(--ivory); border: 1px solid var(--rose-light);
+    border-radius: 16px; padding: 34px 28px; position: relative;
   }
-  .legal-table td {
-    color: var(--ink);
-    border-bottom: 1px solid var(--rose-light);
+  .voice::before {
+    content: "“"; font-family:'Cormorant Garamond',serif; font-size: 68px; color: var(--rose-light);
+    position:absolute; top: 6px; left: 20px; line-height: 1;
   }
-  .legal-table tr:last-child th,
-  .legal-table tr:last-child td { border-bottom: none; }
+  .voice-body { position: relative; font-size: 14.5px; color: var(--ink); line-height: 2; margin: 22px 0 18px; }
+  .voice-tag { font-size: 12.5px; color: var(--gold); letter-spacing: 0.08em; font-family:'Cormorant Garamond',serif; font-style: italic; }
+
+  /* ===== FORWHO ===== */
+  .forwho { background: linear-gradient(180deg, var(--ivory), var(--cream)); }
+  .forwho-list { max-width: 720px; margin: 0 auto; display: grid; gap: 16px; }
+  .forwho-item {
+    display: grid; grid-template-columns: 52px 1fr; gap: 20px; align-items: center;
+    background: #fff; border: 1px solid var(--rose-light); border-radius: 14px;
+    padding: 22px 26px; box-shadow: 0 10px 26px rgba(125,87,99,0.06);
+  }
+  .forwho-num {
+    font-family:'Cormorant Garamond',serif; font-size: 30px; font-style: italic;
+    color: #fff; background: linear-gradient(135deg, var(--rose), var(--plum));
+    width: 52px; height: 52px; border-radius: 50%;
+    display:flex; align-items:center; justify-content:center;
+  }
+  .forwho-item p { font-size: 15.5px; color: var(--ink); line-height: 1.7; }
+
+  /* ===== FAQ ===== */
+  .faq { background: #fff; }
+  .faq-list { max-width: 720px; margin: 0 auto; }
+  .faq-item {
+    border: 1px solid var(--rose-light); border-radius: 14px; margin-bottom: 16px;
+    overflow: hidden; background: var(--ivory);
+  }
+  .faq-q {
+    display: flex; align-items: flex-start; gap: 14px;
+    padding: 22px 24px; cursor: pointer; list-style: none;
+    font-family:'Noto Serif JP',serif; font-weight: 600; color: var(--plum-deep); font-size: 16px;
+  }
+  .faq-q::-webkit-details-marker { display: none; }
+  .faq-q .qmark { color: var(--rose); font-family:'Cormorant Garamond',serif; font-style: italic; font-size: 22px; line-height: 1.2; }
+  .faq-q .arrow { margin-left: auto; color: var(--gold); transition: transform .3s; font-size: 14px; }
+  details[open] .faq-q .arrow { transform: rotate(180deg); }
+  .faq-a { padding: 0 24px 24px 58px; font-size: 14.5px; color: var(--soft); line-height: 2; }
+
+  /* ===== FINAL CTA ===== */
+  .final { position: relative; text-align: center; color: #fff; overflow: hidden; }
+  .final-bg {
+    position:absolute; inset:0; z-index:0;
+    background: linear-gradient(150deg, var(--plum-deep) 0%, var(--plum) 55%, #8a6470 100%);
+  }
+  .final-bg::after {
+    content:""; position:absolute; inset:0;
+    background: radial-gradient(circle at 80% 20%, rgba(217,198,154,0.28), transparent 55%),
+                radial-gradient(circle at 15% 85%, rgba(236,220,223,0.22), transparent 50%);
+  }
+  .final .container { position: relative; z-index: 2; }
+  .final-lead { font-family:'Noto Serif JP',serif; font-size: clamp(16px,2.4vw,20px); color: var(--gold-light); letter-spacing:0.06em; margin-bottom: 24px; }
+  .final-catch {
+    font-family:'Noto Serif JP',serif; font-weight: 600;
+    font-size: clamp(24px, 4.6vw, 40px); line-height: 1.6; letter-spacing: 0.03em; margin-bottom: 30px;
+  }
+  .final-p { font-size: 15.5px; color: rgba(255,255,255,0.9); line-height: 2.05; max-width: 560px; margin: 0 auto 44px; }
+  .final .cta-btn { font-size: clamp(16px, 2.4vw, 20px); padding: 22px 52px; }
 
   /* ===== FOOTER ===== */
-  footer {
-    background: #2c1f1f;
-    color: rgba(255,255,255,0.6);
-    text-align: center;
-    padding: 40px 24px;
-    font-size: 13px;
-    letter-spacing: 0.05em;
+  footer { background: #2c2226; color: rgba(255,255,255,0.55); text-align: center; padding: 46px 24px; font-size: 13px; letter-spacing: 0.05em; }
+  footer .fbrand { font-family:'Noto Serif JP',serif; color: var(--rose-light); font-size: 20px; letter-spacing: 0.16em; margin-bottom: 6px; }
+  footer .fsub { font-family:'Cormorant Garamond',serif; font-style: italic; color: var(--gold-light); letter-spacing: 0.2em; font-size: 13px; margin-bottom: 18px; }
+
+  /* ===== FLOATING CTA ===== */
+  .float-cta {
+    position: fixed; left: 50%; transform: translateX(-50%);
+    bottom: 18px; z-index: 60; width: calc(100% - 32px); max-width: 460px;
+    opacity: 0; pointer-events: none; transition: opacity .4s;
   }
-  footer .brand {
-    font-family: 'Cormorant Garamond', serif;
-    font-style: italic;
-    color: var(--rose-light);
-    font-size: 22px;
-    margin-bottom: 8px;
-  }
+  .float-cta.show { opacity: 1; pointer-events: auto; }
+  .float-cta a { width: 100%; box-shadow: 0 10px 30px rgba(6,199,85,0.4); }
 
   /* ===== RESPONSIVE ===== */
-  @media (max-width: 720px) {
-    section { padding: 70px 20px; }
-    .hero { padding: 60px 20px; }
-    .profile-card {
-      grid-template-columns: 1fr;
-      text-align: center;
-      padding: 36px 24px;
-      gap: 28px;
-    }
-    .profile-photo { margin: 0 auto; width: 180px; height: 180px; font-size: 56px; }
-    .profile-stats { justify-content: center; }
-    .contact-card { padding: 32px 24px; }
-    .contact-row { grid-template-columns: 1fr; gap: 4px; }
-    .legal-table th, .legal-table td { display: block; width: 100%; padding: 14px 20px; }
-    .legal-table th { padding-bottom: 4px; }
+  @media (max-width: 860px) {
+    .profile-grid { grid-template-columns: 1fr; gap: 36px; }
+    .profile-photo-col { position: static; max-width: 320px; margin: 0 auto; }
+    .pillars { grid-template-columns: 1fr; gap: 18px; }
+    .voice-grid { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 760px) {
+    section { padding: 74px 20px; }
+    .hero { padding: 40px 20px 56px; min-height: auto; align-items: flex-start; }
+    .hero-inner { grid-template-columns: 1fr; text-align: center; gap: 30px; }
+    .hero-copy { text-align: center; }
+    .hero-photo-wrap { order: -1; }
+    .hero-photo { width: min(280px, 74vw); }
+    .program-plans { grid-template-columns: 1fr; }
+    .cert-box ul { grid-template-columns: 1fr; }
+    .check-list, .program-card { padding: 30px 22px; }
+    .vs-row { padding: 18px 18px; font-size: 15px; }
   }
 </style>
+<noscript><style>.reveal{opacity:1 !important;transform:none !important;}</style></noscript>
 </head>
 <body>
 
-<!-- HERO -->
+<!-- ========== HERO ========== -->
 <header class="hero" id="top">
   <div class="hero-inner">
-    <span class="hero-badge">PARIS COLLECTION ARTIST</span>
-    <h1>
-      <span class="name">Hisayo</span>
-      <span class="serif">ひさよ｜パリコレメイク経験者が教える更年期美容</span>
-    </h1>
-    <p class="sub">— 大人の女性のための、生涯ものの美しさを —</p>
-    <div class="main-catch">✨ 更年期の —5歳 若見えヘア＆メイクテクニック ✨</div>
-    <div>
-      <a href="#contact" class="hero-cta">お問い合わせはこちら ▸</a>
+    <div class="hero-copy">
+      <span class="hero-badge">DIGNITY VEIL METHOD</span>
+      <h1>
+        所作を<span class="em">まとった日</span>から、<br>
+        あなたへの<span class="em">扱われ方</span>が<br>変わる。
+        <span class="thin">頑張りすぎてきた女性のための<br>品格ヴェールメソッド</span>
+      </h1>
+      <p class="sub">
+        正しい作法を、ただ覚える場ではありません。<br>
+        <b>「自分を丁寧に扱う感覚」</b>を、あなたの所作に宿す講座です。
+      </p>
+      <a href="#cta" class="cta-btn"><span class="ico">▶</span>無料個別相談を予約する</a>
+      <span class="cta-note">＼ LINE登録で かんたん受付 ／</span>
+    </div>
+    <div class="hero-photo-wrap">
+      <img class="hero-photo" src="images/naomi-main.png" alt="品格ヴェールメソッド主宰 日下部尚美">
     </div>
   </div>
 </header>
 
-<!-- TROUBLES -->
-<section class="troubles">
-  <div class="container">
-    <div class="section-label">YOUR CONCERNS</div>
-    <h2 class="section-title">こんなお悩み、<span class="accent">ありませんか？</span></h2>
-    <p class="section-lead">更年期に差しかかると、これまでのケアでは追いつかなくなります。<br>でも、本当に大切な美容の "コツ" を知れば、あなたはまだまだ輝ける。</p>
-    <ul class="trouble-list">
-      <li>鏡を見るたびに、肌のハリ・髪のツヤがなくなってきたと感じる</li>
-      <li>今までのメイクが急に「老けて見える」気がする</li>
-      <li>白髪・うねり・パサつきで、髪型が決まらない</li>
-      <li>自分に似合うメイクが分からなくなってきた</li>
-      <li>年齢を重ねても "自分らしく" 美しくありたい</li>
+<!-- ========== EMPATHY ========== -->
+<section class="empathy">
+  <div class="container narrow reveal">
+    <div class="eyebrow">YOUR FEELINGS</div>
+    <div class="rule"></div>
+    <h2 class="s-title">こんな感覚、<span class="accent">ありませんか。</span></h2>
+    <ul class="check-list">
+      <li>頑張っているのに、なぜか軽く扱われる気がする</li>
+      <li>同じくらいの実力なのに、あの人の方が大切にされている</li>
+      <li>「大丈夫です」と言いながら、全然大丈夫じゃない</li>
+      <li>甘えられる人を見て「ずるい」と思ってしまう</li>
+      <li>食事の席で、所作に自信がなくて楽しめない</li>
     </ul>
+    <p class="empathy-msg">
+      それは能力の問題でも、性格の問題でもありません。<br>
+      「自分を丁寧に扱う習慣」が<br>
+      <span style="color:var(--plum)">まだ体に入っていないだけ</span>です。
+    </p>
   </div>
 </section>
 
-<!-- FEATURES -->
-<section class="features">
-  <div class="container">
-    <div class="section-label">WHAT YOU'LL GET</div>
-    <h2 class="section-title">この申込で<span class="accent">得られること</span></h2>
-    <p class="section-lead">パリコレの第一線で培った技術を、更年期世代のあなたに最適化してお届けします。</p>
-    <div class="feature-grid">
-      <div class="feature">
-        <div class="feature-num">01</div>
-        <div class="feature-title">お顔パーツ診断<br>実施中！</div>
-        <div class="feature-desc">あなたの骨格・パーツバランスを丁寧に分析。本当に似合うラインを見つけます。</div>
-      </div>
-      <div class="feature">
-        <div class="feature-num">02</div>
-        <div class="feature-title">更年期に負けない<br>美髪テクニック</div>
-        <div class="feature-desc">白髪・うねり・ボリュームダウンに対応する、毎日続けられるホームケア術。</div>
-      </div>
-      <div class="feature">
-        <div class="feature-num">03</div>
-        <div class="feature-title">生涯使える<br>若見えメイク術</div>
-        <div class="feature-desc">流行に左右されない、あなただけの「—5歳」を叶える普遍のメイク設計。</div>
-      </div>
-      <div class="feature">
-        <div class="feature-num">04</div>
-        <div class="feature-title">美活サロン<br>主宰メソッド</div>
-        <div class="feature-desc">"—5歳若見えメソッド" を体系化した、現役プロのノウハウをそのまま。</div>
-      </div>
-    </div>
+<!-- ========== INSIGHT ========== -->
+<section class="insight">
+  <div class="container narrow reveal">
+    <p class="insight-big">
+      丁寧に扱われる女性は、<br>
+      自分を<span class="u">すでに丁寧に扱っていた。</span>
+    </p>
+    <p class="insight-p">人は無意識に、その人の自己評価を読み取っています。</p>
+    <p class="insight-p">あなたが自分を扱う方法を、<br>周りはそのまま真似るんです。</p>
   </div>
 </section>
 
-<!-- PROFILE -->
-<section class="profile">
+<!-- ========== PROFILE ========== -->
+<section class="profile" id="profile">
   <div class="container">
-    <div class="section-label">PROFILE</div>
-    <h2 class="section-title">講師プロフィール</h2>
-    <p class="section-lead">パリコレクションのバックステージで活躍した美容のプロフェッショナル。</p>
-    <div class="profile-card">
-      <img class="profile-photo" src="images/hisayo.jpg" alt="ひさよ">
-      <div>
-        <div class="profile-name">ひさよ</div>
-        <div class="profile-role">PARIS COLLECTION MAKE-UP ARTIST</div>
-        <div class="profile-bio">
-          パリコレクションのバックステージでメイクを担当した経験を持つ、<br>
-          —5歳 "若見えメソッド" 美活サロン主宰。<br>
-          更年期世代の女性が「自分史上もっとも美しい今」を生きるための<br>
-          ヘア＆メイク技術を、これまで300人以上の方へ届けてきました。
-        </div>
-        <div class="profile-stats">
-          <div>
-            <div class="stat-num">25<span style="font-size:18px">+</span></div>
-            <div class="stat-label">YEARS EXPERIENCE<br>美容師歴25年以上</div>
-          </div>
-          <div>
-            <div class="stat-num">300<span style="font-size:18px">+</span></div>
-            <div class="stat-label">CLIENTS SUPPORTED<br>顧客サポート300人以上</div>
+    <div class="eyebrow reveal">PROFILE &amp; STORY</div>
+    <div class="rule reveal"></div>
+    <h2 class="s-title reveal">資格より、<span class="accent">実体験から。</span></h2>
+    <p class="s-lead reveal">華やかな経歴の裏で、私も自分を後回しにし続けていた一人でした。</p>
+    <div class="profile-grid">
+      <div class="profile-photo-col reveal">
+        <div class="profile-photo-frame">
+          <img src="images/naomi-side.png" alt="日下部尚美">
+          <div class="profile-name-plate">
+            <div class="profile-name">日下部　尚美 <span class="rb">（なおみ）</span></div>
+            <div class="profile-role">Dignity Veil Method</div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- PRICING -->
-<section class="pricing" id="pricing">
-  <div class="container">
-    <div class="section-label">PRICE LIST</div>
-    <h2 class="section-title">レッスン<span class="accent">料金表</span></h2>
-    <p class="section-lead">あなたのご希望に合わせて、単発・長期の２つのプランをご用意しております。<br>すべてオンライン（Zoom）で受講可能です。</p>
-    <div class="price-grid">
-      <div class="price-card">
-        <div class="price-label">SINGLE LESSON</div>
-        <div class="price-name">単発レッスン</div>
-        <div class="price-term">役務期間：2週間</div>
-        <div class="price-amount-row">
-          <span class="duration">60分</span>
-          <span class="amount">¥16,500</span>
-          <span class="tax">（税込）</span>
+      <div class="story reveal">
+        <p class="lead-line">私もかつて、自分を後回しにし続けていた一人です。</p>
+        <p>
+          美容師として6年、その後<span class="hl">RMK</span>へ（競争率は出せないほどの倍率）、
+          さらに<span class="hl">倍率50倍の外資系ブランド</span>へ。華やかな経歴に見えるかもしれません。
+        </p>
+        <p>
+          でも当時の私は、ご飯を「早く済ませなきゃ」と飲み込み、「大丈夫です」と笑い続けていた。
+          <span class="hl">うつ病を2度経験して</span>、初めて気づいたことがあります。
+        </p>
+        <p>
+          自分を満たさないまま人に与え続けることは、<br>
+          優しさじゃなく、<span class="hl">自己消耗</span>だと。
+        </p>
+        <p>
+          そこから礼儀作法を学び直し、所作を体に入れ直したとき、
+          <span class="hl">扱われ方が静かに変わり始めました。</span>
+          資格より、実体験からお伝えしたい。それがこの講座を作った理由です。
+        </p>
+        <div class="cert-box">
+          <h4>保有資格</h4>
+          <ul>
+            <li>世界一美しいマナー総合認定講師</li>
+            <li>秘書検定準1級</li>
+            <li>着付技能士1級</li>
+            <li>美容師免許</li>
+            <li>MEA認定トータルセラピスト</li>
+          </ul>
         </div>
-        <div class="price-amount-row">
-          <span class="duration">90分</span>
-          <span class="amount">¥19,800</span>
-          <span class="tax">（税込）</span>
-        </div>
-        <ul class="price-meta">
-          <li>Zoom １回</li>
-          <li>サポート期間 ２週間</li>
-        </ul>
-      </div>
-      <div class="price-card featured">
-        <div class="price-badge">おすすめ</div>
-        <div class="price-label">LONG-TERM PROGRAM</div>
-        <div class="price-name">長期レッスン</div>
-        <div class="price-term">役務期間：7ヶ月</div>
-        <div class="price-amount-row">
-          <span class="duration">4ヶ月</span>
-          <span class="amount">¥198,000</span>
-          <span class="tax">（税込）</span>
-        </div>
-        <ul class="price-meta">
-          <li>Zoom レッスン 月3回</li>
-          <li>サポート期間 ３ヶ月</li>
-          <li>—5歳若見えメソッドを体系的に習得</li>
-        </ul>
       </div>
     </div>
   </div>
 </section>
 
-<!-- TESTIMONIALS -->
-<section class="testimonials">
+<!-- ========== FUTURE ========== -->
+<section class="future">
+  <div class="future-bg"></div>
+  <div class="container narrow reveal">
+    <div class="eyebrow">YOUR FUTURE</div>
+    <div class="rule" style="background:var(--gold-light)"></div>
+    <h2 class="s-title">変わったのは、<span style="color:var(--gold-light)">食事の席だけ</span><br>ではありません。</h2>
+    <ul class="future-list">
+      <li>会議に入ってきただけで、場の空気が引き締まった</li>
+      <li>初めて会った人から、最初から丁寧に扱われた</li>
+      <li>夫の私への接し方が変わった</li>
+      <li>職場での扱いが、少しずつ変わってきた</li>
+      <li>「なんか最近、落ち着いたね」と言われた</li>
+      <li>以前は奥の席だったのに、窓際の良い席に通されるようになった</li>
+    </ul>
+    <p class="future-close">
+      所作が整うと、<br>
+      自分への信頼が静かに育ち始めます。
+    </p>
+  </div>
+</section>
+
+<!-- ========== METHOD ========== -->
+<section class="method" id="method">
   <div class="container">
-    <div class="section-label">CUSTOMER VOICE</div>
-    <h2 class="section-title">お客様の声：<span class="accent">喜びの声</span></h2>
-    <p class="section-lead">これまでにレッスンを受けてくださった更年期世代のお客様から、たくさんの嬉しいお声をいただいています。</p>
+    <div class="eyebrow reveal">THE METHOD</div>
+    <div class="rule reveal"></div>
+    <h2 class="s-title reveal">品格ヴェールメソッドが<br><span class="accent">他のマナー講座と違う理由</span></h2>
+    <p class="s-lead reveal">覚える講座ではなく、体に入れる講座。だから、変化が続きます。</p>
+    <div class="vs-box reveal">
+      <div class="vs-row vs-x"><span class="vs-mark">×</span><span>正しい作法を「覚える」場ではありません</span></div>
+      <div class="vs-row vs-o"><span class="vs-mark">○</span><span>「自分を丁寧に扱う感覚」を体に入れる場です</span></div>
+    </div>
+
+    <div class="pillar-head reveal">― 品格を宿す、3つの柱 ―</div>
+    <div class="pillars">
+      <div class="pillar reveal">
+        <div class="pillar-num">01</div>
+        <div class="pillar-jp">所作</div>
+        <div class="pillar-desc">座り方・立ち方・歩き方、物の渡し方・お辞儀の角度。日常動作の全てに、品が宿る。</div>
+      </div>
+      <div class="pillar reveal">
+        <div class="pillar-num">02</div>
+        <div class="pillar-jp">言葉</div>
+        <div class="pillar-desc">声のトーン・言葉の選び方、大和言葉の習慣化。話し方で、格が変わる。</div>
+      </div>
+      <div class="pillar reveal">
+        <div class="pillar-num">03</div>
+        <div class="pillar-jp">マナー</div>
+        <div class="pillar-desc">食事・贈答・接遇、場面に応じた所作。自然に出てくるまで、体に。</div>
+      </div>
+    </div>
+
+    <div class="program-card reveal">
+      <h4><span class="latin">PROGRAM</span>プログラム</h4>
+      <div class="program-plans">
+        <div class="plan">
+          <div class="pn">ベーシック</div>
+          <div class="pt">3か月</div>
+        </div>
+        <div class="plan">
+          <div class="pn">アドバンス</div>
+          <div class="pt">6か月</div>
+        </div>
+      </div>
+      <ul class="program-feat">
+        <li>月2回ペースのレッスン</li>
+        <li>いつでも見返せる動画コンテンツ</li>
+        <li>個別LINEサポート随時</li>
+        <li>3か月に1度、高級レストランでの実食体験つき</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ========== COMPARISON ========== -->
+<section class="compare">
+  <div class="container">
+    <div class="eyebrow reveal">COMPARISON</div>
+    <div class="rule reveal"></div>
+    <h2 class="s-title reveal">他社講座との<span class="accent">比較</span></h2>
+    <p class="s-lead reveal">サポートの手厚さと続けやすさ。ひと目で違いがわかります。</p>
+    <div class="table-scroll reveal">
+      <table class="cmp-table">
+        <thead>
+          <tr>
+            <th></th>
+            <th>A講座</th>
+            <th>B講座</th>
+            <th>C講座</th>
+            <th class="ours">当講座<span>品格ヴェールメソッド</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>個別面談</th>
+            <td class="no">なし</td>
+            <td class="no">なし</td>
+            <td class="no">なし</td>
+            <td class="ours"><span class="yes">○</span> あり</td>
+          </tr>
+          <tr>
+            <th>個別LINEサポート</th>
+            <td class="no">なし</td>
+            <td>チャットワーク</td>
+            <td class="no">なし</td>
+            <td class="ours"><span class="yes">○</span> 随時</td>
+          </tr>
+          <tr>
+            <th>動画コンテンツ</th>
+            <td class="no">なし</td>
+            <td><span class="yes">○</span></td>
+            <td class="no">なし</td>
+            <td class="ours"><span class="yes">○</span> あり</td>
+          </tr>
+          <tr>
+            <th>レッスン形式</th>
+            <td>グループ 月2回</td>
+            <td>オンラインのみ</td>
+            <td>月1回</td>
+            <td class="ours">個別・月2回</td>
+          </tr>
+          <tr>
+            <th>高級レストラン実食</th>
+            <td>月1回（実費）</td>
+            <td class="no">なし</td>
+            <td>月1回（実費）</td>
+            <td class="ours">3か月に1度</td>
+          </tr>
+          <tr>
+            <th>期間</th>
+            <td>5か月</td>
+            <td>6か月</td>
+            <td>6か月</td>
+            <td class="ours">3〜6か月</td>
+          </tr>
+          <tr>
+            <th>価格</th>
+            <td>60万円</td>
+            <td>55万円</td>
+            <td>89.9万円</td>
+            <td class="ours">個別相談でご案内</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="cmp-note">※ 各社公表情報をもとに作成。食事代・交通費は各講座とも別途自己負担となります。</p>
+  </div>
+</section>
+
+<!-- ========== VOICES ========== -->
+<section class="voices">
+  <div class="container">
+    <div class="eyebrow reveal">VOICE</div>
+    <div class="rule reveal"></div>
+    <h2 class="s-title reveal">受講者の<span class="accent">声</span></h2>
+    <p class="s-lead reveal">小さな所作の変化が、まわりの反応を静かに変えていきました。</p>
     <div class="voice-grid">
-      <div class="voice">
-        <img class="voice-photo" src="images/voice-1.jpg" alt="お客様の声 N様">
-        <div class="voice-title">「自分に似合うメイクが見つかりました！」</div>
-        <div class="voice-body">これまで何となくメイクをしていましたが、お顔パーツ診断を受けて自分に本当に合うラインが分かり、毎朝の支度が楽しい時間に変わりました。同年代の友人にも「最近若く見える」と言われ、自信を持って外出できるようになりました。</div>
-        <div class="voice-name">— 50代前半 N様</div>
+      <div class="voice reveal">
+        <p class="voice-body">お辞儀の角度なんて関係あるの？と半信半疑でした。でも1ヶ月後、職場の上司から『なんか最近、落ち着いたね』と言われて驚きました。</p>
+        <span class="voice-tag">― 受講生 T様</span>
       </div>
-      <div class="voice">
-        <img class="voice-photo" src="images/voice-2.jpg" alt="お客様の声 K様">
-        <div class="voice-title">「鏡を見るのが楽しくなりました。」</div>
-        <div class="voice-body">白髪やうねりに悩み、髪型がずっと決まらず憂うつでした。ひさよ先生に教わった美髪ケアを続けるうちに、ツヤが戻り、—5歳メイク術と合わせて鏡の中の自分が見違えるほど。年齢を重ねることが楽しみになりました。</div>
-        <div class="voice-name">— 50代後半 K様</div>
+      <div class="voice reveal">
+        <p class="voice-body">言葉遣いを変えただけで、夫の私への接し方が変わりました。前は雑に扱われてる感じがしたけど、今は丁寧に話しかけてくれます。</p>
+        <span class="voice-tag">― 受講生 M様</span>
       </div>
+      <div class="voice reveal">
+        <p class="voice-body">以前なら奥の席に案内されていたのに、今は窓際の良い席に通してもらえることが増えました。自分でも不思議なくらいです。</p>
+        <span class="voice-tag">― 受講生 K様</span>
+      </div>
+    </div>
+    <div style="text-align:center; margin-top: 52px;" class="reveal">
+      <a href="#cta" class="cta-btn"><span class="ico">▶</span>無料個別相談を予約する</a>
     </div>
   </div>
 </section>
 
-<!-- CONTACT -->
-<section class="contact" id="contact">
+<!-- ========== FOR WHO ========== -->
+<section class="forwho">
   <div class="container">
-    <div class="section-label">CONTACT</div>
-    <h2 class="section-title">お問い合わせ</h2>
-    <p class="section-lead">ご質問やご相談などございましたら、下記までお気軽にご連絡ください。</p>
-    <div class="contact-card">
-      <div class="contact-row">
-        <span class="contact-label">メールアドレス</span>
-        <a href="mailto:te2.ji.aco@gmail.com" class="contact-value">te2.ji.aco@gmail.com</a>
-      </div>
-      <div class="contact-row">
-        <span class="contact-label">公式ライン</span>
-        <span class="contact-value">公式LINEからもお気軽にご連絡いただけます</span>
-      </div>
-      <div class="contact-row">
-        <span class="contact-label">受付時間</span>
-        <span class="contact-value">10:00 〜 19:00（不定休）</span>
-      </div>
-      <div style="text-align:center; margin-top: 36px;">
-        <a href="mailto:te2.ji.aco@gmail.com" class="contact-btn">メールでのお問い合わせ ▸</a>
-      </div>
+    <div class="eyebrow reveal">FOR YOU</div>
+    <div class="rule reveal"></div>
+    <h2 class="s-title reveal">ぜひ受けていただきたい<span class="accent">方</span></h2>
+    <div class="forwho-list">
+      <div class="forwho-item reveal"><div class="forwho-num">1</div><p>頑張っているのに、なぜか軽く扱われる感覚がある方</p></div>
+      <div class="forwho-item reveal"><div class="forwho-num">2</div><p>自分を変えたいけど、何をすればいいかわからない方</p></div>
+      <div class="forwho-item reveal"><div class="forwho-num">3</div><p>内面より先に、今すぐ扱われ方を変えたい方</p></div>
+      <div class="forwho-item reveal"><div class="forwho-num">4</div><p>上品な女性になりたいと、ずっと思っていた方</p></div>
+      <div class="forwho-item reveal"><div class="forwho-num">5</div><p>自分に本気で投資する覚悟が、今ある方</p></div>
     </div>
   </div>
 </section>
 
-<!-- LEGAL -->
-<section class="legal" id="legal">
+<!-- ========== FAQ ========== -->
+<section class="faq">
   <div class="container">
-    <div class="section-label">LEGAL NOTICE</div>
-    <h2 class="section-title">特定商取引法に基づく表記</h2>
-    <table class="legal-table">
-      <tbody>
-        <tr><th>販売事業者名</th><td>T&amp;H WOMAN</td></tr>
-        <tr><th>運営責任者</th><td>井川　寿代</td></tr>
-        <tr><th>所在地</th><td>埼玉県川越市安比奈新田144-21</td></tr>
-        <tr><th>メールアドレス</th><td>te2.ji.aco@gmail.com</td></tr>
-        <tr><th>サービス内容</th><td>ヘアメイク指導、美容コンサルティング、コーチング事業</td></tr>
-        <tr><th>サービス価格</th><td>各サービスの料金表を参照</td></tr>
-        <tr><th>商品以外に必要な費用</th><td>消費税</td></tr>
-        <tr><th>支払方法</th><td>クレジットカード決済・銀行振り込み</td></tr>
-        <tr><th>引渡し時期</th><td>決済終了後、24時間以内にメールにてご案内いたします</td></tr>
-        <tr><th>返品・交換について</th><td>キャンセルを希望される方は、お申込みから7日以内に電話またはメールにてお問い合わせをお願い致します</td></tr>
-        <tr><th>不良品について</th><td>ご注文内容と異なる、またはデータ等が破損している場合は14日以内にご連絡ください。状況確認後に改めてサービス提供を致します</td></tr>
-      </tbody>
-    </table>
+    <div class="eyebrow reveal">Q &amp; A</div>
+    <div class="rule reveal"></div>
+    <h2 class="s-title reveal">よくある<span class="accent">ご質問</span></h2>
+    <div class="faq-list reveal" style="margin-top:8px">
+      <details class="faq-item" open>
+        <summary class="faq-q"><span class="qmark">Q.</span>マナーを全く知らなくても大丈夫ですか？<span class="arrow">▼</span></summary>
+        <div class="faq-a">むしろ初めての方の方が、変化が大きいです。知識として「知っている」より、体に入れることを重視しているため、ゼロからの方が最適です。</div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q"><span class="qmark">Q.</span>オンラインでも受講できますか？<span class="arrow">▼</span></summary>
+        <div class="faq-a">はい。動画コンテンツと個別LINEサポートはオンラインで受講いただけます。実食体験のみ大阪での参加となります。</div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q"><span class="qmark">Q.</span>忙しくても続けられますか？<span class="arrow">▼</span></summary>
+        <div class="faq-a">月2回ペースの設計です。動画は好きな時間に視聴できます。個別LINEサポートで日常の疑問にも随時お答えします。</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FINAL CTA ========== -->
+<section class="final" id="cta">
+  <div class="final-bg"></div>
+  <div class="container narrow reveal">
+    <p class="final-lead">変わるのに、早すぎることはありません。</p>
+    <h2 class="final-catch">
+      所作をまとった日から、<br>
+      あなたへの扱われ方が変わる。
+    </h2>
+    <p class="final-p">
+      まず、無料個別相談へお越しください。<br>
+      30分で、あなたの今の状況と<br>
+      何から始めるべきかをお伝えします。
+    </p>
+    <a href="#" class="cta-btn"><span class="ico">▶</span>無料個別相談を予約する</a>
+    <span class="cta-note" style="color:rgba(255,255,255,0.85)">＼ LINE登録で受付しています ／</span>
   </div>
 </section>
 
 <footer>
-  <div class="brand">Hisayo</div>
-  <div>ひさよ｜パリコレメイク経験者が教える更年期美容</div>
-  <div style="margin-top:14px; font-size:12px;">© 2026 Hisayo Beauty Salon. All Rights Reserved.</div>
+  <div class="fbrand">品格ヴェールメソッド</div>
+  <div class="fsub">Dignity Veil Method</div>
+  <div>主宰　日下部　尚美</div>
+  <div style="margin-top:16px; font-size:12px;">© 2026 Dignity Veil Method. All Rights Reserved.</div>
 </footer>
+
+<!-- Floating CTA -->
+<div class="float-cta" id="floatCta">
+  <a href="#cta" class="cta-btn"><span class="ico">▶</span>無料個別相談を予約する</a>
+</div>
+
+<script>
+  // reveal on scroll
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('on'); io.unobserve(e.target); } });
+  }, { threshold: 0.14 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // floating CTA visibility (show after hero, hide near final CTA)
+  const floatCta = document.getElementById('floatCta');
+  const finalSec = document.getElementById('cta');
+  window.addEventListener('scroll', () => {
+    const scrolled = window.scrollY > window.innerHeight * 0.8;
+    const finalTop = finalSec.getBoundingClientRect().top;
+    const nearFinal = finalTop < window.innerHeight * 0.9;
+    floatCta.classList.toggle('show', scrolled && !nearFinal);
+  }, { passive: true });
+</script>
 
 </body>
 </html>
