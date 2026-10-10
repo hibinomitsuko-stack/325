@@ -1,0 +1,14 @@
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP","Yu Gothic UI","Yu Gothic","Meiryo",sans-serif;
+  background:linear-gradient(168deg,#fffdf9 0%,#fdf4e7 100%);color:#1B2A4A;position:relative;
+  word-break:keep-all;line-break:strict}
+.head{text-align:center;padding:52px 0 0}
+.head h1{font-size:60px;font-weight:900;letter-spacing:.02em;display:inline-block}
+.head .o{color:#f5822b}
+.head .ul{position:relative}
+.head .ul::after{content:"";position:absolute;left:0;right:0;bottom:-3px;height:8px;background:#fbcf9e;border-radius:5px;z-index:-1}
+.foot{position:absolute;left:60px;right:60px;bottom:44px;background:#f5822b;border-radius:22px;
+  padding:24px 0;text-align:center;color:#fff;font-size:35px;font-weight:900;
+  box-shadow:0 10px 22px rgba(245,130,43,.28);display:flex;align-items:center;justify-content:center;gap:16px}
+.foot .ck{width:50px;height:50px;border-radius:50%;background:#1B2A4A;display:flex;align-items:center;justify-content:center}
+.foot .ck svg{width:28px;height:28px}
