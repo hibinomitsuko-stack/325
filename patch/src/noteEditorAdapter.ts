@@ -90,8 +90,17 @@ export async function fillBody(
   for (const job of order) {
     let placed = false;
     if (job.anchor) placed = await placeCaretAfterParagraph(page, body, job.anchor);
+    logger.info(
+      {
+        step: 'image-place',
+        file: job.absPath.split('/').pop(),
+        anchor: job.anchor ? job.anchor.slice(-24) : '(末尾)',
+        placed,
+      },
+      '画像の差し込み位置',
+    );
     if (!placed) await gotoDocEnd(page, body); // 目印が見つからなければ末尾に
-    await page.keyboard.press('Enter'); // 画像用の空段落
+    await openBlankLineForImage(page); // 画像用の空段落（引用の中なら抜ける）
     await page.waitForTimeout(400);
     if (await insertImageAtCursor(page, job.absPath)) imagesInserted++;
   }
@@ -271,6 +280,31 @@ async function applyBlockFormats(page: Page, body: Locator, lines: RichLine[]): 
 
 /* ========== ここまで追加分 ========== */
 
+/**
+ * 画像を入れるための空行を作る。
+ * 直前が引用だと、Enter しても引用の中に留まり、画像が引用の内側に入ってしまう。
+ * 引用の中にいるあいだは Enter を繰り返して抜ける（最大2回）。
+ */
+async function openBlankLineForImage(page: Page): Promise<void> {
+  await page.keyboard.press('Enter');
+  await page.waitForTimeout(250);
+  for (let i = 0; i < 2; i++) {
+    const inQuote = await page
+      .evaluate(() => {
+        const sel = window.getSelection();
+        const n = sel?.anchorNode;
+        if (!n) return false;
+        const el = n.nodeType === 3 ? (n.parentElement as Element | null) : (n as Element);
+        return !!el?.closest('blockquote');
+      })
+      .catch(() => false);
+    if (!inQuote) return;
+    await page.keyboard.press('Enter'); // 空の引用行で Enter → 引用から抜ける
+    await page.waitForTimeout(250);
+  }
+  logger.warn('画像の前で引用から抜けられませんでした（画像が引用の中に入る可能性があります）');
+}
+
 /** 本文の末尾にカーソルを移動する（全選択→右で選択解除して末尾へ） */
 async function gotoDocEnd(page: Page, body: Locator): Promise<void> {
   await body.click();
@@ -284,9 +318,18 @@ async function gotoDocEnd(page: Page, body: Locator): Promise<void> {
  * ②JSでその段落の末尾にキャレットを畳む（同期を確実にするため、直後にキー操作でnudge）
  */
 async function placeCaretAfterParagraph(page: Page, body: Locator, anchor: string): Promise<boolean> {
-  const tail = anchor.length > 16 ? anchor.slice(-16) : anchor;
-  const block = body.locator('> *').filter({ hasText: tail }).last();
-  if (!(await block.count().catch(() => 0))) return false;
+  // 目印は長めに取る。短いと「〜ではありません。」のような語尾が別の段落に当たってしまう。
+  const needle = anchor.length > 40 ? anchor.slice(-40) : anchor;
+  const matches = body.locator('> *').filter({ hasText: needle });
+  const n = await matches.count().catch(() => 0);
+  if (n === 0) {
+    logger.warn({ anchor: needle.slice(0, 24) }, '画像の目印の段落が見つかりませんでした（末尾に入れます）');
+    return false;
+  }
+  if (n > 1) {
+    logger.warn({ anchor: needle.slice(0, 24), matches: n }, '画像の目印が複数の段落に当たりました（最初のものを使います）');
+  }
+  const block = matches.first();
   try {
     await block.scrollIntoViewIfNeeded();
     await block.click();

@@ -1,46 +1,50 @@
-note-draft 書式対応パッチ v2 ── 導入手順
+note-draft 書式対応パッチ v3 ── 導入手順
 
 ================================================
-v1 からの変更
+v3 で足したもの
 ================================================
-・型チェックのエラーを修正（npm run typecheck が通るようにした）
-・ボタンを aria-label / title まで見て探すようにした（小見出し対策）
-・小見出しのボタンが無い場合は、その行を太字にして代用する
-・当てられなかったときの画面ボタン一覧を、より詳しく出すようにした
-
-v1 の結果：大見出し7/7、引用12/12、太字41か所 → すべて自動
-　　　　　 小見出し 0/14 がボタン名不明で残っていた
+・入稿前に中身を確認する「プレビュー」を追加（src/preview.ts）
+・画像の差し込み位置を、実行中にターミナルへ出すようにした
+・直前が「引用」の行だと画像が引用の内側に入っていたのを修正
+・画像の目印を長めに取り、複数に当たったときは警告を出すようにした
 
 ================================================
 入れ方（ターミナルに丸ごと貼ってEnter）
 ================================================
 
 cd ~/Downloads
-unzip -oq note-draft-patch.zip
-cp note-draft-patch/src/*.ts ~/note-kit/note-draft/src/
+Z=$(ls -t note-draft-patch*.zip | head -1)
+echo "使うファイル: $Z"
+rm -rf _patch_tmp && mkdir _patch_tmp
+unzip -oq "$Z" -d _patch_tmp
+cp _patch_tmp/note-draft-patch/src/*.ts ~/note-kit/note-draft/src/
 cd ~/note-kit/note-draft
+grep -c "openBlankLineForImage" src/noteEditorAdapter.ts
 npm run typecheck
-echo "--- エラーが出なければ成功 ---"
 
-※ バックアップは v1 のときに ~/note-kit/note-draft/_backup_src/ に作ってあります。
-　 元に戻すときは：
-　 cp ~/note-kit/note-draft/_backup_src/*.ts ~/note-kit/note-draft/src/
+※ grep の数字が 2以上、typecheck で赤い文字が出なければ成功です。
 
 ================================================
-試す
+入稿前に、中身をターミナルで見る
+================================================
+
+cd ~/note-kit/note-draft
+npx tsx src/preview.ts articles/senryaku-senni-ritsu
+
+見出し・小見出し・引用・太字・画像の位置が、ぜんぶ一覧で出ます。
+長いときは less を付けてください：
+
+npx tsx src/preview.ts articles/senryaku-senni-ritsu | less
+
+================================================
+入稿する
 ================================================
 
 cd ~/note-kit/note-draft && npm run draft -- articles/senryaku-senni-ritsu --headed
 
-※ 下書きは毎回「新しい記事」として作られます。
-　 前回の下書きが残るので、不要なら note の画面で削除してください。
+実行中、画像ごとにこう出ます：
 
-================================================
-見るところ
-================================================
-ターミナルの body-format の行を見てください。
-
-  h3: 14   → 小見出しも自動で入った（完成）
-  h3: 0, boldFallback: 14 → 小見出しは太字で代用された
-
-後者だった場合は、そのすぐ下の visibleButtons の一覧を送ってください。
+  step: "image-place"
+  file: "fig1.png"
+  anchor: "伸びた＝効いた、ではありません。"
+  placed: true     ← false なら目印が見つからず末尾に入っています
