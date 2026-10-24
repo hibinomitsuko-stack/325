@@ -151,26 +151,43 @@ async function typeRichLines(page: Page, body: Locator, lines: RichLine[]): Prom
 
 /** 見出し・引用のボタン名の候補。noteの表記ゆれに備えて複数持つ */
 const BLOCK_BUTTON_NAMES: Record<'h2' | 'h3' | 'quote', RegExp[]> = {
-  h2: [/^大見出し$/, /^見出し$/, /見出し\s*2/, /^H2$/i],
-  h3: [/^小見出し$/, /見出し\s*3/, /^H3$/i],
-  quote: [/^引用$/, /引用/],
+  h2: [/^大見出し$/, /^見出し$/, /見出し\s*2/, /^H2$/i, /heading\s*2/i],
+  h3: [/^小見出し$/, /小さな見出し/, /見出し\s*3/, /^H3$/i, /heading\s*3/i, /サブ見出し/],
+  quote: [/^引用$/, /引用/, /quote/i],
 };
 
 /** いま選択している範囲に、見出し／引用を当てる。当てられなければ false（＝素のまま） */
+async function clickByLabel(page: Page, re: RegExp): Promise<boolean> {
+  const handles = await page.$$('button,[role="button"],[role="menuitem"]');
+  for (const h of handles) {
+    let label = '';
+    try {
+      label = await h.evaluate(
+        (el) =>
+          (el.getAttribute('aria-label') ||
+            el.getAttribute('title') ||
+            (el as HTMLElement).innerText ||
+            '').trim(),
+      );
+    } catch {
+      continue;
+    }
+    if (!label || !re.test(label)) continue;
+    if (!(await h.isVisible().catch(() => false))) continue;
+    try {
+      await h.click({ timeout: 2000 });
+      await page.waitForTimeout(150);
+      return true;
+    } catch {
+      /* 次の候補へ */
+    }
+  }
+  return false;
+}
+
 async function applyBlockFormat(page: Page, kind: 'h2' | 'h3' | 'quote'): Promise<boolean> {
   for (const name of BLOCK_BUTTON_NAMES[kind]) {
-    for (const role of ['button', 'menuitem'] as const) {
-      const btn = page.getByRole(role, { name }).first();
-      if (await btn.isVisible({ timeout: 700 }).catch(() => false)) {
-        try {
-          await btn.click({ timeout: 2000 });
-          await page.waitForTimeout(150);
-          return true;
-        } catch {
-          /* 次の候補へ */
-        }
-      }
-    }
+    if (await clickByLabel(page, name)) return true;
   }
   return false;
 }
@@ -178,8 +195,21 @@ async function applyBlockFormat(page: Page, kind: 'h2' | 'h3' | 'quote'): Promis
 /** 当てられなかったとき、画面に出ているボタン名を控えておく（次回の候補追加に使う） */
 async function dumpVisibleButtonNames(page: Page): Promise<string[]> {
   try {
-    const names = await page.getByRole('button').allInnerTexts();
-    return [...new Set(names.map((s) => s.trim()).filter((s) => s && s.length <= 12))].slice(0, 40);
+    return await page.evaluate(() => {
+      const out: string[] = [];
+      document.querySelectorAll('button,[role="button"],[role="menuitem"]').forEach((el) => {
+        const r = (el as HTMLElement).getBoundingClientRect();
+        if (r.width === 0 || r.height === 0) return;
+        const label = (
+          el.getAttribute('aria-label') ||
+          el.getAttribute('title') ||
+          (el as HTMLElement).innerText ||
+          ''
+        ).trim().replace(/\s+/g, ' ');
+        if (label && label.length <= 24) out.push(label);
+      });
+      return [...new Set(out)].slice(0, 60);
+    });
   } catch {
     return [];
   }
@@ -191,11 +221,15 @@ async function dumpVisibleButtonNames(page: Page): Promise<string[]> {
  * 見つからない／押せないときは何もしない（素のテキストのまま残る）。
  */
 async function applyBlockFormats(page: Page, body: Locator, lines: RichLine[]): Promise<void> {
-  const targets = lines.filter((l) => l.kind !== 'p' && lineText(l).trim().length > 0);
+  const targets = lines.filter(
+    (l): l is RichLine & { kind: 'h2' | 'h3' | 'quote' } =>
+      l.kind !== 'p' && lineText(l).trim().length > 0,
+  );
   if (targets.length === 0) return;
 
   const done: Record<string, number> = { h2: 0, h3: 0, quote: 0 };
   let missed = 0;
+  let boldFallback = 0;
   let hint: string[] = [];
 
   for (const l of targets) {
@@ -216,14 +250,19 @@ async function applyBlockFormats(page: Page, body: Locator, lines: RichLine[]): 
     else {
       missed++;
       if (hint.length === 0) hint = await dumpVisibleButtonNames(page);
+      // 小見出しのボタンが無い場合は、太字にして見出しらしさだけ残す
+      if (l.kind === 'h3') {
+        await page.keyboard.press('ControlOrMeta+b').catch(() => {});
+        boldFallback++;
+      }
     }
     await page.keyboard.press('End').catch(() => {}); // 選択を解除して末尾へ
   }
 
   if (missed > 0) {
     logger.warn(
-      { step: 'body-format', ...done, missed, visibleButtons: hint },
-      '見出し・引用を当てられなかった行があります（その行は素のテキストのままです）',
+      { step: 'body-format', ...done, missed, boldFallback, visibleButtons: hint },
+      '当てられなかった行があります（小見出しは太字で代用、それ以外は素のテキストのままです）',
     );
   } else {
     logger.info({ step: 'body-format', ...done }, '見出し・引用を適用しました');
