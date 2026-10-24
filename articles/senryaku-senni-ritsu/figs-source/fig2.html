@@ -1,0 +1,38 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><style>
+@import url("base.css");
+html,body{width:1600px;height:800px}
+.row{display:flex;justify-content:center;gap:44px;padding:52px 90px 0;position:relative;z-index:2}
+.col{width:640px;overflow:hidden}
+.cap{text-align:center;font-size:29px;font-weight:900;padding:16px 0;color:#fff}
+.r .cap{background:linear-gradient(100deg,var(--mag),var(--vio))}
+.l .cap{background:linear-gradient(100deg,rgba(90,100,150,.85),rgba(70,80,130,.85))}
+.box{padding:22px 30px 26px}
+li{list-style:none;font-size:27px;font-weight:800;line-height:1.5;padding:18px 0 18px 46px;position:relative}
+li+li{border-top:1.5px dashed rgba(185,196,255,.28)}
+li::before{content:"";position:absolute;left:8px;top:24px;width:18px;height:18px;border-radius:50%}
+.r li::before{background:var(--neon);box-shadow:0 0 12px rgba(217,255,61,.9)}
+.l li::before{background:#6b7aa8}
+.l li{color:#99a4c9}
+.calc{margin:16px 24px 0;text-align:center;font-size:28px;font-weight:900;color:var(--neon);
+  text-shadow:0 0 14px rgba(217,255,61,.6);line-height:1.5}
+.note{text-align:center;font-size:21px;font-weight:800;color:var(--ink2);padding:12px 24px 0}
+</style></head><body>
+<div class="head"><h1>見る数字は、<span class="o ul">ひとつだけ</span></h1></div>
+<div class="row">
+  <div class="col neon dim l">
+    <div class="cap">今は見なくていい</div>
+    <div class="box"><ul>
+      <li>いいねの数</li><li>視聴者数</li><li>リポスト・引用</li><li>フォロワーの増減</li></ul></div>
+  </div>
+  <div class="col neon m r">
+    <div class="cap">これだけ見る</div>
+    <div class="box"><ul>
+      <li>閲覧数</li><li>プロフィールのアクセス数</li></ul>
+      <div class="calc">プロフィールのアクセス数<br>÷ 閲覧数</div>
+      <div class="note">＝ プロフィール遷移率（電卓で10秒）</div>
+    </div>
+  </div>
+</div>
+<div class="foot"><span class="ck"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4.5 4.5L19 7.5" stroke="#d9ff3d" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+<span>閲覧は「届いた量」、遷移率は <span class="hl">「刺さった深さ」</span></span></div>
+</body></html>

@@ -1,0 +1,32 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><style>
+@import url("base.css");
+html,body{width:1600px;height:800px}
+.row{display:flex;justify-content:center;gap:40px;padding:52px 80px 0;position:relative;z-index:2}
+.col{width:660px}
+.cap{text-align:center;font-size:30px;font-weight:900;padding:16px 0;border-radius:20px 20px 0 0;color:#fff}
+.l .cap{background:linear-gradient(100deg,rgba(35,201,255,.95),rgba(59,130,246,.95))}
+.r .cap{background:linear-gradient(100deg,var(--mag),var(--vio))}
+.box{padding:24px 30px 28px}
+li{list-style:none;font-size:26px;font-weight:800;line-height:1.5;padding:17px 0 17px 44px;position:relative}
+li+li{border-top:1.5px dashed rgba(185,196,255,.3)}
+li::before{content:"";position:absolute;left:8px;top:23px;width:18px;height:18px;border-radius:50%}
+.l li::before{background:#7aa8ff;box-shadow:0 0 10px rgba(122,168,255,.9)}
+.r li::before{background:var(--mag);box-shadow:0 0 10px rgba(240,38,200,.9)}
+.sub{margin-top:18px;font-size:24px;font-weight:900;text-align:center}
+.l .sub{color:#8fb6ff}
+.r .sub{color:var(--mag)}
+</style></head><body>
+<div class="head"><h1>AI時代の記事が、<span class="o ul">止まる場所</span></h1></div>
+<div class="row">
+  <div class="col l"><div class="cap">よく書かれていること</div>
+    <div class="neon dim box" style="border-radius:0 0 20px 20px"><ul>
+      <li>判断できる人が残る</li><li>経験が多い人ほど強い</li><li>見慣れないうちは難しい</li></ul>
+      <div class="sub">＝ 待つしかない</div></div></div>
+  <div class="col r"><div class="cap">書かれていないこと</div>
+    <div class="neon m box" style="border-radius:0 0 20px 20px"><ul>
+      <li>経験が浅い人は、今日何をするか</li><li>年数以外に、何で増えるのか</li><li>AIをどの順番で使うのか</li></ul>
+      <div class="sub">＝ 今日からできる</div></div></div>
+</div>
+<div class="foot"><span class="ck"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4.5 4.5L19 7.5" stroke="#d9ff3d" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+<span>足りないのは、<span class="hl">経験年数ではない</span></span></div>
+</body></html>
