@@ -1,0 +1,45 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><style>
+@import url("base.css");
+html,body{width:1600px;height:870px}
+.row{display:flex;justify-content:center;gap:44px;padding:52px 90px 0;position:relative;z-index:2}
+.col{width:640px;overflow:hidden}
+.cap{text-align:center;font-size:29px;font-weight:900;padding:16px 0;color:#fff}
+.l .cap{background:linear-gradient(100deg,rgba(90,100,150,.85),rgba(70,80,130,.85))}
+.r .cap{background:linear-gradient(100deg,var(--mag),var(--vio))}
+.box{padding:22px 30px 26px}
+li{list-style:none;font-size:26px;font-weight:800;line-height:1.5;padding:18px 0 18px 46px;position:relative}
+li+li{border-top:1.5px dashed rgba(185,196,255,.28)}
+li::before{content:"";position:absolute;left:8px;top:24px;width:18px;height:18px;border-radius:50%}
+.l li::before{background:#6b7aa8}
+.r li::before{background:var(--neon);box-shadow:0 0 12px rgba(217,255,61,.9)}
+.l li{color:#99a4c9}
+.sub{margin-top:18px;font-size:23px;font-weight:900;text-align:center;line-height:1.5}
+.l .sub{color:#8690b8}
+.r .sub{color:var(--neon)}
+</style></head><body>
+<div class="head"><h1>プロフィールは、<span class="o ul">自己紹介ではない</span></h1></div>
+<div class="row">
+  <div class="col neon dim l">
+    <div class="cap">つい書いてしまうこと</div>
+    <div class="box"><ul>
+      <li>肩書き・使えるソフト</li>
+      <li>年数・社数・資格</li>
+      <li>「〇〇思考×〇〇思考」</li>
+      <li>すごい経歴（前に出す）</li>
+    </ul>
+    <div class="sub">＝ 書いた側は安心する</div></div>
+  </div>
+  <div class="col neon m r">
+    <div class="cap">来た人が知りたいこと</div>
+    <div class="box"><ul>
+      <li>自分と同じ場所にいた人か</li>
+      <li>そこから出られたのか</li>
+      <li>自分にも何かもらえるのか</li>
+      <li>（経歴は、その証拠として後で）</li>
+    </ul>
+    <div class="sub">＝ 読んだ側が動く</div></div>
+  </div>
+</div>
+<div class="foot"><span class="ck"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4.5 4.5L19 7.5" stroke="#d9ff3d" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+<span>書き手は実績として書き、読み手は <span class="hl">距離として読む</span></span></div>
+</body></html>
