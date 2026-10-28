@@ -1,0 +1,35 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><style>
+@import url("base.css");
+html,body{width:1600px;height:980px}
+.sheet{margin:46px 110px 0;padding:30px 42px 34px;position:relative;z-index:2}
+.row{display:flex;align-items:flex-start;gap:26px;padding:22px 0}
+.row+.row{border-top:1.5px dashed rgba(185,196,255,.3)}
+.lb{flex:none;width:58px;height:58px;border-radius:50%;color:#fff;font-size:28px;font-weight:900;
+  display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(110deg,var(--mag),var(--vio));box-shadow:0 0 14px rgba(240,38,200,.5)}
+.bd{flex:1}
+.q{font-size:24px;font-weight:900;color:#fff;margin-bottom:10px}
+.ln{height:44px;border-bottom:3px dotted rgba(185,196,255,.55);margin-bottom:9px}
+.hint{font-size:20px;font-weight:800;color:var(--ink2);line-height:1.5}
+.tail{margin-top:18px;font-size:23px;font-weight:900;color:var(--neon);text-align:center;
+  text-shadow:0 0 12px rgba(217,255,61,.5)}
+</style></head><body>
+<div class="head"><h1>金額の<span class="o ul">根拠シート</span></h1></div>
+<div class="sheet neon">
+  <div class="row"><div class="lb">1</div><div class="bd">
+    <div class="q">この仕事で、相手の何が変わったか</div>
+    <div class="ln"></div>
+    <div class="hint">例）問い合わせの電話が鳴るようになった</div></div></div>
+  <div class="row"><div class="lb">2</div><div class="bd">
+    <div class="q">自分以外がやるとしたら、何が必要か</div>
+    <div class="ln"></div>
+    <div class="hint">例）ヒアリング／調べもの／やり直しの回数</div></div></div>
+  <div class="row"><div class="lb">3</div><div class="bd">
+    <div class="q">削るとしたら、どこから削れるか</div>
+    <div class="ln"></div>
+    <div class="hint">思いつかないなら、それが答え。「削れるところがないので、この金額です」</div></div></div>
+  <div class="tail">③まで書けたら、その金額は説明できます</div>
+</div>
+<div class="foot"><span class="ck"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4.5 4.5L19 7.5" stroke="#d9ff3d" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+<span>今日は <span class="hl">①</span> が書けたら終わりです</span></div>
+</body></html>
