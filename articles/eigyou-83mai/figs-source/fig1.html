@@ -1,0 +1,41 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><style>
+@import url("base.css");
+html,body{width:1600px;height:850px}
+.row{display:flex;justify-content:center;gap:44px;padding:52px 90px 0;position:relative;z-index:2}
+.col{width:640px;overflow:hidden}
+.cap{text-align:center;font-size:29px;font-weight:900;padding:16px 0;color:#fff}
+.l .cap{background:linear-gradient(100deg,rgba(35,201,255,.9),rgba(59,130,246,.9))}
+.r .cap{background:linear-gradient(100deg,var(--mag),var(--vio))}
+.box{padding:24px 30px 26px}
+li{list-style:none;font-size:26px;font-weight:800;line-height:1.5;padding:17px 0 17px 44px;position:relative;color:#fff}
+li+li{border-top:1.5px dashed rgba(185,196,255,.28)}
+li::before{content:"";position:absolute;left:8px;top:23px;width:18px;height:18px;border-radius:50%;
+  background:#7aa8ff;box-shadow:0 0 10px rgba(122,168,255,.9)}
+.big{text-align:center;padding:30px 0 10px}
+.big .v{font-size:92px;font-weight:900;color:var(--neon);line-height:1;text-shadow:0 0 26px rgba(217,255,61,.7)}
+.big .lb{font-size:25px;font-weight:800;color:#fff;margin-top:16px}
+.big .sub{font-size:22px;font-weight:800;color:var(--ink2);margin-top:10px}
+</style></head><body>
+<div class="head"><h1>1年間、やったこと<span class="o ul">と起きたこと</span></h1></div>
+<div class="row">
+  <div class="col neon dim l">
+    <div class="cap">やったこと</div>
+    <div class="box"><ul>
+      <li>交流会に通う（30回）</li>
+      <li>名刺を配る（83人）</li>
+      <li>会った人をフォローする</li>
+      <li>「またぜひ」に喜ぶ</li>
+    </ul></div>
+  </div>
+  <div class="col neon m r">
+    <div class="cap">起きたこと</div>
+    <div class="big">
+      <div class="v">0<span style="font-size:42px">件</span></div>
+      <div class="lb">1年後の問い合わせ</div>
+      <div class="sub">原因を「人見知りだから」にしていた</div>
+    </div>
+  </div>
+</div>
+<div class="foot"><span class="ck"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4.5 4.5L19 7.5" stroke="#d9ff3d" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+<span>0件なのは、<span class="hl">人柄が足りないからではない</span></span></div>
+</body></html>
