@@ -1,0 +1,35 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><style>
+@import url("base.css");
+html,body{width:1600px;height:900px}
+.wrap{padding:44px 100px 0;position:relative;z-index:2;display:flex;flex-direction:column;gap:24px}
+.top{display:flex;align-items:center;gap:40px;padding:26px 44px}
+.big{font-size:104px;font-weight:900;color:var(--neon);line-height:1;text-shadow:0 0 22px rgba(217,255,61,.6)}
+.bigt{font-size:26px;font-weight:800;color:var(--ink2);margin-top:6px;text-align:center}
+.arw{font-size:36px;font-weight:900;color:var(--mag)}
+.big2{font-size:104px;font-weight:900;color:#fff;line-height:1}
+.rows{padding:26px 44px 30px}
+.row{display:flex;align-items:center;gap:22px;padding:18px 0;border-bottom:1.5px dashed rgba(185,196,255,.22)}
+.row:last-child{border-bottom:0}
+.lbl{font-size:28px;font-weight:900;flex:1}
+.cnt{font-size:44px;font-weight:900;flex:none;width:200px;text-align:right}
+.a .cnt{color:var(--mag);text-shadow:0 0 14px rgba(240,38,200,.7)}
+.b .cnt{color:#7f89b4}
+.b .lbl{color:#aab3d8}
+</style></head><body>
+<div class="head"><h1>122件に、共通していた<span class="o ul">たった1つ</span></h1></div>
+<div class="wrap">
+  <div class="neon m top">
+    <div><div class="big">122</div><div class="bigt">件 応募</div></div>
+    <div class="arw">▶</div>
+    <div><div class="big2">122</div><div class="bigt">件 不採用</div></div>
+    <div style="margin-left:auto;font-size:28px;font-weight:900;line-height:1.5;text-align:right">
+      全部まとめて<br>読み返しました</div>
+  </div>
+  <div class="neon rows">
+    <div class="row a"><div class="lbl">「私は」「弊社は」から始まる文</div><div class="cnt">ほぼ全部</div></div>
+    <div class="row b"><div class="lbl">「御社は」「◯◯さんは」から始まる文</div><div class="cnt">0</div></div>
+  </div>
+</div>
+<div class="foot"><span class="ck"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4.5 4.5L19 7.5" stroke="#d9ff3d" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+<span>今日やるのは、<span class="hl">主語を数える</span>だけ</span></div>
+</body></html>

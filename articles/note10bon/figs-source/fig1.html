@@ -1,0 +1,43 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><style>
+@import url("base.css");
+html,body{width:1600px;height:860px}
+.row{display:flex;justify-content:center;gap:44px;padding:52px 90px 0;position:relative;z-index:2}
+.col{width:640px;overflow:hidden}
+.cap{text-align:center;font-size:29px;font-weight:900;padding:16px 0;color:#fff}
+.r .cap{background:linear-gradient(100deg,var(--mag),var(--vio))}
+.l .cap{background:linear-gradient(100deg,rgba(90,100,150,.85),rgba(70,80,130,.85))}
+.box{padding:26px 30px 28px;text-align:center}
+.v{font-size:76px;font-weight:900;line-height:1.05}
+.r .v{color:var(--neon);text-shadow:0 0 22px rgba(217,255,61,.65)}
+.l .v{color:#8690b8}
+.u{font-size:28px}
+.lb{font-size:22px;font-weight:800;color:var(--ink2);margin-top:8px}
+.sep{margin:20px 0 16px;border-top:1.5px dashed rgba(185,196,255,.3)}
+.pct{font-size:30px;font-weight:900;margin-top:14px}
+.r .pct{color:var(--neon)}
+.l .pct{color:#8690b8}
+</style></head><body>
+<div class="head"><h1>13本のうち、<span class="o ul">1本</span>に集まっていた</h1></div>
+<div class="row">
+  <div class="col neon m r">
+    <div class="cap">いちばん読まれた1本</div>
+    <div class="box">
+      <div class="v">941<span class="u"> PV</span></div><div class="lb">ページビュー</div>
+      <div class="sep"></div>
+      <div class="v" style="font-size:52px">28<span class="u"> スキ</span></div>
+      <div class="pct">PVの 80% ／ スキの 72%</div>
+    </div>
+  </div>
+  <div class="col neon dim l">
+    <div class="cap">残りの全記事（12本）</div>
+    <div class="box">
+      <div class="v">242<span class="u"> PV</span></div><div class="lb">12本の合計</div>
+      <div class="sep"></div>
+      <div class="v" style="font-size:52px">11<span class="u"> スキ</span></div>
+      <div class="pct">1本あたり 20PV 前後</div>
+    </div>
+  </div>
+</div>
+<div class="foot"><span class="ck"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4.5 4.5L19 7.5" stroke="#d9ff3d" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+<span>積み上がって <span class="hl">いませんでした</span></span></div>
+</body></html>
