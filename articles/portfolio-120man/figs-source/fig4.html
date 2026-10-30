@@ -2,28 +2,31 @@
 @import url("base.css");
 html,body{width:1600px;height:900px}
 .wrap{padding:44px 96px 0;position:relative;z-index:2}
-.sheet{padding:32px 44px 34px}
-.ttl{font-size:26px;font-weight:900;color:var(--neon);margin-bottom:22px}
-.row{display:flex;align-items:flex-end;gap:22px;padding:20px 0;border-bottom:1.5px dashed rgba(185,196,255,.22)}
-.row:last-of-type{border-bottom:0}
-.n{font-size:28px;font-weight:900;color:var(--mag);flex:none;width:58px}
-.q{font-size:27px;font-weight:900;flex:none;width:430px;line-height:1.35}
-.ln{flex:1;border-bottom:2.5px dotted rgba(185,196,255,.5);height:34px}
-.hint{margin-top:24px;padding-top:20px;border-top:1.5px dashed rgba(185,196,255,.3);
-  font-size:24px;font-weight:800;color:var(--ink2);line-height:1.6}
-.hint b{color:#fff}
+.sheet{padding:30px 44px 32px}
+.ttl{font-size:25px;font-weight:900;color:var(--neon);margin-bottom:20px}
+.tmpl{font-size:32px;font-weight:900;line-height:1.75}
+.bl{display:inline-block;min-width:260px;border-bottom:2.5px dotted rgba(185,196,255,.6);
+  text-align:center;font-size:23px;color:#8f9ac4;font-weight:800;padding-bottom:3px}
+.chk{margin-top:26px;padding-top:22px;border-top:1.5px dashed rgba(185,196,255,.3)}
+.ck2{display:flex;align-items:center;gap:16px;font-size:25px;font-weight:800;color:#e8ecff;padding:9px 0}
+.box{width:26px;height:26px;border:2.5px solid var(--cyan);border-radius:6px;flex:none}
 </style></head><body>
-<div class="head"><h1>作品の横に置く、<span class="o ul">3行</span></h1></div>
+<div class="head"><h1>1社ぶんの、<span class="o ul">1行</span>をつくる</h1></div>
 <div class="wrap">
   <div class="sheet neon m">
-    <div class="ttl">いちばん自信がない作品を、1点だけ選ぶ</div>
-    <div class="row"><div class="n">1</div><div class="q">相手は何に困っていたか</div><div class="ln"></div></div>
-    <div class="row"><div class="n">2</div><div class="q">そこで何をしたか</div><div class="ln"></div></div>
-    <div class="row"><div class="n">3</div><div class="q">そのあとどうなったか</div><div class="ln"></div></div>
-    <div class="hint">1行目の主語が<b>自分</b>になっていたら、まだ自己紹介です。<br>
-      自主制作なら「架空の案件として作りました」と先に書けば、嘘になりません。</div>
+    <div class="ttl">1社だけ選んで、スマホで開く（8分）</div>
+    <div class="tmpl">
+      御社の<span class="bl">見た場所</span>、<br>
+      <span class="bl">どんな状態か</span>のが、<br>
+      少しもったいないと感じました。
+    </div>
+    <div class="chk">
+      <div class="ck2"><span class="box"></span>場所が1つに絞られているか</div>
+      <div class="ck2"><span class="box"></span>困っているのが「相手のお客さん」になっているか</div>
+      <div class="ck2"><span class="box"></span>言い切らずに終わっているか</div>
+    </div>
   </div>
 </div>
 <div class="foot"><span class="ck"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4.5 4.5L19 7.5" stroke="#d9ff3d" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-<span>今日は、<span class="hl">1点ぶん</span>書けたら終わりです</span></div>
+<span>今日は、<span class="hl">書けたら終わり</span>。送らなくていい</span></div>
 </body></html>

@@ -1,28 +1,31 @@
 <!doctype html><html lang="ja"><head><meta charset="utf-8"><style>
 @import url("base.css");
-html,body{width:1600px;height:900px}
-.wrap{padding:44px 96px 0;position:relative;z-index:2;display:flex;flex-direction:column;gap:20px}
-.card{display:flex;align-items:center;gap:30px;padding:26px 38px}
-.no{width:72px;height:72px;border-radius:50%;flex:none;display:flex;align-items:center;justify-content:center;
-  font-size:38px;font-weight:900;color:#05040f;background:var(--neon);box-shadow:0 0 18px rgba(217,255,61,.7)}
-.tx .t{font-size:33px;font-weight:900;line-height:1.35}
-.tx .s{font-size:24px;font-weight:800;color:var(--ink2);margin-top:8px;line-height:1.45}
-.note{margin-top:6px;text-align:center;font-size:27px;font-weight:900;color:#fff;position:relative;z-index:2}
-.note b{color:var(--neon);text-shadow:0 0 12px rgba(217,255,61,.5)}
+html,body{width:1600px;height:920px}
+.wrap{padding:40px 90px 0;position:relative;z-index:2;display:flex;flex-direction:column;gap:18px}
+.src{padding:22px 34px;font-size:27px;font-weight:900;line-height:1.55;text-align:center}
+.src .p1{color:var(--cyan)}.src .p2{color:var(--mag)}.src .p3{color:var(--neon)}
+.card{display:flex;align-items:center;gap:26px;padding:22px 36px}
+.no{width:64px;height:64px;border-radius:50%;flex:none;display:flex;align-items:center;justify-content:center;
+  font-size:30px;font-weight:900;color:#05040f;box-shadow:0 0 16px rgba(0,0,0,.4)}
+.c1 .no{background:var(--cyan)}.c2 .no{background:var(--mag)}.c3 .no{background:var(--neon)}
+.tx .t{font-size:31px;font-weight:900;line-height:1.35}
+.tx .s{font-size:23px;font-weight:800;color:var(--ink2);margin-top:7px}
 </style></head><body>
-<div class="head"><h1>作品の代わりに、<span class="o ul">見られているもの</span></h1></div>
+<div class="head"><h1>1行をつくる、<span class="o ul">3つの材料</span></h1></div>
 <div class="wrap">
-  <div class="card neon m"><div class="no">1</div><div class="tx">
-    <div class="t">この先、どう進むのかが見えるか</div>
-    <div class="s">次に何が起きて、いつ何が決まるのか</div></div></div>
-  <div class="card neon m"><div class="no">2</div><div class="tx">
-    <div class="t">自分が何を準備すればいいか分かるか</div>
-    <div class="s">「素材をください」ではなく、何を・どの形で・いつまでに</div></div></div>
-  <div class="card neon m"><div class="no">3</div><div class="tx">
-    <div class="t">質問が、相手の仕事の話になっているか</div>
-    <div class="s">「ご予算は」だけ ／ 「これは誰に見せるものですか」</div></div></div>
-  <div class="note">この3つは、<b>作品が1点もなくても書けます</b></div>
+  <div class="src neon">
+    「<span class="p1">御社の商品、スマホだと</span><span class="p2">一番伝えたい魅力が途中で消えてしまっている</span><span class="p3">のが、少しもったいないと感じました</span>」
+  </div>
+  <div class="card neon c1"><div class="no">1</div><div class="tx">
+    <div class="t">どこを見たか　— 場所を1つに絞る</div>
+    <div class="s">スマホの1画面目／申し込みまでの道のり／写真1枚目／プロフィール欄</div></div></div>
+  <div class="card neon c2"><div class="no">2</div><div class="tx">
+    <div class="t">誰が困るか　— 相手の「お客さん」</div>
+    <div class="s">×デザインが古い（否定）　×私ならできます（自分の話）</div></div></div>
+  <div class="card neon c3"><div class="no">3</div><div class="tx">
+    <div class="t">言い切らない　— 「感じました」で止める</div>
+    <div class="s">「少し」「もったいない」「感じました」で角が取れる</div></div></div>
 </div>
 <div class="foot"><span class="ck"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4.5 4.5L19 7.5" stroke="#d9ff3d" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-<span>選ばれているのは、作品ではなく<span class="hl">進め方</span></span></div>
+<span>できることは、<span class="hl">一言も書かない</span></span></div>
 </body></html>
