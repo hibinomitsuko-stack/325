@@ -19,7 +19,7 @@
 ## Q-20261106-01
 - theme: AIに3年来の取引先を失いかけた日
 - type: 体験談
-- approved: false
+- approved: true
 - created: 2026-11-06
 
 ### 本文
