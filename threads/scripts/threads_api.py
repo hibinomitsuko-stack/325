@@ -170,10 +170,12 @@ def cmd_post(args):
     entry = q[idx]
     qid = entry.splitlines()[0][3:].strip()
     body, comment = section(entry, "本文"), section(entry, "コメント欄")
+    # コメント欄は '---' だけの行で区切ると、複数の続き（スレッド連投）として順につなげて投稿する
+    parts = [p.strip() for p in re.split(r"(?m)^---\s*$", comment) if p.strip()]
     theme = field(entry, "theme") or ""
     if not body:
         sys.exit(f"STOP: {qid} の『### 本文』が空です。")
-    for label, s in (("本文", body), ("コメント欄", comment)):
+    for label, s in [("本文", body)] + [(f"コメント欄{i + 1}", p) for i, p in enumerate(parts)]:
         if len(s) > MAX_CHARS:
             sys.exit(f"STOP: {qid} の{label}が{len(s)}文字です（上限{MAX_CHARS}）。")
     hist_text = HISTORY.read_text(encoding="utf-8") if HISTORY.exists() else "# 投稿履歴\n\n"
@@ -183,20 +185,23 @@ def cmd_post(args):
         if field(e, "queue_id") == qid or (field(e, "text_head") or "") == head40:
             sys.exit(f"STOP: 二重投稿の疑い。{qid} は post-history.md に既にあります。キューから削除してください。")
 
-    print(f"--- 投稿予定: {qid} / theme: {theme}\n[本文]\n{body}\n\n[コメント欄]\n{comment or '(なし)'}\n---")
+    print(f"--- 投稿予定: {qid} / theme: {theme}\n[本文]\n{body}\n\n" + "".join(f"\n[コメント欄{i + 1}/{len(parts)}] ({len(p)}文字)\n{p}\n" for i, p in enumerate(parts)) + "---")
     if args.dry_run:
         print("DRY-RUN: 投稿していません。")
         return
 
     post_id = publish_text(body)
-    reply_id = "-"
-    if comment:
+    reply_ids, prev = [], post_id
+    for i, part in enumerate(parts):
         time.sleep(5)
         try:
-            reply_id = publish_text(comment, reply_to=post_id)
+            prev = publish_text(part, reply_to=prev)  # 直前の投稿にぶら下げて連投にする
+            reply_ids.append(prev)
         except Exception as e:  # noqa: BLE001  本文は出ているので記録は必ず残す
-            print(f"WARN: セルフリプライ失敗（本文は投稿済み）: {e}", file=sys.stderr)
-            reply_id = "failed"
+            print(f"WARN: 続き{i + 1}の投稿失敗（本文は投稿済み・残りは中断）: {e}", file=sys.stderr)
+            reply_ids.append("failed")
+            break
+    reply_id = ",".join(reply_ids) or "-"
 
     now = datetime.now(JST).strftime("%Y-%m-%d %H:%M")
     new = (f"## {now}\n\n- post_id: {post_id}\n- reply_id: {reply_id}\n- queue_id: {qid}\n"
@@ -242,7 +247,7 @@ def cmd_fetch(args):
         lines = []
         for r in reps:
             t = (r.get("text") or "").replace("\n", " ")
-            if r.get("id") == field(e, "reply_id"):
+            if r.get("id") in (field(e, "reply_id") or "").split(","):
                 continue  # 自分のセルフリプライは除外
             tag = "[質問]" if any(w in t for w in QUESTION_WORDS) else "[感想]"
             lines.append(f"  - {tag} {r.get('timestamp', '')[:16]} @{r.get('username', '?')}: {t}")
