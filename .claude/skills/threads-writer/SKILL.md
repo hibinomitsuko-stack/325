@@ -10,14 +10,18 @@ next-topics.md をもとに投稿を3本書き、`threads/ops/post-queue.md` の
 ## 事前に読むファイル
 - threads/knowledge/01_profile.md / 02_target.md（誰が誰に書くか）
 - threads/knowledge/05_writing.md（文体ルール）
-- threads/knowledge/06_references.md（伸びた投稿の構造見本）
+- threads/knowledge/06_references.md（伸びた投稿の構造見本：体験型）
+- threads/knowledge/09_benchmarks.md（参考アカウントのフックと型：ノウハウ型）
+- threads/knowledge/08_strategy.md（配分：1日2本のうち1本はノウハウ型）
 - threads/knowledge/07_ng-rules.md（禁止事項）
 - threads/ops/next-topics.md（今回のテーマ）
 - threads/ops/analysis-latest.md（直近の学び。あれば）
 
 ## 手順（1本ごと）
 1. next-topics.md の上からテーマを1つ選ぶ
-2. 06_references.md から借りる「構造」を1つ選ぶ（丸写し禁止。型だけ）
+2. 借りる「構造」を1つ選ぶ（丸写し禁止。型だけ）
+   - ノウハウ型 → 09_benchmarks.md の「みつこ用フックの型」と「本文の型」
+   - 体験・共感型 → 06_references.md
 3. **1行目を5案書き出し、一番強い1つを選ぶ**（5案と選んだ理由は会話に表示する）
    - 「有益そう」「意外」「続きが気になる」のどれかを必ず満たす
    - 固有名詞か数字を必ず含める（例：3ヶ月、月7桁、1日15分、顔出しゼロ）
@@ -59,6 +63,9 @@ next-topics.md をもとに投稿を3本書き、`threads/ops/post-queue.md` の
 
 ## ルール
 - 3本は必ず違う型（箇条書き / 体験談 / 断言 / Before→After / 失敗談 / Q&A など）
+- 3本のうち最低2本はノウハウ型（スレッズの伸ばし方の価値提供）にする
+- キューの並びが「ノウハウ → 体験 → ノウハウ → 体験」の交互になるように差し込む（末尾に足すだけで連続する場合は、未承認の原稿の間に入れてよい）
+- type には「ノウハウ：◯◯型」「体験：◯◯型」と書く
 - 「〜って知ってましたか？」で始めるのは禁止
 - 時間配分は1行目に最も多く割く
 

@@ -27,6 +27,11 @@ description: Threads・X・Instagram・YouTubeを横断検索して、今ウケ�
 | Instagram | WebSearch `site:instagram.com キーワード` | 保存されやすいカルーセルのタイトル・構成 |
 | YouTube | WebSearch `site:youtube.com キーワード` | 再生数の多い動画タイトル、コメント欄の悩み |
 
+## 参考アカウント（毎回チェック）
+09_benchmarks.md の一覧にあるアカウント。投稿URL（https://www.threads.com/@ハンドル/post/コード）が分かれば、
+`curl -sS -A "Mozilla/5.0" URL` で取得したHTMLの `og:description` に本文が入っている（いいね・閲覧数は取れない）。
+みつこが 09_benchmarks.md の「伸びた投稿」欄にURLを貼っていたら、最優先で本文を取得し、型を 09_benchmarks.md に追記する。
+
 ## 出力（research-latest.md に上書き）
 ```
 # リサーチ結果（YYYY-MM-DD）
