@@ -136,9 +136,9 @@ def cmd_status(_):
     unanalyzed = [e for e in h if (field(e, "analyzed") or "").lower() == "false"]
     last = None
     for e in h:
-        m = re.match(r"## (\d{4}-\d{2}-\d{2} \d{2}:\d{2})", e)
+        m = re.match(r"## (\d{4}-\d{2}-\d{2})(?: (\d{2}:\d{2}))?", e)
         if m:
-            d = datetime.strptime(m.group(1), "%Y-%m-%d %H:%M").replace(tzinfo=JST)
+            d = datetime.strptime(f"{m.group(1)} {m.group(2) or '00:00'}", "%Y-%m-%d %H:%M").replace(tzinfo=JST)
             last = max(last, d) if last else d
     empty_knowledge = []
     for f in sorted(KNOWLEDGE.glob("0*.md")):

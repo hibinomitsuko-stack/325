@@ -1,0 +1,82 @@
+# Threads 自動運用（投稿と数字の回収）
+# - 投稿：毎日 7:33 と 21:07（日本時間）に、post-queue.md の先頭の承認済み原稿を1本だけ投稿
+# - 回収：毎日 12:17（日本時間）に、24時間以上たった投稿の数字とコメントを回収
+# - 手動実行：Actions タブ → Threads 自動運用 → Run workflow（dry_run で投稿せずに中身だけ確認できる）
+# 必要な設定：リポジトリの Settings → Secrets and variables → Actions に THREADS_ACCESS_TOKEN
+# GitHub の定期実行は混雑時に数分〜数十分遅れることがある
+name: Threads 自動運用
+
+on:
+  schedule:
+    - cron: "33 22 * * *"   # 7:33 JST 投稿
+    - cron: "7 12 * * *"    # 21:07 JST 投稿
+    - cron: "17 3 * * *"    # 12:17 JST 数字の回収
+  workflow_dispatch:
+    inputs:
+      task:
+        description: "post（投稿）か fetch（数字の回収）"
+        required: true
+        default: post
+        type: choice
+        options: [post, fetch]
+      dry_run:
+        description: "投稿せずに、次に出る原稿を表示するだけ"
+        required: false
+        default: true
+        type: boolean
+
+permissions:
+  contents: write
+
+concurrency:
+  group: threads-ops
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    env:
+      THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 何をするか決める
+        id: what
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "task=${{ inputs.task }}" >> "$GITHUB_OUTPUT"
+          elif [ "${{ github.event.schedule }}" = "17 3 * * *" ]; then
+            echo "task=fetch" >> "$GITHUB_OUTPUT"
+          else
+            echo "task=post" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: 投稿（承認済みの先頭1本）
+        if: steps.what.outputs.task == 'post'
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.dry_run }}" = "true" ]; then
+            python3 threads/scripts/threads_api.py post --dry-run
+          else
+            python3 threads/scripts/threads_api.py post
+          fi
+
+      - name: 数字とコメントの回収
+        if: steps.what.outputs.task == 'fetch'
+        run: python3 threads/scripts/threads_api.py fetch
+
+      - name: 結果をリポジトリに保存
+        if: always()
+        run: |
+          git config user.name "threads-bot"
+          git config user.email "threads-bot@users.noreply.github.com"
+          git add threads/ops
+          if git diff --cached --quiet; then
+            echo "変更なし"
+          else
+            git commit -m "threads: ${{ steps.what.outputs.task }} ($(TZ=Asia/Tokyo date '+%Y-%m-%d %H:%M') JST)"
+            git push
+          fi
