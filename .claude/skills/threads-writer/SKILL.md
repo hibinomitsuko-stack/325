@@ -14,7 +14,7 @@ next-topics.md をもとに投稿を3本書き、`threads/ops/post-queue.md` の
 - threads/knowledge/09_benchmarks.md（参考アカウントのフックと型：ノウハウ型）
 - threads/knowledge/08_strategy.md（配分：1日2本のうち1本はノウハウ型）
 - threads/knowledge/07_ng-rules.md（禁止事項）
-- threads/knowledge/10_students.md（受講生の事例。A＝公開済みのみ名前つきで使用、1投稿1名）
+- threads/knowledge/10_students.md（受講生の事例。名前は出さず成果だけ、1投稿1名、要確認の数字は使わない）
 - threads/ops/next-topics.md（今回のテーマ）
 - threads/ops/analysis-latest.md（直近の学び。あれば）
 
