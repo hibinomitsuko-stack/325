@@ -9,11 +9,12 @@ next-topics.md をもとに投稿を3本書き、`threads/ops/post-queue.md` の
 
 ## 事前に読むファイル
 - threads/knowledge/01_profile.md / 02_target.md（誰が誰に書くか）
-- threads/knowledge/05_writing.md（文体ルール）
+- threads/knowledge/05_writing.md（文体ルール。冒頭の「みつこの文体ルール10項目」を最優先）
 - threads/knowledge/06_references.md（伸びた投稿の構造見本：体験型）
 - threads/knowledge/09_benchmarks.md（参考アカウントのフックと型：ノウハウ型）
 - threads/knowledge/08_strategy.md（配分：1日2本のうち1本はノウハウ型）
 - threads/knowledge/07_ng-rules.md（禁止事項）
+- threads/knowledge/10_students.md（受講生の事例。A＝公開済みのみ名前つきで使用、1投稿1名）
 - threads/ops/next-topics.md（今回のテーマ）
 - threads/ops/analysis-latest.md（直近の学び。あれば）
 
