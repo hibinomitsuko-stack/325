@@ -1,5 +1,5 @@
 # Threads 自動運用（投稿と数字の回収）
-# - 投稿：毎日 7:33 と 21:07（日本時間）に、post-queue.md の先頭の承認済み原稿を1本だけ投稿
+# - 投稿：毎日 6:33 と 20:07（日本時間）に、post-queue.md の先頭の承認済み原稿を1本だけ投稿
 # - 回収：毎日 12:17（日本時間）に、24時間以上たった投稿の数字とコメントを回収
 # - 手動実行：Actions タブ → Threads 自動運用 → Run workflow（dry_run で投稿せずに中身だけ確認できる）
 # 必要な設定：リポジトリの Settings → Secrets and variables → Actions に THREADS_ACCESS_TOKEN
@@ -8,8 +8,8 @@ name: Threads 自動運用
 
 on:
   schedule:
-    - cron: "33 22 * * *"   # 7:33 JST 投稿
-    - cron: "7 12 * * *"    # 21:07 JST 投稿
+    - cron: "33 21 * * *"   # 6:33 JST 投稿
+    - cron: "7 11 * * *"    # 20:07 JST 投稿
     - cron: "17 3 * * *"    # 12:17 JST 数字の回収
   workflow_dispatch:
     inputs:
