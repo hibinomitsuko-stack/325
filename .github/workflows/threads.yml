@@ -1,16 +1,14 @@
 # Threads 自動運用（投稿と数字の回収）
-# - 投稿：毎日 6:33 と 20:07（日本時間）に、post-queue.md の先頭の承認済み原稿を1本だけ投稿
-# - 回収：毎日 12:17（日本時間）に、24時間以上たった投稿の数字とコメントを回収
+# - 投稿：cron-job.org が毎日 6:33 と 20:07（日本時間）に GitHub API 経由で「Run workflow」（task=post）を起動する
+#   （GitHub の定期実行は数時間遅れることがあるため、投稿は外部の予約サービスから起動する）
+# - 回収：毎日 12:17（日本時間）に GitHub の定期実行で、24時間以上たった投稿の数字とコメントを回収
 # - 手動実行：Actions タブ → Threads 自動運用 → Run workflow（dry_run で投稿せずに中身だけ確認できる）
 # 必要な設定：リポジトリの Settings → Secrets and variables → Actions に THREADS_ACCESS_TOKEN
-# GitHub の定期実行は混雑時に数分〜数時間遅れることがある。投稿は 6:33〜9:00 / 20:07〜22:30（日本時間）の間に動いたときだけ行い、それ以外は見送る
 name: Threads 自動運用
 
 on:
   schedule:
-    - cron: "33 21 * * *"   # 6:33 JST 投稿
-    - cron: "7 11 * * *"    # 20:07 JST 投稿
-    - cron: "17 3 * * *"    # 12:17 JST 数字の回収
+    - cron: "17 3 * * *"    # 12:17 JST 数字の回収（投稿は cron-job.org から起動）
   workflow_dispatch:
     inputs:
       task:
@@ -49,18 +47,8 @@ jobs:
         run: |
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             echo "task=${{ inputs.task }}" >> "$GITHUB_OUTPUT"
-          elif [ "${{ github.event.schedule }}" = "17 3 * * *" ]; then
-            echo "task=fetch" >> "$GITHUB_OUTPUT"
           else
-            # GitHub の定期実行は数時間遅れることがある。
-            # 予定時刻から大きく遅れたときは投稿せずに見送り、次の枠に回す（変な時間に出さない）
-            NOW=$(TZ=Asia/Tokyo date +%H%M)
-            if { [ "$NOW" -ge 0633 ] && [ "$NOW" -le 0900 ]; } || { [ "$NOW" -ge 2007 ] && [ "$NOW" -le 2230 ]; }; then
-              echo "task=post" >> "$GITHUB_OUTPUT"
-            else
-              echo "予定時刻から遅れすぎたため投稿を見送り（日本時間 $NOW）。次の枠で投稿します。"
-              echo "task=skip" >> "$GITHUB_OUTPUT"
-            fi
+            echo "task=fetch" >> "$GITHUB_OUTPUT"
           fi
 
       - name: 投稿（承認済みの先頭1本）
