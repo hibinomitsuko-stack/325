@@ -1,4 +1,4 @@
-# Threads 自動運用（みつこ｜陰キャのスレッズ集客法 @mitsukoihle）
+# Threads 自動運用（みつこ｜陰キャのThreads集客法 @mitsukoihle）
 
 「調べる → 決める → 書く → 出す → 数字を取る → 次に活かす」を、6つの役割（Claude Codeスキル）に分けて回す仕組みです。
 役割どうしの受け渡しは、すべて `threads/ops/` のMarkdownファイルで行います（会話の記憶に頼らない）。
