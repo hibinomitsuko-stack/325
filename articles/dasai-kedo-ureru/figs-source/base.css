@@ -1,0 +1,80 @@
+/* ===== note図解 共通スタイル（ネオン版 v2） =====
+   1600px幅・高さは図ごとに指定。2倍解像度で書き出す。
+   色を変えるときは :root だけ触ればよい。 */
+:root{
+  --bg1:#0a0629; --bg2:#1b0b44; --bg3:#2a0f52;
+  --ink:#ffffff;            /* 見出し・本文 */
+  --ink2:#b9c4ff;           /* 補足テキスト */
+  --neon:#d9ff3d;           /* 蛍光イエロー：いちばん強調したい語 */
+  --mag:#f026c8;            /* マゼンタ */
+  --cyan:#23c9ff;           /* シアン */
+  --vio:#8b3cf7;            /* 紫 */
+  --card:rgba(10,8,45,.72); /* カードの中の色 */
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP","Yu Gothic UI","Yu Gothic","Meiryo",sans-serif;
+  color:var(--ink);position:relative;overflow:hidden;
+  background:
+    linear-gradient(118deg, transparent 0 48%, var(--cyan) 48% 49.4%, transparent 49.4%) right 52px top 22px/150px 150px no-repeat,
+    linear-gradient(118deg, transparent 0 48%, var(--mag) 48% 49.4%, transparent 49.4%) right 104px top 22px/150px 150px no-repeat,
+    radial-gradient(1100px 620px at 78% 8%, rgba(139,60,247,.42), transparent 62%),
+    radial-gradient(900px 560px at 10% 88%, rgba(240,38,200,.24), transparent 62%),
+    linear-gradient(152deg, var(--bg1) 0%, var(--bg2) 52%, var(--bg3) 100%);
+  word-break:keep-all;line-break:strict;
+}
+/* 左上の斜めストライプ（角からじわっと消える） */
+body::before{content:"";position:absolute;inset:0;pointer-events:none;z-index:0;
+  background:
+    repeating-linear-gradient(135deg, rgba(240,38,200,.5) 0 8px, transparent 8px 30px),
+    repeating-linear-gradient(135deg, rgba(35,201,255,.42) 0 6px, transparent 6px 46px);
+  -webkit-mask:linear-gradient(135deg, #000 0 120px, rgba(0,0,0,.35) 210px, transparent 300px);
+          mask:linear-gradient(135deg, #000 0 120px, rgba(0,0,0,.35) 210px, transparent 300px);
+}
+/* 左上と右下のドット（丸くぼかして置く） */
+body::after{content:"";position:absolute;inset:0;pointer-events:none;z-index:0;
+  background:
+    radial-gradient(circle, rgba(185,196,255,.6) 2.4px, transparent 2.4px) left 20px top 20px/26px 26px,
+    radial-gradient(circle, rgba(240,38,200,.55) 2.4px, transparent 2.4px) right 22px bottom 22px/26px 26px;
+  -webkit-mask:
+    radial-gradient(250px 170px at 3% 5%, #000 30%, transparent 72%),
+    radial-gradient(290px 200px at 97% 95%, #000 30%, transparent 72%);
+          mask:
+    radial-gradient(250px 170px at 3% 5%, #000 30%, transparent 72%),
+    radial-gradient(290px 200px at 97% 95%, #000 30%, transparent 72%);
+}
+/* ---- 見出し ---- */
+.head{text-align:center;padding:50px 0 0;position:relative;z-index:2}
+.head h1{font-size:60px;font-weight:900;letter-spacing:.01em;display:inline-block;
+  text-shadow:0 0 22px rgba(139,60,247,.75), 0 0 46px rgba(35,201,255,.38)}
+.head .o{color:var(--neon);text-shadow:0 0 18px rgba(217,255,61,.75)}
+.head .ul{position:relative}
+.head .ul::after{content:"";position:absolute;left:0;right:0;bottom:-4px;height:7px;border-radius:4px;
+  background:var(--neon);box-shadow:0 0 14px rgba(217,255,61,.95);z-index:-1}
+/* ---- カード（グラデ枠＋発光） ---- */
+.neon{position:relative;z-index:2;border:2.5px solid transparent;border-radius:22px;
+  background:
+    linear-gradient(var(--card),var(--card)) padding-box,
+    linear-gradient(135deg,var(--cyan),var(--vio) 52%,var(--mag)) border-box;
+  box-shadow:0 0 22px rgba(139,60,247,.5), inset 0 0 26px rgba(35,201,255,.1)}
+.neon.m{background:
+    linear-gradient(var(--card),var(--card)) padding-box,
+    linear-gradient(135deg,var(--mag),var(--vio) 55%,var(--cyan)) border-box;
+  box-shadow:0 0 22px rgba(240,38,200,.5), inset 0 0 26px rgba(240,38,200,.08)}
+.neon.dim{background:
+    linear-gradient(var(--card),var(--card)) padding-box,
+    linear-gradient(135deg,rgba(35,201,255,.5),rgba(139,60,247,.45)) border-box;
+  box-shadow:0 0 14px rgba(35,201,255,.22)}
+/* ---- 下のまとめ帯 ---- */
+.foot{position:absolute;left:58px;right:58px;bottom:40px;z-index:2;
+  border:2.5px solid transparent;border-radius:22px;padding:22px 0;text-align:center;
+  font-size:35px;font-weight:900;color:#fff;
+  display:flex;align-items:center;justify-content:center;gap:16px;
+  background:
+    linear-gradient(100deg,var(--vio),var(--mag) 58%,var(--vio)) padding-box,
+    linear-gradient(120deg,var(--cyan),var(--mag)) border-box;
+  box-shadow:0 0 30px rgba(240,38,200,.6)}
+.foot .hl{color:var(--neon);text-shadow:0 0 14px rgba(217,255,61,.8)}
+.foot .ck{width:52px;height:52px;border-radius:50%;background:#05040f;
+  display:flex;align-items:center;justify-content:center;box-shadow:0 0 14px rgba(0,0,0,.6)}
+.foot .ck svg{width:30px;height:30px}

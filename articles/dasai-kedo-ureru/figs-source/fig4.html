@@ -1,0 +1,32 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><style>
+@import url("base.css");
+html,body{width:1600px;height:900px}
+.wrap{padding:42px 96px 0;position:relative;z-index:2}
+.sheet{padding:28px 44px 30px}
+.ttl{font-size:24px;font-weight:900;color:var(--neon);margin-bottom:18px}
+.row{display:flex;align-items:center;gap:22px;padding:15px 0;border-bottom:1.5px dashed rgba(185,196,255,.2)}
+.row:last-of-type{border-bottom:0}
+.k{font-size:25px;font-weight:900;flex:none;width:400px;line-height:1.35}
+.ln{flex:1;border-bottom:2.5px dotted rgba(185,196,255,.5);height:30px}
+.sep{margin:18px 0 8px;padding-top:16px;border-top:1.5px dashed rgba(185,196,255,.3);
+  font-size:24px;font-weight:900;color:var(--cyan)}
+.fix{display:flex;align-items:center;gap:20px;font-size:25px;font-weight:800;color:#e8ecff;padding:9px 0}
+.box{width:24px;height:24px;border:2.5px solid var(--cyan);border-radius:6px;flex:none}
+.fix b{color:var(--neon);font-weight:900}
+</style></head><body>
+<div class="head"><h1>3秒だけ開いて、<span class="o ul">閉じる</span></h1></div>
+<div class="wrap">
+  <div class="sheet neon m">
+    <div class="ttl">自分の1枚を3秒見て、思い出せたことだけ書く</div>
+    <div class="row"><div class="k">何のサービス・商品だったか</div><div class="ln"></div></div>
+    <div class="row"><div class="k">いちばん言いたかったことは</div><div class="ln"></div></div>
+    <div class="row"><div class="k">次に何をすればよかったか</div><div class="ln"></div></div>
+    <div class="sep">書けなかったものに合わせて、直す場所を1つだけ決める</div>
+    <div class="fix"><span class="box"></span>見られていない　→　<b>色か、余白</b></div>
+    <div class="fix"><span class="box"></span>分からない　→　<b>いちばん上の1行</b></div>
+    <div class="fix"><span class="box"></span>忘れられる　→　<b>言葉を1つ足す</b></div>
+  </div>
+</div>
+<div class="foot"><span class="ck"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4.5 4.5L19 7.5" stroke="#d9ff3d" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+<span>今日は、<span class="hl">1か所決めたら</span>終わりです</span></div>
+</body></html>
