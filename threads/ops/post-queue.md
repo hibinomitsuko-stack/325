@@ -506,7 +506,7 @@ AIに丸投げして、誰でも書ける投稿を量産するのか。材料だ
 - reader: 投稿づくりに時間がかかりすぎて続かない人
 - cta: なし
 - reference: 10_students.md（悩み→実践→期間→成果→変化）／名前は出さない
-- approved: false
+- approved: true
 - created: 2026-11-10
 
 ### 本文
@@ -570,7 +570,7 @@ AIに丸投げして、誰でも書ける投稿を量産するのか。材料だ
 - reader: 安く見られる・値下げを頼まれる個人事業主
 - cta: なし
 - reference: 06_references.md 見本5（102,229閲覧）を新アカウント向けに再構成＋発信への橋渡し
-- approved: false
+- approved: true
 - created: 2026-11-10
 
 ### 本文
@@ -634,7 +634,7 @@ AIに丸投げして、誰でも書ける投稿を量産するのか。材料だ
 - reader: インスタのリールや画像づくりに疲れた人
 - cta: 30分の無料個別相談（P.S.で1つ）
 - reference: @ayayaya.lol 途中経過の公開＋10_students.md の構成／名前は出さない
-- approved: false
+- approved: true
 - created: 2026-11-10
 
 ### 本文
@@ -696,7 +696,7 @@ P.S. 「自分の仕事だと、何を言葉にすればいいかわからない
 - reader: 自分は内向的で人付き合いが苦手だと思っている人
 - cta: コメント（問いかけ）
 - reference: 06_references.md 見本10（486,502閲覧）を再構成＋陰キャの強みへの橋渡し
-- approved: false
+- approved: true
 - created: 2026-11-10
 
 ### 本文
@@ -758,7 +758,7 @@ P.S. 「自分の仕事だと、何を言葉にすればいいかわからない
 - reader: 顔出しなしで発信している人・迷っている人
 - cta: コメント（あなたの理由を教えて）
 - reference: @toku.film.jp 質問・参加型
-- approved: false
+- approved: true
 - created: 2026-11-10
 
 ### 本文
@@ -817,7 +817,7 @@ P.S. 「自分の仕事だと、何を言葉にすればいいかわからない
 - reader: インスタにお金や時間をかけても反応がない人
 - cta: 30分の無料個別相談（P.S.で1つ）
 - reference: 10_students.md（悩み→実践→期間→成果→変化）／名前は出さない
-- approved: false
+- approved: true
 - created: 2026-11-10
 
 ### 本文
@@ -881,7 +881,7 @@ P.S. 「自分の言葉で書くと言われても、何から書けばいいか
 - reader: 否定されて立ち止まっている人
 - cta: なし
 - reference: 06_references.md 見本3（136,643閲覧）を再構成＋発信への橋渡し
-- approved: false
+- approved: true
 - created: 2026-11-10
 
 ### 本文
