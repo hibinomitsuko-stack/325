@@ -56,15 +56,15 @@
 - theme: リールを撮るたびにお腹が痛かった陰キャが、インスタをやめた話
 - type: 共感・ユーモア（問いかけ）（1行目の型：共感あるある情景）
 - text_head: 台本を書いて、撮って、自分の声を聞いて、そっと消す。リール、今日も上がらなかった
-- metrics_fetched: false
-- fetched_at: -
+- metrics_fetched: true
+- fetched_at: 2026-11-11 19:57
 - analyzed: false
-- likes: -
-- replies: -
-- reposts: -
-- quotes: -
-- shares: -
-- views: -
+- likes: 0
+- replies: 0
+- reposts: 0
+- quotes: 0
+- shares: 0
+- views: 17
 - comments: []
 
 ### 本文
