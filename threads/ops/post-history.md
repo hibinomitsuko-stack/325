@@ -1,5 +1,27 @@
 # 投稿履歴（ポスターが追記／フェッチャーが数字を更新／アナリストが analyzed を更新）
 
+## 2026-11-12 06:33
+
+- post_id: 18106681535291651
+- reply_id: 17933439030428361
+- queue_id: Q-20261107-02
+- theme: 投稿前の1行目チェックリスト
+- type: ノウハウ：保存版チェックリスト型（1行目の型：テンプレ配布）
+- text_head: Threadsでそのまま使える、投稿前の1行目チェックリスト6つまとめました。
+- metrics_fetched: false
+- fetched_at: -
+- analyzed: false
+- likes: -
+- replies: -
+- reposts: -
+- quotes: -
+- shares: -
+- views: -
+- comments: []
+
+### 本文
+Threadsでそのまま使える、投稿前の1行目チェックリスト6つまとめました。
+
 ## 2026-11-11 20:08
 
 - post_id: 18004771019807966
