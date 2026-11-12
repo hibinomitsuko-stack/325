@@ -1,5 +1,28 @@
 # 投稿履歴（ポスターが追記／フェッチャーが数字を更新／アナリストが analyzed を更新）
 
+## 2026-11-12 20:08
+
+- post_id: 17886272910626037
+- reply_id: 18130204321880165,18101887871090151,18143979829624078
+- queue_id: Q-20261107-07
+- theme: AIで投稿を作っても伸びない人は、頼む順番が逆
+- type: ノウハウ：常識否定×手順型（1行目の型：NG断言）
+- text_head: AIに絶対やらせてはいけない、Threads投稿の作業があります。それは、「Th
+- metrics_fetched: false
+- fetched_at: -
+- analyzed: false
+- likes: -
+- replies: -
+- reposts: -
+- quotes: -
+- shares: -
+- views: -
+- comments: []
+
+### 本文
+AIに絶対やらせてはいけない、Threads投稿の作業があります。
+それは、「Threadsでバズる投稿を書いて」から指示をすること。
+
 ## 2026-11-12 06:33
 
 - post_id: 18106681535291651
