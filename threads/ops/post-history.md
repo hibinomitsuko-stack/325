@@ -53,15 +53,15 @@ Threadsでそのまま使える、投稿前の1行目チェックリスト6つ�
 - theme: 毎日投稿しても閲覧2桁・反応ゼロの本当の原因（誰に向けて書いているか）
 - type: ノウハウ：つぶやき→教育型（焼き直し元：一般の「反応ゼロ」つぶやき／自分の4月の投稿）（1行目の型：本音・共通不安）
 - text_head: 最近Threads、毎日投稿してるのに閲覧は2桁。いいねは、自分で押した「1」だ
-- metrics_fetched: false
-- fetched_at: -
+- metrics_fetched: true
+- fetched_at: 2026-11-12 20:10
 - analyzed: false
-- likes: -
-- replies: -
-- reposts: -
-- quotes: -
-- shares: -
-- views: -
+- likes: 0
+- replies: 3
+- reposts: 0
+- quotes: 0
+- shares: 0
+- views: 23
 - comments: []
 
 ### 本文
@@ -79,15 +79,15 @@ Threadsでそのまま使える、投稿前の1行目チェックリスト6つ�
 - theme: 122件全落ちから、1行目を変えたら19件
 - type: Before→After（1行目の型：断言＋不足）
 - text_head: 断言します。Threadsでいくら投稿しても集客できない人、1行目だけ変えて下さ
-- metrics_fetched: false
-- fetched_at: -
+- metrics_fetched: true
+- fetched_at: 2026-11-12 20:10
 - analyzed: false
-- likes: -
-- replies: -
-- reposts: -
-- quotes: -
-- shares: -
-- views: -
+- likes: 1
+- replies: 4
+- reposts: 0
+- quotes: 0
+- shares: 0
+- views: 707
 - comments: []
 
 ### 本文
@@ -101,15 +101,15 @@ Threadsでそのまま使える、投稿前の1行目チェックリスト6つ�
 - theme: 94万閲覧の投稿から抜き出した1行目の型5つ（そのまま使ってOK）
 - type: ノウハウ：テンプレ集×許可型（焼き直し元：@shoko_hikaru_kotoba フックまとめ）（1行目の型：許可×実績×まとめ）
 - text_head: そのまま使ってOKです！前のアカウントで94万閲覧まで伸びた私の投稿から、1行目
-- metrics_fetched: false
-- fetched_at: -
+- metrics_fetched: true
+- fetched_at: 2026-11-12 20:10
 - analyzed: false
-- likes: -
-- replies: -
-- reposts: -
-- quotes: -
-- shares: -
-- views: -
+- likes: 1
+- replies: 3
+- reposts: 0
+- quotes: 0
+- shares: 0
+- views: 31
 - comments: []
 
 ### 本文
