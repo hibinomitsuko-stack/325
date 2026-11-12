@@ -55,7 +55,7 @@ Threadsのプロフィールに「よろしくお願いします」と書いて�
 - slot: 昼
 - reader: Threads集客に悩む顔出しなしのひとり起業家
 - cta: なし（強い一文で締め、賛否のコメント余白）
-- approved: false
+- approved: true
 - created: 2026-11-12
 
 ### 本文
@@ -149,7 +149,7 @@ Threadsでコメントが1件もつかない人、最後の1行で損してま�
 - slot: 昼
 - reader: Threads集客に悩む顔出しなしのひとり起業家
 - cta: なし（強い一文で締め、賛否のコメント余白）
-- approved: false
+- approved: true
 - created: 2026-11-12
 
 ### 本文
@@ -230,7 +230,7 @@ Threadsの閲覧が2桁しか行かない人、焦って投稿を消したり、
 - slot: 昼
 - reader: Threads集客に悩む顔出しなしのひとり起業家
 - cta: なし（強い一文で締め、賛否のコメント余白）
-- approved: false
+- approved: true
 - created: 2026-11-12
 
 ### 本文
@@ -309,7 +309,7 @@ Threadsの閲覧が2桁しか行かない人、焦って投稿を消したり、
 - slot: 昼
 - reader: Threads集客に悩む顔出しなしのひとり起業家
 - cta: なし（強い一文で締め、賛否のコメント余白）
-- approved: false
+- approved: true
 - created: 2026-11-12
 
 ### 本文
@@ -394,7 +394,7 @@ Threads投稿1本書くのに、1時間かかっていた。
 - slot: 昼
 - reader: Threads集客に悩む顔出しなしのひとり起業家
 - cta: なし（強い一文で締め、賛否のコメント余白）
-- approved: false
+- approved: true
 - created: 2026-11-12
 
 ### 本文
@@ -414,7 +414,7 @@ Threads投稿1本書くのに、1時間かかっていた。
 - slot: 夜
 - reader: 準備や遠慮で動けていない人
 - cta: なし
-- approved: false
+- approved: true
 - created: 2026-11-12
 
 ### 本文
@@ -474,7 +474,7 @@ Threadsから相談が来ない人の固定投稿には、共通している「�
 - slot: 昼
 - reader: Threads集客に悩む顔出しなしのひとり起業家
 - cta: なし（強い一文で締め、賛否のコメント余白）
-- approved: false
+- approved: true
 - created: 2026-11-12
 
 ### 本文
@@ -562,7 +562,7 @@ Threadsでそのまま使える「ネタ切れしない質問」10個まとめ�
 - slot: 昼
 - reader: Threads集客に悩む顔出しなしのひとり起業家
 - cta: なし（強い一文で締め、賛否のコメント余白）
-- approved: false
+- approved: true
 - created: 2026-11-12
 
 ### 本文
@@ -640,7 +640,7 @@ Threadsで絶対にやってはいけないのが、1投稿に話題を2つ入�
 - slot: 昼
 - reader: Threads集客に悩む顔出しなしのひとり起業家
 - cta: なし（強い一文で締め、賛否のコメント余白）
-- approved: false
+- approved: true
 - created: 2026-11-12
 
 ### 本文
@@ -721,7 +721,7 @@ Threadsでバズっている投稿の裏側、知ってますか。
 - slot: 昼
 - reader: Threads集客に悩む顔出しなしのひとり起業家
 - cta: なし（強い一文で締め、賛否のコメント余白）
-- approved: false
+- approved: true
 - created: 2026-11-12
 
 ### 本文
@@ -798,7 +798,7 @@ Threadsでバズっている投稿の裏側、知ってますか。
 - slot: 昼
 - reader: Threads集客に悩む顔出しなしのひとり起業家
 - cta: なし（強い一文で締め、賛否のコメント余白）
-- approved: false
+- approved: true
 - created: 2026-11-12
 
 ### 本文
@@ -881,7 +881,7 @@ Threadsのコメント返信、「ありがとうございます」だけで終�
 - slot: 昼
 - reader: Threads集客に悩む顔出しなしのひとり起業家
 - cta: なし（強い一文で締め、賛否のコメント余白）
-- approved: false
+- approved: true
 - created: 2026-11-12
 
 ### 本文
@@ -900,7 +900,7 @@ Threadsのコメント返信、「ありがとうございます」だけで終�
 - slot: 夜
 - reader: 準備や遠慮で動けていない人
 - cta: なし
-- approved: false
+- approved: true
 - created: 2026-11-12
 
 ### 本文
@@ -960,7 +960,7 @@ Threadsのコメント返信、「ありがとうございます」だけで終�
 - slot: 昼
 - reader: Threads集客に悩む顔出しなしのひとり起業家
 - cta: なし（強い一文で締め、賛否のコメント余白）
-- approved: false
+- approved: true
 - created: 2026-11-12
 
 ### 本文
