@@ -79,15 +79,15 @@ AIに絶対やらせてはいけない、Threads投稿の作業があります�
 - theme: 投稿前の1行目チェックリスト
 - type: ノウハウ：保存版チェックリスト型（1行目の型：テンプレ配布）
 - text_head: Threadsでそのまま使える、投稿前の1行目チェックリスト6つまとめました。
-- metrics_fetched: false
-- fetched_at: -
+- metrics_fetched: true
+- fetched_at: 2026-11-13 19:58
 - analyzed: false
-- likes: -
-- replies: -
-- reposts: -
-- quotes: -
-- shares: -
-- views: -
+- likes: 2
+- replies: 1
+- reposts: 0
+- quotes: 0
+- shares: 0
+- views: 175
 - comments: []
 
 ### 本文
