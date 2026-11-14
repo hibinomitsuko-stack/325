@@ -78,15 +78,15 @@ Threadsで閲覧数、いいね、コメントを増やすことしか考えて�
 - theme: 毎日投稿すれば伸びる、は間違い
 - type: 昼：常識破壊（1スレッド・強い言い切り）
 - text_head: 毎日投稿すれば伸びる、は間違いです。届かない投稿を毎日増やしても、届かない投稿が
-- metrics_fetched: false
-- fetched_at: -
+- metrics_fetched: true
+- fetched_at: 2026-11-14 19:25
 - analyzed: false
-- likes: -
-- replies: -
-- reposts: -
-- quotes: -
-- shares: -
-- views: -
+- likes: 1
+- replies: 0
+- reposts: 0
+- quotes: 0
+- shares: 0
+- views: 18
 - comments: []
 
 ### 本文
@@ -104,15 +104,15 @@ Threadsで閲覧数、いいね、コメントを増やすことしか考えて�
 - theme: 顔出しなしのプロフィールに入れる3つ
 - type: ノウハウ：禁止形（1行目の型：書き換え例）
 - text_head: Threadsのプロフィールに「よろしくお願いします」と書いている人、このままだ
-- metrics_fetched: false
-- fetched_at: -
+- metrics_fetched: true
+- fetched_at: 2026-11-14 19:25
 - analyzed: false
-- likes: -
-- replies: -
-- reposts: -
-- quotes: -
-- shares: -
-- views: -
+- likes: 1
+- replies: 3
+- reposts: 0
+- quotes: 0
+- shares: 0
+- views: 8
 - comments: []
 
 ### 本文
@@ -126,15 +126,15 @@ Threadsのプロフィールに「よろしくお願いします」と書いて�
 - theme: AIで投稿を作っても伸びない人は、頼む順番が逆
 - type: ノウハウ：常識否定×手順型（1行目の型：NG断言）
 - text_head: AIに絶対やらせてはいけない、Threads投稿の作業があります。それは、「Th
-- metrics_fetched: false
-- fetched_at: -
+- metrics_fetched: true
+- fetched_at: 2026-11-14 19:25
 - analyzed: false
-- likes: -
-- replies: -
-- reposts: -
-- quotes: -
-- shares: -
-- views: -
+- likes: 1
+- replies: 3
+- reposts: 0
+- quotes: 0
+- shares: 0
+- views: 18
 - comments: []
 
 ### 本文
