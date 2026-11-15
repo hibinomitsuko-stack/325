@@ -82,15 +82,15 @@ Threadsの閲覧が2桁しか行かない人、焦って投稿を消したり、
 - theme: フォロワー1,000人まで売れない、は思い込み
 - type: 昼：常識破壊（1スレッド・強い言い切り）
 - text_head: フォロワー1,000人になるまで売れない、は完全な思い込みです。指導を始めて1ヶ
-- metrics_fetched: false
-- fetched_at: -
+- metrics_fetched: true
+- fetched_at: 2026-11-15 19:53
 - analyzed: false
-- likes: -
-- replies: -
-- reposts: -
-- quotes: -
-- shares: -
-- views: -
+- likes: 1
+- replies: 0
+- reposts: 0
+- quotes: 0
+- shares: 0
+- views: 5
 - comments: []
 
 ### 本文
@@ -108,15 +108,15 @@ Threadsの閲覧が2桁しか行かない人、焦って投稿を消したり、
 - theme: コメントが1件もつかない人は、最後の1行で損している（目的別の締め方3つ）
 - type: ノウハウ：断定×目的別テンプレ（1行目の型：❌損してます系の断定）
 - text_head: Threadsでコメントが1件もつかない人、最後の1行で損してます。
-- metrics_fetched: false
-- fetched_at: -
+- metrics_fetched: true
+- fetched_at: 2026-11-15 19:53
 - analyzed: false
-- likes: -
-- replies: -
-- reposts: -
-- quotes: -
-- shares: -
-- views: -
+- likes: 1
+- replies: 3
+- reposts: 0
+- quotes: 0
+- shares: 0
+- views: 4
 - comments: []
 
 ### 本文
@@ -130,15 +130,15 @@ Threadsでコメントが1件もつかない人、最後の1行で損してま�
 - theme: 半年止まっていたアカウントを再開した本当の理由（矢印が自分に向いていた）
 - type: 体験：成長過程の公開型
 - text_head: Threadsで閲覧数、いいね、コメントを増やすことしか考えていない人、一生投稿
-- metrics_fetched: false
-- fetched_at: -
+- metrics_fetched: true
+- fetched_at: 2026-11-15 19:53
 - analyzed: false
-- likes: -
-- replies: -
-- reposts: -
-- quotes: -
-- shares: -
-- views: -
+- likes: 1
+- replies: 4
+- reposts: 0
+- quotes: 0
+- shares: 0
+- views: 4
 - comments: []
 
 ### 本文
