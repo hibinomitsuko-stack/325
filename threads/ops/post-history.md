@@ -85,15 +85,15 @@ Threads投稿1本書くのに、1時間かかっていた。
 - theme: 顔出しなしで、スレッズから最初の仕事・相談が来た人に聞きたい
 - type: 共感・参加型（質問）（1行目の型：質問・参加）
 - text_head: 顔出しなしでThreadsをやっていて、仕事や相談の「最初の1件」が来た人に聞き
-- metrics_fetched: false
-- fetched_at: -
+- metrics_fetched: true
+- fetched_at: 2026-11-16 20:17
 - analyzed: false
-- likes: -
-- replies: -
-- reposts: -
-- quotes: -
-- shares: -
-- views: -
+- likes: 2
+- replies: 0
+- reposts: 0
+- quotes: 0
+- shares: 0
+- views: 44
 - comments: []
 
 ### 本文
@@ -111,15 +111,15 @@ Threads投稿1本書くのに、1時間かかっていた。
 - theme: バズれば売れる、は危険
 - type: 昼：常識破壊（1スレッド・強い言い切り）
 - text_head: バズれば売れると思っているなら、危険です。それは、集客と商売を混同しています。1
-- metrics_fetched: false
-- fetched_at: -
+- metrics_fetched: true
+- fetched_at: 2026-11-16 20:17
 - analyzed: false
-- likes: -
-- replies: -
-- reposts: -
-- quotes: -
-- shares: -
-- views: -
+- likes: 0
+- replies: 0
+- reposts: 0
+- quotes: 0
+- shares: 0
+- views: 56
 - comments: []
 
 ### 本文
@@ -138,15 +138,15 @@ Threads投稿1本書くのに、1時間かかっていた。
 - theme: 最近スレッズが急に伸びない人が、今やること3つ
 - type: ノウハウ：共通不安の代弁＋即実行型（1行目の型：途中経過の数字）
 - text_head: Threadsの閲覧が2桁しか行かない人、焦って投稿を消したり、時間帯を調べ回っ
-- metrics_fetched: false
-- fetched_at: -
+- metrics_fetched: true
+- fetched_at: 2026-11-16 20:17
 - analyzed: false
-- likes: -
-- replies: -
-- reposts: -
-- quotes: -
-- shares: -
-- views: -
+- likes: 8
+- replies: 5
+- reposts: 0
+- quotes: 0
+- shares: 0
+- views: 1884
 - comments: []
 
 ### 本文
@@ -160,15 +160,15 @@ Threadsの閲覧が2桁しか行かない人、焦って投稿を消したり、
 - theme: 「効率が悪いだけ」と夫に言われて、修正9回が2回になった話
 - type: 体験：出来事→感情→失敗→工夫→結果→一言（1行目の型：言われた一言）
 - text_head: 「そのクライアント、悪くないよ。きみの効率が悪いだけ」修正が9回目に入って涙目に
-- metrics_fetched: false
-- fetched_at: -
+- metrics_fetched: true
+- fetched_at: 2026-11-16 20:17
 - analyzed: false
-- likes: -
-- replies: -
-- reposts: -
-- quotes: -
-- shares: -
-- views: -
+- likes: 1
+- replies: 2
+- reposts: 0
+- quotes: 0
+- shares: 0
+- views: 33
 - comments: []
 
 ### 本文
