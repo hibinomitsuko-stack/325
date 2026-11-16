@@ -1,5 +1,29 @@
 # 投稿履歴（ポスターが追記／フェッチャーが数字を更新／アナリストが analyzed を更新）
 
+## 2026-11-16 20:07
+
+- post_id: 17910986031664228
+- reply_id: 18059084048584635,18016044362994693
+- queue_id: Q-20261110-02
+- theme: 受講生さん：1本1時間かかっていた投稿が12分になった
+- type: 体験：受講生の変化（数字の落差）
+- text_head: Threads投稿1本書くのに、1時間かかっていた。独学でThreadsを4ヶ月
+- metrics_fetched: false
+- fetched_at: -
+- analyzed: false
+- likes: -
+- replies: -
+- reposts: -
+- quotes: -
+- shares: -
+- views: -
+- comments: []
+
+### 本文
+Threads投稿1本書くのに、1時間かかっていた。
+独学でThreadsを4ヶ月続けても、成約はゼロ。
+受講生さんが最初に話してくれた悩みです。
+
 ## 2026-11-16 12:07
 
 - post_id: 18170792173488659
