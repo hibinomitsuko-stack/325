@@ -82,15 +82,15 @@
 - theme: 受講生さん：1本1時間かかっていた投稿が12分になった
 - type: 体験：受講生の変化（数字の落差）
 - text_head: Threads投稿1本書くのに、1時間かかっていた。独学でThreadsを4ヶ月
-- metrics_fetched: false
-- fetched_at: -
+- metrics_fetched: true
+- fetched_at: 2026-11-17 20:52
 - analyzed: false
-- likes: -
-- replies: -
-- reposts: -
-- quotes: -
-- shares: -
-- views: -
+- likes: 1
+- replies: 2
+- reposts: 0
+- quotes: 0
+- shares: 0
+- views: 28
 - comments: []
 
 ### 本文
@@ -106,15 +106,15 @@ Threads投稿1本書くのに、1時間かかっていた。
 - theme: 有益なだけの人は忘れられる
 - type: 昼：常識破壊（1スレッド・強い言い切り）
 - text_head: 有益な投稿だけを続けても、選ばれません。有益な情報は、検索すれば出てきます。AI
-- metrics_fetched: false
-- fetched_at: -
+- metrics_fetched: true
+- fetched_at: 2026-11-17 20:52
 - analyzed: false
-- likes: -
-- replies: -
-- reposts: -
-- quotes: -
-- shares: -
-- views: -
+- likes: 1
+- replies: 0
+- reposts: 0
+- quotes: 0
+- shares: 0
+- views: 7
 - comments: []
 
 ### 本文
@@ -132,15 +132,15 @@ Threads投稿1本書くのに、1時間かかっていた。
 - theme: その1行目、こう書き換えると読まれます（失敗例→改善例3つ）
 - type: ノウハウ：書き換え例・添削型（1行目の型：❌損してます）
 - text_head: ❌Threads1行目でこれやってる人、損してます・「今日は◯◯についてお話しし
-- metrics_fetched: false
-- fetched_at: -
+- metrics_fetched: true
+- fetched_at: 2026-11-17 20:52
 - analyzed: false
-- likes: -
-- replies: -
-- reposts: -
-- quotes: -
-- shares: -
-- views: -
+- likes: 1
+- replies: 2
+- reposts: 0
+- quotes: 0
+- shares: 0
+- views: 14
 - comments: []
 
 ### 本文
