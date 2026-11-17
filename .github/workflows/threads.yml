@@ -1,7 +1,7 @@
 # Threads 自動運用（投稿と数字の回収）
 # - 投稿：cron-job.org が毎日 6:33 と 20:07（日本時間）に GitHub API 経由で「Run workflow」（task=post）を起動する
 #   （GitHub の定期実行は数時間遅れることがあるため、投稿は外部の予約サービスから起動する）
-# - 回収：毎日 12:17（日本時間）に GitHub の定期実行で、24時間以上たった投稿の数字とコメントを回収
+# - 回収：毎日 12:17（日本時間）に GitHub の定期実行で、投稿の1日後と7日後の数字とコメントを回収（1日後の数字は *_1d に残る）
 # - 手動実行：Actions タブ → Threads 自動運用 → Run workflow（dry_run で投稿せずに中身だけ確認できる）
 # 必要な設定：リポジトリの Settings → Secrets and variables → Actions に THREADS_ACCESS_TOKEN
 name: Threads 自動運用
@@ -12,11 +12,11 @@ on:
   workflow_dispatch:
     inputs:
       task:
-        description: "post（投稿）か fetch（数字の回収）"
+        description: "post（投稿）／fetch（数字の回収：1日後と7日後）／refresh（全投稿を今の数字に更新・分析前用）"
         required: true
         default: post
         type: choice
-        options: [post, fetch]
+        options: [post, fetch, refresh]
       dry_run:
         description: "投稿せずに、次に出る原稿を表示するだけ"
         required: false
@@ -63,6 +63,10 @@ jobs:
       - name: 数字とコメントの回収
         if: steps.what.outputs.task == 'fetch'
         run: python3 threads/scripts/threads_api.py fetch
+
+      - name: 全投稿の数字を今の値に更新（分析前）
+        if: steps.what.outputs.task == 'refresh'
+        run: python3 threads/scripts/threads_api.py fetch --refresh
 
       - name: 結果をリポジトリに保存
         if: always()

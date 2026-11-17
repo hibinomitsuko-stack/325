@@ -13,9 +13,14 @@ description: 投稿後のエンゲージメント（閲覧・いいね・コメ�
    - 成功した投稿は `metrics_fetched: true` に変わる。失敗したものは false のまま次回へ
 2. 出力の件数を確認し、[質問] コメントがあれば一覧にして報告する（アナリストの最優先ネタになる）
 
+## 2回の回収（2026-11-18 追加）
+- 1回目：投稿から24時間後。metrics_fetched: true になる
+- 2回目：投稿から7日後。1回目の数字は views_1d などに残り、本欄（views など）は7日後の数字に更新。final_fetched: true になる
+- 分析の直前は `python3 threads/scripts/threads_api.py fetch --refresh`（GitHub Actions では task=refresh）で、7日未満の投稿も今の数字に更新する
+
 ## ルール
 - 24時間未満の投稿は取りにいかない（数字が動いている途中のため）
-- 取得済みの投稿を再取得しない
+- 7日後の回収が済んだ投稿（final_fetched: true）は再取得しない
 - APIエラーで止まっても手で数字を埋めない
 
 ## 保存（クラウド実行時は必須）

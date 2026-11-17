@@ -216,50 +216,94 @@ def cmd_post(args):
     print(f"POSTED: post_id={post_id} reply_id={reply_id} at {now} JST")
 
 
+METRICS = ("likes", "replies", "reposts", "quotes", "shares", "views")
+
+
+def put_field(entry: str, key: str, value: str) -> str:
+    """フィールドを更新。無ければ「- comments:」（なければ「### 本文」）の直前に差し込む。"""
+    pat = rf"(?m)^- {re.escape(key)}:.*$"
+    if re.search(pat, entry):
+        return re.sub(pat, lambda _: f"- {key}: {value}", entry, count=1)
+    for anchor in ("\n- comments:", "\n### 本文"):
+        if anchor in entry:
+            return entry.replace(anchor, f"\n- {key}: {value}" + anchor, 1)
+    return entry.rstrip("\n") + f"\n- {key}: {value}\n"
+
+
+def _collect(pid: str, entry: str):
+    ins = call("GET", f"{pid}/insights", {"metric": ",".join(METRICS)})
+    vals = {d["name"]: (d.get("values") or [{}])[0].get("value", d.get("total_value", {}).get("value"))
+            for d in ins.get("data", [])}
+    reps = call("GET", f"{pid}/replies", {"fields": "id,text,timestamp,username"}).get("data", [])
+    lines = []
+    for r in reps:
+        t = (r.get("text") or "").replace("\n", " ")
+        if r.get("id") in (field(entry, "reply_id") or "").split(","):
+            continue  # 自分のセルフリプライは除外
+        tag = "[質問]" if any(w in t for w in QUESTION_WORDS) else "[感想]"
+        lines.append(f"  - {tag} {r.get('timestamp', '')[:16]} @{r.get('username', '?')}: {t}")
+    return vals, lines
+
+
+def _apply(entry: str, vals: dict, lines: list, now: datetime) -> str:
+    for k in METRICS:
+        entry = put_field(entry, k, str(vals.get(k, "-")))
+    entry = re.sub(r"(?ms)^- comments:.*?(?=^- |^### |\Z)",
+                   lambda _: "- comments:" + (" []\n\n" if not lines else "\n" + "\n".join(lines) + "\n\n"),
+                   entry, count=1)
+    return put_field(entry, "fetched_at", now.strftime("%Y-%m-%d %H:%M"))
+
+
 def cmd_fetch(args):
+    """数字の回収。
+    1回目：投稿から24時間後（metrics_fetched: false → true）
+    2回目：投稿から7日後（1回目の数字は *_1d として残し、本欄を7日後の数字に更新。final_fetched: true）
+    --refresh：7日たっていない投稿も含め、今の数字に更新する（分析の直前に使う。1回目の数字は *_1d に残す）
+    """
     text = HISTORY.read_text(encoding="utf-8")
     head, h = split_entries(text)
     now = datetime.now(JST)
-    done, skipped, failed = 0, 0, 0
+    first, final, refreshed, skipped, failed = 0, 0, 0, 0, 0
     for i, e in enumerate(h):
-        if (field(e, "metrics_fetched") or "").lower() != "false":
-            continue
         m = re.match(r"## (\d{4}-\d{2}-\d{2} \d{2}:\d{2})", e)
-        pid = field(e, "post_id")
-        if not m or not pid:
+        pid = (field(e, "post_id") or "").strip()
+        if not m or not pid or pid == "-":
             continue
-        posted = datetime.strptime(m.group(1), "%Y-%m-%d %H:%M").replace(tzinfo=JST)
-        if now - posted < timedelta(hours=args.min_age_hours):
-            skipped += 1
+        age = now - datetime.strptime(m.group(1), "%Y-%m-%d %H:%M").replace(tzinfo=JST)
+        fetched = (field(e, "metrics_fetched") or "").lower() == "true"
+        is_final = (field(e, "final_fetched") or "").lower() == "true"
+        if not fetched:
+            if age < timedelta(hours=args.min_age_hours):
+                skipped += 1
+                continue
+            stage = "first"
+        elif not is_final and age >= timedelta(days=args.final_age_days):
+            stage = "final"
+        elif args.refresh and not is_final:
+            stage = "refresh"
+        else:
             continue
         try:
-            ins = call("GET", f"{pid}/insights",
-                       {"metric": "views,likes,replies,reposts,quotes,shares"})
-            vals = {d["name"]: (d.get("values") or [{}])[0].get("value", d.get("total_value", {}).get("value"))
-                    for d in ins.get("data", [])}
-            reps = call("GET", f"{pid}/replies", {"fields": "id,text,timestamp,username"}).get("data", [])
-        except Exception as ex:  # noqa: BLE001  false のまま次回へ
+            vals, lines = _collect(pid, e)
+        except Exception as ex:  # noqa: BLE001  次回に回す
             print(f"WARN: {pid} の取得失敗（次回に回します）: {ex}", file=sys.stderr)
             failed += 1
             continue
-        for k in ("likes", "replies", "reposts", "quotes", "shares", "views"):
-            e = set_field(e, k, str(vals.get(k, "-")))
-        lines = []
-        for r in reps:
-            t = (r.get("text") or "").replace("\n", " ")
-            if r.get("id") in (field(e, "reply_id") or "").split(","):
-                continue  # 自分のセルフリプライは除外
-            tag = "[質問]" if any(w in t for w in QUESTION_WORDS) else "[感想]"
-            lines.append(f"  - {tag} {r.get('timestamp', '')[:16]} @{r.get('username', '?')}: {t}")
-        e = re.sub(r"(?ms)^- comments:.*?(?=^- |^### |\Z)",
-                   lambda _: "- comments:" + (" []\n\n" if not lines else "\n" + "\n".join(lines) + "\n\n"),
-                   e, count=1)
-        e = set_field(e, "metrics_fetched", "true")
-        e = set_field(e, "fetched_at", now.strftime("%Y-%m-%d %H:%M"))
+        if stage in ("final", "refresh") and field(e, "views_1d") is None:
+            for k in METRICS:
+                e = put_field(e, f"{k}_1d", field(e, k) or "-")
+        e = _apply(e, vals, lines, now)
+        if stage == "first":
+            e = put_field(e, "metrics_fetched", "true")
+            first += 1
+        elif stage == "final":
+            e = put_field(e, "final_fetched", "true")
+            final += 1
+        else:
+            refreshed += 1
         h[i] = e
-        done += 1
     HISTORY.write_text(head + "".join(h), encoding="utf-8")
-    print(f"FETCHED: {done} 件 / 24h未満で保留: {skipped} 件 / 失敗: {failed} 件")
+    print(f"FETCHED: 1回目 {first} 件 / 7日後 {final} 件 / 更新 {refreshed} 件 / 24h未満で保留 {skipped} 件 / 失敗 {failed} 件")
 
 
 def cmd_search(args):
@@ -289,6 +333,8 @@ def main():
     sp.set_defaults(fn=cmd_post)
     sf = sub.add_parser("fetch")
     sf.add_argument("--min-age-hours", type=float, default=24)
+    sf.add_argument("--final-age-days", type=float, default=7)
+    sf.add_argument("--refresh", action="store_true", help="7日未満の投稿も今の数字に更新（分析前に使う）")
     sf.set_defaults(fn=cmd_fetch)
     ss = sub.add_parser("search")
     ss.add_argument("query")
