@@ -1,5 +1,28 @@
 # 投稿履歴（ポスターが追記／フェッチャーが数字を更新／アナリストが analyzed を更新）
 
+## 2026-11-18 20:08
+
+- post_id: 18106943756204293
+- reply_id: 17991612876064527,17956718328328402,18080732147748626
+- queue_id: Q-20261110-04
+- theme: 「1万円だと、何を削りましょうか？」値下げされなくなった質問
+- type: 体験：言われた一言
+- text_head: 「高いなあ。1万円じゃダメ？」3万円の見積もりを出した私に、クライアントが言いま
+- metrics_fetched: false
+- fetched_at: -
+- analyzed: false
+- likes: -
+- replies: -
+- reposts: -
+- quotes: -
+- shares: -
+- views: -
+- comments: []
+
+### 本文
+「高いなあ。1万円じゃダメ？」
+3万円の見積もりを出した私に、クライアントが言いました。
+
 ## 2026-11-18 12:07
 
 - post_id: 17979129780140421
@@ -57,15 +80,15 @@ Threadsから相談が来ない人の固定投稿には、共通している「�
 - theme: 学んでいたのではなく、準備へ逃げていた
 - type: 体験：過去の自分への毒
 - text_head: あの頃の私は、学んでいたのではありません。失敗しないために、準備へ逃げていただけ
-- metrics_fetched: false
-- fetched_at: -
+- metrics_fetched: true
+- fetched_at: 2026-11-18 20:42
 - analyzed: false
-- likes: -
-- replies: -
-- reposts: -
-- quotes: -
-- shares: -
-- views: -
+- likes: 0
+- replies: 3
+- reposts: 0
+- quotes: 0
+- shares: 0
+- views: 12
 - comments: []
 
 ### 本文
@@ -79,15 +102,15 @@ Threadsから相談が来ない人の固定投稿には、共通している「�
 - theme: いい子ちゃん投稿だけでは売れない
 - type: 昼：常識破壊（1スレッド・強い言い切り）
 - text_head: 誰にでも好かれたい「いい子ちゃん投稿」だけしていても、売れません。いい子ちゃんす
-- metrics_fetched: false
-- fetched_at: -
+- metrics_fetched: true
+- fetched_at: 2026-11-18 20:42
 - analyzed: false
-- likes: -
-- replies: -
-- reposts: -
-- quotes: -
-- shares: -
-- views: -
+- likes: 2
+- replies: 0
+- reposts: 0
+- quotes: 0
+- shares: 0
+- views: 12
 - comments: []
 
 ### 本文
@@ -106,16 +129,17 @@ Threadsから相談が来ない人の固定投稿には、共通している「�
 - theme: 閲覧はあるのに相談が来ない人へ（価値提供と、最後の案内の作り方）
 - type: ノウハウ：悩み提示→手順→体験→無料個別相談
 - text_head: はっきり言うけど、Threads閲覧が増えても相談が来ないのは、投稿の中身が悪い
-- metrics_fetched: false
-- fetched_at: -
+- metrics_fetched: true
+- fetched_at: 2026-11-18 20:42
 - analyzed: false
-- likes: -
-- replies: -
-- reposts: -
-- quotes: -
-- shares: -
-- views: -
-- comments: []
+- likes: 1
+- replies: 5
+- reposts: 0
+- quotes: 0
+- shares: 0
+- views: 12
+- comments:
+  - [質問] 2026-11-17T23:13 @business_threads_com: 表示もフォロワーも増えているのに、相談が来ないという話、すごく分かります。自分の実験アカウントも、表示は伸びてもフォローに繋がらないのが一番の課題でした。変えた2つのこと、よかったら教えてもらえませんか？自分のアカウントでも試してみたいです。
 
 ### 本文
 はっきり言うけど、Threads閲覧が増えても相談が来ないのは、投稿の中身が悪いからじゃないんです。
@@ -472,14 +496,21 @@ Threadsでそのまま使える、投稿前の1行目チェックリスト6つ�
 - type: ノウハウ：つぶやき→教育型（焼き直し元：一般の「反応ゼロ」つぶやき／自分の4月の投稿）（1行目の型：本音・共通不安）
 - text_head: 最近Threads、毎日投稿してるのに閲覧は2桁。いいねは、自分で押した「1」だ
 - metrics_fetched: true
-- fetched_at: 2026-11-12 20:10
+- fetched_at: 2026-11-18 20:42
 - analyzed: false
 - likes: 0
 - replies: 3
 - reposts: 0
 - quotes: 0
 - shares: 0
-- views: 23
+- views: 33
+- likes_1d: 0
+- replies_1d: 3
+- reposts_1d: 0
+- quotes_1d: 0
+- shares_1d: 0
+- views_1d: 23
+- final_fetched: true
 - comments: []
 
 ### 本文
@@ -498,14 +529,21 @@ Threadsでそのまま使える、投稿前の1行目チェックリスト6つ�
 - type: Before→After（1行目の型：断言＋不足）
 - text_head: 断言します。Threadsでいくら投稿しても集客できない人、1行目だけ変えて下さ
 - metrics_fetched: true
-- fetched_at: 2026-11-12 20:10
+- fetched_at: 2026-11-18 20:42
 - analyzed: false
 - likes: 1
 - replies: 4
 - reposts: 0
 - quotes: 0
 - shares: 0
-- views: 707
+- views: 724
+- likes_1d: 1
+- replies_1d: 4
+- reposts_1d: 0
+- quotes_1d: 0
+- shares_1d: 0
+- views_1d: 707
+- final_fetched: true
 - comments: []
 
 ### 本文
@@ -520,14 +558,21 @@ Threadsでそのまま使える、投稿前の1行目チェックリスト6つ�
 - type: ノウハウ：テンプレ集×許可型（焼き直し元：@shoko_hikaru_kotoba フックまとめ）（1行目の型：許可×実績×まとめ）
 - text_head: そのまま使ってOKです！前のアカウントで94万閲覧まで伸びた私の投稿から、1行目
 - metrics_fetched: true
-- fetched_at: 2026-11-12 20:10
+- fetched_at: 2026-11-18 20:42
 - analyzed: false
 - likes: 1
 - replies: 3
 - reposts: 0
 - quotes: 0
 - shares: 0
-- views: 31
+- views: 41
+- likes_1d: 1
+- replies_1d: 3
+- reposts_1d: 0
+- quotes_1d: 0
+- shares_1d: 0
+- views_1d: 31
+- final_fetched: true
 - comments: []
 
 ### 本文
@@ -546,14 +591,21 @@ Threadsでそのまま使える、投稿前の1行目チェックリスト6つ�
 - type: 共感・ユーモア（問いかけ）（1行目の型：共感あるある情景）
 - text_head: 台本を書いて、撮って、自分の声を聞いて、そっと消す。リール、今日も上がらなかった
 - metrics_fetched: true
-- fetched_at: 2026-11-11 19:57
+- fetched_at: 2026-11-18 20:42
 - analyzed: false
 - likes: 0
 - replies: 0
 - reposts: 0
 - quotes: 0
 - shares: 0
-- views: 17
+- views: 25
+- likes_1d: 0
+- replies_1d: 0
+- reposts_1d: 0
+- quotes_1d: 0
+- shares_1d: 0
+- views_1d: 17
+- final_fetched: true
 - comments: []
 
 ### 本文
