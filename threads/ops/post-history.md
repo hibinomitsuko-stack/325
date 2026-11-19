@@ -79,15 +79,15 @@ Threadsでそのまま使える「ネタ切れしない質問」10個まとめ�
 - theme: 「1万円だと、何を削りましょうか？」値下げされなくなった質問
 - type: 体験：言われた一言
 - text_head: 「高いなあ。1万円じゃダメ？」3万円の見積もりを出した私に、クライアントが言いま
-- metrics_fetched: false
-- fetched_at: -
+- metrics_fetched: true
+- fetched_at: 2026-11-19 20:39
 - analyzed: false
-- likes: -
-- replies: -
-- reposts: -
-- quotes: -
-- shares: -
-- views: -
+- likes: 0
+- replies: 3
+- reposts: 0
+- quotes: 0
+- shares: 0
+- views: 9
 - comments: []
 
 ### 本文
@@ -102,15 +102,15 @@ Threadsでそのまま使える「ネタ切れしない質問」10個まとめ�
 - theme: アルゴリズムのせいにしている限り、文章は直らない
 - type: 昼：常識破壊（1スレッド・強い言い切り）
 - text_head: 閲覧数が少ない原因を、アルゴリズムのせいにしていませんか。アルゴリズムが変わって
-- metrics_fetched: false
-- fetched_at: -
+- metrics_fetched: true
+- fetched_at: 2026-11-19 20:39
 - analyzed: false
-- likes: -
-- replies: -
-- reposts: -
-- quotes: -
-- shares: -
-- views: -
+- likes: 1
+- replies: 0
+- reposts: 0
+- quotes: 0
+- shares: 0
+- views: 12
 - comments: []
 
 ### 本文
@@ -129,15 +129,15 @@ Threadsでそのまま使える「ネタ切れしない質問」10個まとめ�
 - theme: 相談が来ない人の固定投稿に共通している3つの抜け
 - type: ノウハウ：共通点N個
 - text_head: Threadsから相談が来ない人の固定投稿には、共通している「抜け」が3つありま
-- metrics_fetched: false
-- fetched_at: -
+- metrics_fetched: true
+- fetched_at: 2026-11-19 20:39
 - analyzed: false
-- likes: -
-- replies: -
-- reposts: -
-- quotes: -
-- shares: -
-- views: -
+- likes: 0
+- replies: 5
+- reposts: 0
+- quotes: 0
+- shares: 0
+- views: 116
 - comments: []
 
 ### 本文
@@ -522,14 +522,21 @@ Threadsのプロフィールに「よろしくお願いします」と書いて�
 - type: ノウハウ：常識否定×手順型（1行目の型：NG断言）
 - text_head: AIに絶対やらせてはいけない、Threads投稿の作業があります。それは、「Th
 - metrics_fetched: true
-- fetched_at: 2026-11-14 19:25
+- fetched_at: 2026-11-19 20:39
 - analyzed: false
 - likes: 1
 - replies: 3
 - reposts: 0
 - quotes: 0
 - shares: 0
-- views: 18
+- views: 31
+- likes_1d: 1
+- replies_1d: 3
+- reposts_1d: 0
+- quotes_1d: 0
+- shares_1d: 0
+- views_1d: 18
+- final_fetched: true
 - comments: []
 
 ### 本文
@@ -545,14 +552,21 @@ AIに絶対やらせてはいけない、Threads投稿の作業があります�
 - type: ノウハウ：保存版チェックリスト型（1行目の型：テンプレ配布）
 - text_head: Threadsでそのまま使える、投稿前の1行目チェックリスト6つまとめました。
 - metrics_fetched: true
-- fetched_at: 2026-11-13 19:58
+- fetched_at: 2026-11-19 20:39
 - analyzed: false
 - likes: 2
 - replies: 1
 - reposts: 0
 - quotes: 0
 - shares: 0
-- views: 175
+- views: 185
+- likes_1d: 2
+- replies_1d: 1
+- reposts_1d: 0
+- quotes_1d: 0
+- shares_1d: 0
+- views_1d: 175
+- final_fetched: true
 - comments: []
 
 ### 本文
