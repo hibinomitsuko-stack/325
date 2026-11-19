@@ -1,5 +1,28 @@
 # 投稿履歴（ポスターが追記／フェッチャーが数字を更新／アナリストが analyzed を更新）
 
+## 2026-11-19 20:07
+
+- post_id: 18113485514182960
+- reply_id: 18128285461675869,18009636533792107
+- queue_id: Q-20261110-06
+- theme: 受講生さん：リール制作が苦痛だった人が、7投稿目で46万閲覧
+- type: 体験：受講生の変化（途中経過の数字）
+- text_head: Threadsを始めて、7投稿目。閲覧数は、46万回でした。
+- metrics_fetched: false
+- fetched_at: -
+- analyzed: false
+- likes: -
+- replies: -
+- reposts: -
+- quotes: -
+- shares: -
+- views: -
+- comments: []
+
+### 本文
+Threadsを始めて、7投稿目。
+閲覧数は、46万回でした。
+
 ## 2026-11-19 12:07
 
 - post_id: 18083285603443701
