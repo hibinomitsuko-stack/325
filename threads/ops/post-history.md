@@ -79,15 +79,15 @@ Threadsの閲覧が伸びない人の投稿には、話題が2つ入っていま
 - theme: 受講生さん：リール制作が苦痛だった人が、7投稿目で46万閲覧
 - type: 体験：受講生の変化（途中経過の数字）
 - text_head: Threadsを始めて、7投稿目。閲覧数は、46万回でした。
-- metrics_fetched: false
-- fetched_at: -
+- metrics_fetched: true
+- fetched_at: 2026-11-20 20:39
 - analyzed: false
-- likes: -
-- replies: -
-- reposts: -
-- quotes: -
-- shares: -
-- views: -
+- likes: 2
+- replies: 2
+- reposts: 0
+- quotes: 0
+- shares: 0
+- views: 65
 - comments: []
 
 ### 本文
@@ -102,15 +102,15 @@ Threadsを始めて、7投稿目。
 - theme: 「とりあえず投稿」はただの作業
 - type: 昼：常識破壊（1スレッド・強い言い切り）
 - text_head: 「とりあえず投稿」は、発信ではありません。ただの作業です。今日の投稿を、誰に、何
-- metrics_fetched: false
-- fetched_at: -
+- metrics_fetched: true
+- fetched_at: 2026-11-20 20:39
 - analyzed: false
-- likes: -
-- replies: -
-- reposts: -
-- quotes: -
-- shares: -
-- views: -
+- likes: 0
+- replies: 0
+- reposts: 0
+- quotes: 0
+- shares: 0
+- views: 9
 - comments: []
 
 ### 本文
@@ -128,15 +128,15 @@ Threadsを始めて、7投稿目。
 - theme: ネタ切れしない、自分の体験を掘り出す質問10個
 - type: ノウハウ：テンプレ配布
 - text_head: Threadsでそのまま使える「ネタ切れしない質問」10個まとめました。
-- metrics_fetched: false
-- fetched_at: -
+- metrics_fetched: true
+- fetched_at: 2026-11-20 20:39
 - analyzed: false
-- likes: -
-- replies: -
-- reposts: -
-- quotes: -
-- shares: -
-- views: -
+- likes: 0
+- replies: 3
+- reposts: 0
+- quotes: 0
+- shares: 0
+- views: 140
 - comments: []
 
 ### 本文
@@ -523,14 +523,21 @@ Threadsでコメントが1件もつかない人、最後の1行で損してま�
 - type: 体験：成長過程の公開型
 - text_head: Threadsで閲覧数、いいね、コメントを増やすことしか考えていない人、一生投稿
 - metrics_fetched: true
-- fetched_at: 2026-11-15 19:53
+- fetched_at: 2026-11-20 20:39
 - analyzed: false
 - likes: 1
 - replies: 4
 - reposts: 0
 - quotes: 0
 - shares: 0
-- views: 4
+- views: 25
+- likes_1d: 1
+- replies_1d: 4
+- reposts_1d: 0
+- quotes_1d: 0
+- shares_1d: 0
+- views_1d: 4
+- final_fetched: true
 - comments: []
 
 ### 本文
@@ -545,14 +552,21 @@ Threadsで閲覧数、いいね、コメントを増やすことしか考えて�
 - type: 昼：常識破壊（1スレッド・強い言い切り）
 - text_head: 毎日投稿すれば伸びる、は間違いです。届かない投稿を毎日増やしても、届かない投稿が
 - metrics_fetched: true
-- fetched_at: 2026-11-14 19:25
+- fetched_at: 2026-11-20 20:39
 - analyzed: false
 - likes: 1
 - replies: 0
 - reposts: 0
 - quotes: 0
 - shares: 0
-- views: 18
+- views: 36
+- likes_1d: 1
+- replies_1d: 0
+- reposts_1d: 0
+- quotes_1d: 0
+- shares_1d: 0
+- views_1d: 18
+- final_fetched: true
 - comments: []
 
 ### 本文
@@ -571,14 +585,21 @@ Threadsで閲覧数、いいね、コメントを増やすことしか考えて�
 - type: ノウハウ：禁止形（1行目の型：書き換え例）
 - text_head: Threadsのプロフィールに「よろしくお願いします」と書いている人、このままだ
 - metrics_fetched: true
-- fetched_at: 2026-11-14 19:25
+- fetched_at: 2026-11-20 20:39
 - analyzed: false
 - likes: 1
 - replies: 3
 - reposts: 0
 - quotes: 0
 - shares: 0
-- views: 8
+- views: 28
+- likes_1d: 1
+- replies_1d: 3
+- reposts_1d: 0
+- quotes_1d: 0
+- shares_1d: 0
+- views_1d: 8
+- final_fetched: true
 - comments: []
 
 ### 本文
