@@ -78,15 +78,15 @@ Threadsでバズっている型を真似しても閲覧が伸びない人、型�
 - theme: AIは書かせるな、質問させろ
 - type: 昼：常識破壊（1スレッド・強い言い切り）
 - text_head: AIで時短できない人は、AIを「文章を書く人」として使っています。AIは、「質問
-- metrics_fetched: false
-- fetched_at: -
+- metrics_fetched: true
+- fetched_at: 2026-11-21 20:01
 - analyzed: false
-- likes: -
-- replies: -
-- reposts: -
-- quotes: -
-- shares: -
-- views: -
+- likes: 0
+- replies: 0
+- reposts: 0
+- quotes: 0
+- shares: 0
+- views: 2
 - comments: []
 
 ### 本文
@@ -105,15 +105,15 @@ AIに聞かせる人だけが、自分の言葉を手に入れます。
 - theme: スレッズで絶対にやってはいけない、1投稿に話題を2つ入れること
 - type: ノウハウ：NG断言
 - text_head: Threadsの閲覧が伸びない人の投稿には、話題が2つ入っています。1つに絞るだ
-- metrics_fetched: false
-- fetched_at: -
+- metrics_fetched: true
+- fetched_at: 2026-11-21 20:01
 - analyzed: false
-- likes: -
-- replies: -
-- reposts: -
-- quotes: -
-- shares: -
-- views: -
+- likes: 0
+- replies: 3
+- reposts: 0
+- quotes: 0
+- shares: 0
+- views: 12
 - comments: []
 
 ### 本文
@@ -523,14 +523,21 @@ Threadsの閲覧が2桁しか行かない人、焦って投稿を消したり、
 - type: 昼：常識破壊（1スレッド・強い言い切り）
 - text_head: フォロワー1,000人になるまで売れない、は完全な思い込みです。指導を始めて1ヶ
 - metrics_fetched: true
-- fetched_at: 2026-11-15 19:53
+- fetched_at: 2026-11-21 20:01
 - analyzed: false
 - likes: 1
 - replies: 0
 - reposts: 0
 - quotes: 0
 - shares: 0
-- views: 5
+- views: 28
+- likes_1d: 1
+- replies_1d: 0
+- reposts_1d: 0
+- quotes_1d: 0
+- shares_1d: 0
+- views_1d: 5
+- final_fetched: true
 - comments: []
 
 ### 本文
@@ -549,14 +556,21 @@ Threadsの閲覧が2桁しか行かない人、焦って投稿を消したり、
 - type: ノウハウ：断定×目的別テンプレ（1行目の型：❌損してます系の断定）
 - text_head: Threadsでコメントが1件もつかない人、最後の1行で損してます。
 - metrics_fetched: true
-- fetched_at: 2026-11-15 19:53
+- fetched_at: 2026-11-21 20:01
 - analyzed: false
 - likes: 1
 - replies: 3
 - reposts: 0
 - quotes: 0
 - shares: 0
-- views: 4
+- views: 23
+- likes_1d: 1
+- replies_1d: 3
+- reposts_1d: 0
+- quotes_1d: 0
+- shares_1d: 0
+- views_1d: 4
+- final_fetched: true
 - comments: []
 
 ### 本文
