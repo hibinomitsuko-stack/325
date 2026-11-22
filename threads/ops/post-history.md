@@ -80,15 +80,15 @@
 - theme: 顔出ししない理由を教えてください（参加型）
 - type: 共感・参加型（質問）
 - text_head: 顔出しなしで発信している人に、聞いてみたいです。顔を出さない理由は、何ですか？
-- metrics_fetched: false
-- fetched_at: -
+- metrics_fetched: true
+- fetched_at: 2026-11-22 20:24
 - analyzed: false
-- likes: -
-- replies: -
-- reposts: -
-- quotes: -
-- shares: -
-- views: -
+- likes: 0
+- replies: 2
+- reposts: 0
+- quotes: 0
+- shares: 0
+- views: 4
 - comments: []
 
 ### 本文
@@ -103,15 +103,15 @@
 - theme: プロンプトを100個集めても経験は言葉にならない
 - type: 昼：常識破壊（1スレッド・強い言い切り）
 - text_head: プロンプトを100個集めても、自分の経験が言葉になることはありません。プロンプト
-- metrics_fetched: false
-- fetched_at: -
+- metrics_fetched: true
+- fetched_at: 2026-11-22 20:24
 - analyzed: false
-- likes: -
-- replies: -
-- reposts: -
-- quotes: -
-- shares: -
-- views: -
+- likes: 0
+- replies: 0
+- reposts: 0
+- quotes: 0
+- shares: 0
+- views: 10
 - comments: []
 
 ### 本文
@@ -129,15 +129,15 @@
 - theme: バズっている投稿の裏側（型は同じ、中身が違う）
 - type: ノウハウ：業界の裏側
 - text_head: Threadsでバズっている型を真似しても閲覧が伸びない人、型は合っています。足
-- metrics_fetched: false
-- fetched_at: -
+- metrics_fetched: true
+- fetched_at: 2026-11-22 20:24
 - analyzed: false
-- likes: -
-- replies: -
-- reposts: -
-- quotes: -
-- shares: -
-- views: -
+- likes: 2
+- replies: 3
+- reposts: 0
+- quotes: 0
+- shares: 0
+- views: 11
 - comments: []
 
 ### 本文
@@ -151,15 +151,15 @@ Threadsでバズっている型を真似しても閲覧が伸びない人、型�
 - theme: 7年で秘書が14人変わった社長の、15人目の秘書になった話（陰キャの観察力）
 - type: 体験：意外な告白
 - text_head: 7年で秘書が14人変わった社長の、15人目の秘書になったことがあります。
-- metrics_fetched: false
-- fetched_at: -
+- metrics_fetched: true
+- fetched_at: 2026-11-22 20:24
 - analyzed: false
-- likes: -
-- replies: -
-- reposts: -
-- quotes: -
-- shares: -
-- views: -
+- likes: 0
+- replies: 3
+- reposts: 0
+- quotes: 0
+- shares: 0
+- views: 30
 - comments: []
 
 ### 本文
@@ -518,14 +518,21 @@ Threads投稿1本書くのに、1時間かかっていた。
 - type: 共感・参加型（質問）（1行目の型：質問・参加）
 - text_head: 顔出しなしでThreadsをやっていて、仕事や相談の「最初の1件」が来た人に聞き
 - metrics_fetched: true
-- fetched_at: 2026-11-16 20:17
+- fetched_at: 2026-11-22 20:24
 - analyzed: false
 - likes: 2
 - replies: 0
 - reposts: 0
 - quotes: 0
 - shares: 0
-- views: 44
+- views: 48
+- likes_1d: 2
+- replies_1d: 0
+- reposts_1d: 0
+- quotes_1d: 0
+- shares_1d: 0
+- views_1d: 44
+- final_fetched: true
 - comments: []
 
 ### 本文
@@ -544,14 +551,21 @@ Threads投稿1本書くのに、1時間かかっていた。
 - type: 昼：常識破壊（1スレッド・強い言い切り）
 - text_head: バズれば売れると思っているなら、危険です。それは、集客と商売を混同しています。1
 - metrics_fetched: true
-- fetched_at: 2026-11-16 20:17
+- fetched_at: 2026-11-22 20:24
 - analyzed: false
 - likes: 0
 - replies: 0
 - reposts: 0
 - quotes: 0
 - shares: 0
-- views: 56
+- views: 62
+- likes_1d: 0
+- replies_1d: 0
+- reposts_1d: 0
+- quotes_1d: 0
+- shares_1d: 0
+- views_1d: 56
+- final_fetched: true
 - comments: []
 
 ### 本文
@@ -571,14 +585,21 @@ Threads投稿1本書くのに、1時間かかっていた。
 - type: ノウハウ：共通不安の代弁＋即実行型（1行目の型：途中経過の数字）
 - text_head: Threadsの閲覧が2桁しか行かない人、焦って投稿を消したり、時間帯を調べ回っ
 - metrics_fetched: true
-- fetched_at: 2026-11-16 20:17
+- fetched_at: 2026-11-22 20:24
 - analyzed: false
 - likes: 8
 - replies: 5
 - reposts: 0
 - quotes: 0
 - shares: 0
-- views: 1884
+- views: 1936
+- likes_1d: 8
+- replies_1d: 5
+- reposts_1d: 0
+- quotes_1d: 0
+- shares_1d: 0
+- views_1d: 1884
+- final_fetched: true
 - comments: []
 
 ### 本文
@@ -593,14 +614,21 @@ Threadsの閲覧が2桁しか行かない人、焦って投稿を消したり、
 - type: 体験：出来事→感情→失敗→工夫→結果→一言（1行目の型：言われた一言）
 - text_head: 「そのクライアント、悪くないよ。きみの効率が悪いだけ」修正が9回目に入って涙目に
 - metrics_fetched: true
-- fetched_at: 2026-11-16 20:17
+- fetched_at: 2026-11-22 20:24
 - analyzed: false
 - likes: 1
 - replies: 2
 - reposts: 0
 - quotes: 0
 - shares: 0
-- views: 33
+- views: 40
+- likes_1d: 1
+- replies_1d: 2
+- reposts_1d: 0
+- quotes_1d: 0
+- shares_1d: 0
+- views_1d: 33
+- final_fetched: true
 - comments: []
 
 ### 本文
