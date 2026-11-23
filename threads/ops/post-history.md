@@ -1,13 +1,13 @@
 # 投稿履歴（ポスターが追記／フェッチャーが数字を更新／アナリストが analyzed を更新）
 
-## 2026-11-20 20:08
+## 2026-11-23 12:07
 
-- post_id: 18151615876560007
-- reply_id: 17967075069212920,17916439851287610,18168995185486875
-- queue_id: Q-20261110-08
-- theme: 7年で秘書が14人変わった社長の、15人目の秘書になった話（陰キャの観察力）
-- type: 体験：意外な告白
-- text_head: 7年で秘書が14人変わった社長の、15人目の秘書になったことがあります。
+- post_id: 17947735617088253
+- reply_id: -
+- queue_id: Q-20261112-N11
+- theme: 資格集めは行動しない理由
+- type: 昼：常識破壊（1スレッド・強い言い切り）
+- text_head: 資格を増やせば自信がつく、は幻想です。資格集めは、行動しない理由になっています。
 - metrics_fetched: false
 - fetched_at: -
 - analyzed: false
@@ -17,6 +17,197 @@
 - quotes: -
 - shares: -
 - views: -
+- comments: []
+
+### 本文
+資格を増やせば自信がつく、は幻想です。
+資格集めは、行動しない理由になっています。
+私も、デザイナーになる前に夜間スクールを2つ出ました。それでも、仕事は来ませんでした。仕事が来たのは、怖いまま応募を始めてからです。
+次の講座に申し込む前に、今の知識で1人を助けてください。
+自信は、学んだ量ではなく、動いた回数でつきます。
+
+## 2026-11-23 06:34
+
+- post_id: 18151295707568513
+- reply_id: 17994292182082237,18115621811128271,18117616592168427
+- queue_id: Q-20261110-11
+- theme: その返信、「ありがとうございます」だけで終わっていませんか（コメント返信の書き換え）
+- type: ノウハウ：書き換え例
+- text_head: Threadsでコメントはもらえるのに相談につながらない人、原因は返信の書き方で
+- metrics_fetched: false
+- fetched_at: -
+- analyzed: false
+- likes: -
+- replies: -
+- reposts: -
+- quotes: -
+- shares: -
+- views: -
+- comments: []
+
+### 本文
+Threadsでコメントはもらえるのに相談につながらない人、原因は返信の書き方です。相談につながる返し方は、
+
+## 2026-11-22 20:08
+
+- post_id: 17889287727502890
+- reply_id: 17986878698902119,18161149825447159,18148702600580359
+- queue_id: Q-20261110-12
+- theme: 受講生さん：インスタ運用を外注しても反応がなかった人が、17日目に51万閲覧
+- type: 体験：受講生の変化（数字の落差）
+- text_head: インスタの運用を、2つの業者さんにお願いした。それでも、反応はほとんどなかった。
+- metrics_fetched: false
+- fetched_at: -
+- analyzed: false
+- likes: -
+- replies: -
+- reposts: -
+- quotes: -
+- shares: -
+- views: -
+- comments: []
+
+### 本文
+インスタの運用を、2つの業者さんにお願いした。
+それでも、反応はほとんどなかった。
+
+## 2026-11-22 12:07
+
+- post_id: 18120743063000368
+- reply_id: -
+- queue_id: Q-20261112-N10
+- theme: 実績ができてから売る人は、永遠に実績ができない
+- type: 昼：常識破壊（1スレッド・強い言い切り）
+- text_head: 実績ができてから売ろうとする人は、永遠に実績ができません。実績は、売った人にしか
+- metrics_fetched: false
+- fetched_at: -
+- analyzed: false
+- likes: -
+- replies: -
+- reposts: -
+- quotes: -
+- shares: -
+- views: -
+- comments: []
+
+### 本文
+実績ができてから売ろうとする人は、永遠に実績ができません。
+実績は、売った人にしかできないからです。
+「もっと上手くなってから」「もう少し準備してから」。その間に、自分より経験の浅い人が先に売れていきます。
+最初のお客さんは、完璧な自分ではなく、今の自分に相談に来ます。
+今日、1人に「何に困っていますか」と聞いてください。それが最初の実績の入口です。
+準備が整う日は、永遠に来ません。
+
+## 2026-11-22 06:34
+
+- post_id: 18110433032298371
+- reply_id: 18141082312679144,18030878228696472,18196885579362681
+- queue_id: Q-20261110-09
+- theme: デザイナー8年で気づいた、読まれる文章の「余白」3つ
+- type: ノウハウ：経験×単純化
+- text_head: デザイナーを8年やってきたけど、読まれる文章の「余白」は、この3つしかない。
+- metrics_fetched: false
+- fetched_at: -
+- analyzed: false
+- likes: -
+- replies: -
+- reposts: -
+- quotes: -
+- shares: -
+- views: -
+- comments: []
+
+### 本文
+デザイナーを8年やってきたけど、読まれる文章の「余白」は、この3つしかない。
+
+## 2026-11-21 20:07
+
+- post_id: 18029687900869182
+- reply_id: 18656738713033285,18074824106498566
+- queue_id: Q-20261110-10
+- theme: 顔出ししない理由を教えてください（参加型）
+- type: 共感・参加型（質問）
+- text_head: 顔出しなしで発信している人に、聞いてみたいです。顔を出さない理由は、何ですか？
+- metrics_fetched: true
+- fetched_at: 2026-11-22 20:24
+- analyzed: false
+- likes: 0
+- replies: 2
+- reposts: 0
+- quotes: 0
+- shares: 0
+- views: 4
+- comments: []
+
+### 本文
+顔出しなしで発信している人に、聞いてみたいです。
+顔を出さない理由は、何ですか？
+
+## 2026-11-21 12:07
+
+- post_id: 18102005789408241
+- reply_id: -
+- queue_id: Q-20261112-N09
+- theme: プロンプトを100個集めても経験は言葉にならない
+- type: 昼：常識破壊（1スレッド・強い言い切り）
+- text_head: プロンプトを100個集めても、自分の経験が言葉になることはありません。プロンプト
+- metrics_fetched: true
+- fetched_at: 2026-11-22 20:24
+- analyzed: false
+- likes: 0
+- replies: 0
+- reposts: 0
+- quotes: 0
+- shares: 0
+- views: 10
+- comments: []
+
+### 本文
+プロンプトを100個集めても、自分の経験が言葉になることはありません。
+プロンプトは、ただの型です。中に入れる材料は、自分の過去にしかありません。
+クビになった日、122件落ちた日、時給300円だった日。私が書いて読まれたのは、全部、プロンプト集には載っていない話でした。
+プロンプトを集める時間で、自分の失敗を1つ書き出してください。
+材料のないプロンプトは、空っぽの鍋です。
+
+## 2026-11-21 06:34
+
+- post_id: 18118047134021512
+- reply_id: 18119717699034904,18078597275769266,18275266231306068
+- queue_id: Q-20261110-07
+- theme: バズっている投稿の裏側（型は同じ、中身が違う）
+- type: ノウハウ：業界の裏側
+- text_head: Threadsでバズっている型を真似しても閲覧が伸びない人、型は合っています。足
+- metrics_fetched: true
+- fetched_at: 2026-11-22 20:24
+- analyzed: false
+- likes: 2
+- replies: 3
+- reposts: 0
+- quotes: 0
+- shares: 0
+- views: 11
+- comments: []
+
+### 本文
+Threadsでバズっている型を真似しても閲覧が伸びない人、型は合っています。足りないのは、
+
+## 2026-11-20 20:08
+
+- post_id: 18151615876560007
+- reply_id: 17967075069212920,17916439851287610,18168995185486875
+- queue_id: Q-20261110-08
+- theme: 7年で秘書が14人変わった社長の、15人目の秘書になった話（陰キャの観察力）
+- type: 体験：意外な告白
+- text_head: 7年で秘書が14人変わった社長の、15人目の秘書になったことがあります。
+- metrics_fetched: true
+- fetched_at: 2026-11-22 20:24
+- analyzed: false
+- likes: 0
+- replies: 3
+- reposts: 0
+- quotes: 0
+- shares: 0
+- views: 30
 - comments: []
 
 ### 本文
@@ -30,15 +221,15 @@
 - theme: AIは書かせるな、質問させろ
 - type: 昼：常識破壊（1スレッド・強い言い切り）
 - text_head: AIで時短できない人は、AIを「文章を書く人」として使っています。AIは、「質問
-- metrics_fetched: false
-- fetched_at: -
+- metrics_fetched: true
+- fetched_at: 2026-11-21 20:01
 - analyzed: false
-- likes: -
-- replies: -
-- reposts: -
-- quotes: -
-- shares: -
-- views: -
+- likes: 0
+- replies: 0
+- reposts: 0
+- quotes: 0
+- shares: 0
+- views: 2
 - comments: []
 
 ### 本文
@@ -57,15 +248,15 @@ AIに聞かせる人だけが、自分の言葉を手に入れます。
 - theme: スレッズで絶対にやってはいけない、1投稿に話題を2つ入れること
 - type: ノウハウ：NG断言
 - text_head: Threadsの閲覧が伸びない人の投稿には、話題が2つ入っています。1つに絞るだ
-- metrics_fetched: false
-- fetched_at: -
+- metrics_fetched: true
+- fetched_at: 2026-11-21 20:01
 - analyzed: false
-- likes: -
-- replies: -
-- reposts: -
-- quotes: -
-- shares: -
-- views: -
+- likes: 0
+- replies: 3
+- reposts: 0
+- quotes: 0
+- shares: 0
+- views: 12
 - comments: []
 
 ### 本文
@@ -375,14 +566,21 @@ Threads投稿1本書くのに、1時間かかっていた。
 - type: 共感・参加型（質問）（1行目の型：質問・参加）
 - text_head: 顔出しなしでThreadsをやっていて、仕事や相談の「最初の1件」が来た人に聞き
 - metrics_fetched: true
-- fetched_at: 2026-11-16 20:17
+- fetched_at: 2026-11-22 20:24
 - analyzed: false
 - likes: 2
 - replies: 0
 - reposts: 0
 - quotes: 0
 - shares: 0
-- views: 44
+- views: 48
+- likes_1d: 2
+- replies_1d: 0
+- reposts_1d: 0
+- quotes_1d: 0
+- shares_1d: 0
+- views_1d: 44
+- final_fetched: true
 - comments: []
 
 ### 本文
@@ -401,14 +599,21 @@ Threads投稿1本書くのに、1時間かかっていた。
 - type: 昼：常識破壊（1スレッド・強い言い切り）
 - text_head: バズれば売れると思っているなら、危険です。それは、集客と商売を混同しています。1
 - metrics_fetched: true
-- fetched_at: 2026-11-16 20:17
+- fetched_at: 2026-11-22 20:24
 - analyzed: false
 - likes: 0
 - replies: 0
 - reposts: 0
 - quotes: 0
 - shares: 0
-- views: 56
+- views: 62
+- likes_1d: 0
+- replies_1d: 0
+- reposts_1d: 0
+- quotes_1d: 0
+- shares_1d: 0
+- views_1d: 56
+- final_fetched: true
 - comments: []
 
 ### 本文
@@ -428,14 +633,21 @@ Threads投稿1本書くのに、1時間かかっていた。
 - type: ノウハウ：共通不安の代弁＋即実行型（1行目の型：途中経過の数字）
 - text_head: Threadsの閲覧が2桁しか行かない人、焦って投稿を消したり、時間帯を調べ回っ
 - metrics_fetched: true
-- fetched_at: 2026-11-16 20:17
+- fetched_at: 2026-11-22 20:24
 - analyzed: false
 - likes: 8
 - replies: 5
 - reposts: 0
 - quotes: 0
 - shares: 0
-- views: 1884
+- views: 1936
+- likes_1d: 8
+- replies_1d: 5
+- reposts_1d: 0
+- quotes_1d: 0
+- shares_1d: 0
+- views_1d: 1884
+- final_fetched: true
 - comments: []
 
 ### 本文
@@ -450,14 +662,21 @@ Threadsの閲覧が2桁しか行かない人、焦って投稿を消したり、
 - type: 体験：出来事→感情→失敗→工夫→結果→一言（1行目の型：言われた一言）
 - text_head: 「そのクライアント、悪くないよ。きみの効率が悪いだけ」修正が9回目に入って涙目に
 - metrics_fetched: true
-- fetched_at: 2026-11-16 20:17
+- fetched_at: 2026-11-22 20:24
 - analyzed: false
 - likes: 1
 - replies: 2
 - reposts: 0
 - quotes: 0
 - shares: 0
-- views: 33
+- views: 40
+- likes_1d: 1
+- replies_1d: 2
+- reposts_1d: 0
+- quotes_1d: 0
+- shares_1d: 0
+- views_1d: 33
+- final_fetched: true
 - comments: []
 
 ### 本文
@@ -475,14 +694,21 @@ Threadsの閲覧が2桁しか行かない人、焦って投稿を消したり、
 - type: 昼：常識破壊（1スレッド・強い言い切り）
 - text_head: フォロワー1,000人になるまで売れない、は完全な思い込みです。指導を始めて1ヶ
 - metrics_fetched: true
-- fetched_at: 2026-11-15 19:53
+- fetched_at: 2026-11-21 20:01
 - analyzed: false
 - likes: 1
 - replies: 0
 - reposts: 0
 - quotes: 0
 - shares: 0
-- views: 5
+- views: 28
+- likes_1d: 1
+- replies_1d: 0
+- reposts_1d: 0
+- quotes_1d: 0
+- shares_1d: 0
+- views_1d: 5
+- final_fetched: true
 - comments: []
 
 ### 本文
@@ -501,14 +727,21 @@ Threadsの閲覧が2桁しか行かない人、焦って投稿を消したり、
 - type: ノウハウ：断定×目的別テンプレ（1行目の型：❌損してます系の断定）
 - text_head: Threadsでコメントが1件もつかない人、最後の1行で損してます。
 - metrics_fetched: true
-- fetched_at: 2026-11-15 19:53
+- fetched_at: 2026-11-21 20:01
 - analyzed: false
 - likes: 1
 - replies: 3
 - reposts: 0
 - quotes: 0
 - shares: 0
-- views: 4
+- views: 23
+- likes_1d: 1
+- replies_1d: 3
+- reposts_1d: 0
+- quotes_1d: 0
+- shares_1d: 0
+- views_1d: 4
+- final_fetched: true
 - comments: []
 
 ### 本文
