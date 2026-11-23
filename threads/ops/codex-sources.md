@@ -14,6 +14,13 @@
 | 2026-11-07 | @shoko_hikaru_kotoba | - | 31,400 | https://www.threads.com/@shoko_hikaru_kotoba/post/DdufyynE-6w | ① | Q-20261123-C13 |
 | 2026-11-23 | @hiro_ai_work_one | 2026-11-22 | 11,973 | https://www.threads.com/@hiro_ai_work_one/post/DgD73v5Dze- | 夜AI活用（本人指定） | Q-20261123-C06 |
 | 2026-11-23 | @eriko_aiblog | 2026-11-14／11-21 | 93,046／62,430 | https://www.threads.com/@eriko_aiblog | 夜AI活用（本人指定・同じ構造の2投稿） | Q-20261123-C03 |
+| 2026-11-23 | @kotetsu_ai_design | 2026-10-14 | 54,862 | https://www.threads.com/@kotetsu_ai_design/post/DeeBGIjHRt7 | ①（本人指定） | Q-20261123-D01 |
+| 2026-11-23 | @kai_claudecode | 2026-10-03 | 151,027 | https://www.threads.com/@kai_claudecode/post/DeCJMVvFJYs | ②（本人指定） | Q-20261123-D02 |
+| 2026-11-23 | @kanae_ai_creator777 | 2026-05-04 | 79,711 | https://www.threads.com/@kanae_ai_creator777/post/DX6jmqfibTo | ①（本人指定） | Q-20261123-D04 |
+| 2026-11-23 | @kuroe_claude | 2026-10-16 | 594,386 | https://www.threads.com/@kuroe_claude/post/DeiMjVKis6a | ②（本人指定・2回目） | Q-20261123-D05 |
+| 2026-11-23 | @licalife_claude | 2026-09-28 | 165,760 | https://www.threads.com/@licalife_claude/post/Ddzp12HgT-G | ①（本人指定） | Q-20261123-D07 |
+| 2026-11-23 | @kuro_mama_cc | 2026-10-04 | 118,626 | https://www.threads.com/@kuro_mama_cc/post/DeEPJpameG7 | ②（本人指定） | Q-20261123-D08 |
+| 2026-11-23 | @miyachi_ai | 2025-10-25 | 401,273 | https://www.threads.com/@miyachi_ai/post/DQOfUzDCazv | 夜AI活用（本人指定） | Q-20261123-D09 |
 
 ## 構造メモ（下の4本は 2026-11-23 にすべて使用済み）
 使ったら上の表に移す。文は借りず、構造だけ借りる。
