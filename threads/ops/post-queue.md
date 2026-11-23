@@ -139,7 +139,7 @@
 - structure: 許可の一言＋「AIを◯◯にする指示文N選」→番号ごとに指示文と1行の効果→「まず1つだけ」→案内
 - reader: AIで投稿を作っているが、誰が書いても同じ文章になる人
 - cta: あり
-- approved: false
+- approved: true
 - created: 2026-11-23
 
 ### 本文
@@ -178,7 +178,7 @@ AIが速くなるほど、「誰が書いたか」で読まれるかどうかが
 - structure: 「〜はこの3種類しかない」→□つきの3分類→使い方→「保存して見返して」
 - reader: 閲覧はあるのに相談が来ない人
 - cta: なし
-- approved: false
+- approved: true
 - created: 2026-11-23
 
 ### 本文
@@ -209,7 +209,7 @@ Threadsで閲覧はあるのに、相談が1件も来ない人。
 - structure: 丸投げの頼み方を並べる→「怪物級に育てたいなら、」で切る→先にAIに質問させる指示文→目的の例❶〜❸→答えにくい質問の扱い→プロジェクトの指示に貼る
 - reader: AIで投稿を作っているが、毎回どこかで見た文章になる人
 - cta: なし
-- approved: false
+- approved: true
 - created: 2026-11-23
 
 ### 本文
@@ -245,7 +245,7 @@ AIに聞かれて、自分で答えた言葉です。
 - structure: 【報告】＋「この一言だけで◯◯が△△に」→例→AIに渡す一言（本当に一言）→案内
 - reader: Threadsで1行目に悩み、読まれない人
 - cta: あり
-- approved: false
+- approved: true
 - created: 2026-11-23
 
 ### 本文
@@ -281,7 +281,7 @@ AIに1行目を作ってもらうときも、渡す一言は1つで足ります�
 - structure: NGの提示→比較→代わりの手順→締め
 - reader: AIで投稿を作っているのに閲覧が伸びない人
 - cta: なし
-- approved: false
+- approved: true
 - created: 2026-11-23
 
 ### 本文
@@ -314,7 +314,7 @@ AIは、材料を作る係ではなく、並べる係です。
 - structure: 具体的な使い道の提示→「何でも任せるとリスクなので、決まりを作る指示文を3つ」→指示文ごとに条件の箇条書き→「必ず目で確かめて」→決め台詞
 - reader: 閲覧数を見ても、次に何を書けばいいか分からない人
 - cta: なし
-- approved: false
+- approved: true
 - created: 2026-11-23
 
 ### 本文
@@ -354,7 +354,7 @@ ChatGPTやClaudeに貼るだけで、次に伸びる1本が書ける指示文を
 - structure: 熱量の前置き＋「Claude Codeでやっていることまとめ」→《見出し》ごとの①〜リスト→最後に一言と案内
 - reader: 投稿づくりをAIに任せたいが、自分の言葉がなくなるのが不安な人
 - cta: あり
-- approved: false
+- approved: true
 - created: 2026-11-23
 
 ### 本文
@@ -393,7 +393,7 @@ AIに任せるほど、「何を任せないか」を決めた人だけが、自
 - structure: 裏側→なぜ影響されるか→判断基準→自分の方針
 - reader: 型どおりに書いているのに閲覧が伸びない人
 - cta: なし
-- approved: false
+- approved: true
 - created: 2026-11-23
 
 ### 本文
@@ -425,7 +425,7 @@ Threads、バズの型どおりに書いても、閲覧が伸びない人。
 - structure: 受講前の悩み→期間→数値成果→変化→読者が使える一歩
 - reader: 投稿に時間がかかり、成果が出ていない人
 - cta: なし
-- approved: false
+- approved: true
 - created: 2026-11-23
 
 ### 本文
@@ -458,7 +458,7 @@ Threads、バズの型どおりに書いても、閲覧が伸びない人。
 - structure: 成果の前置き＋「AIに頼むと早い指示文」→❶〜❹目的別の指示文と1行の理由→「指示文は自分で育てる」→案内
 - reader: 閲覧はあるのにフォローも相談も増えない人
 - cta: あり
-- approved: false
+- approved: true
 - created: 2026-11-23
 
 ### 本文
@@ -494,7 +494,7 @@ Threadsで、クビになった話や122件落ちた話を隠さず書くよう�
 - structure: 失敗例→改善例→違いの解説→書き換える順番→保存
 - reader: プロフィールは見られているのにフォローされない人
 - cta: なし
-- approved: false
+- approved: true
 - created: 2026-11-23
 
 ### 本文
@@ -530,7 +530,7 @@ Threadsでプロフィールまで見に来てもらえるのに、フォロー�
 - structure: 困っていたこと→AIに渡したもの（ルール）→今のルールの一部→読者が使える一歩
 - reader: AIに下書きを頼むたびに同じところを直している人
 - cta: なし
-- approved: false
+- approved: true
 - created: 2026-11-23
 
 ### 本文
@@ -564,7 +564,7 @@ AIと長く付き合うコツは、これだけです。
 - structure: 許可の一言＋実績＋「1行目の型まとめ」→型ごとに要素と例→「1行目は入口」の補足→案内
 - reader: Threadsの1行目が書けない人
 - cta: あり
-- approved: false
+- approved: true
 - created: 2026-11-23
 
 ### 本文
@@ -598,7 +598,7 @@ Threadsの1行目が書けない人へ。そのまま使ってOKです。
 - structure: 悩みの名指し＋「◯◯しても意味ない。やるべきなのは、」→今日5分でできる①〜③→締め
 - reader: Threadsの投稿が続かない人
 - cta: なし
-- approved: false
+- approved: true
 - created: 2026-11-23
 
 ### 本文
@@ -630,7 +630,7 @@ Threadsの投稿が続かない人、毎回ゼロから「何を書こう」と�
 - structure: 困っていたこと→AIに渡したもの→AIが返すもの→本人が直すところ→結果
 - reader: AIで発信を時短したい人
 - cta: なし
-- approved: false
+- approved: true
 - created: 2026-11-23
 
 ### 本文
