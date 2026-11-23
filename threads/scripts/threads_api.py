@@ -209,6 +209,9 @@ def cmd_post(args):
            f"- metrics_fetched: false\n- fetched_at: -\n- analyzed: false\n- likes: -\n- replies: -\n"
            f"- reposts: -\n- quotes: -\n- shares: -\n- views: -\n- comments: []\n\n"
            f"### 本文\n{body}\n\n")
+    posted = [p for p, rid in zip(parts, reply_ids) if rid != "failed"]
+    if posted:  # 続き（スレッド2本目以降）も、投稿した版をそのまま残す
+        new += "### 続き\n" + "\n---\n".join(posted) + "\n\n"
     hist_head, _ = split_entries(hist_text)
     HISTORY.write_text((hist_head or "# 投稿履歴\n\n") + new + "".join(h), encoding="utf-8")
     del q[idx]
