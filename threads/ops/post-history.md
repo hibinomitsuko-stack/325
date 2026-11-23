@@ -78,15 +78,15 @@ Threadsでコメントはもらえるのに相談につながらない人、原�
 - theme: 受講生さん：インスタ運用を外注しても反応がなかった人が、17日目に51万閲覧
 - type: 体験：受講生の変化（数字の落差）
 - text_head: インスタの運用を、2つの業者さんにお願いした。それでも、反応はほとんどなかった。
-- metrics_fetched: false
-- fetched_at: -
+- metrics_fetched: true
+- fetched_at: 2026-11-23 21:40
 - analyzed: false
-- likes: -
-- replies: -
-- reposts: -
-- quotes: -
-- shares: -
-- views: -
+- likes: 1
+- replies: 3
+- reposts: 0
+- quotes: 0
+- shares: 0
+- views: 12
 - comments: []
 
 ### 本文
@@ -101,15 +101,15 @@ Threadsでコメントはもらえるのに相談につながらない人、原�
 - theme: 実績ができてから売る人は、永遠に実績ができない
 - type: 昼：常識破壊（1スレッド・強い言い切り）
 - text_head: 実績ができてから売ろうとする人は、永遠に実績ができません。実績は、売った人にしか
-- metrics_fetched: false
-- fetched_at: -
+- metrics_fetched: true
+- fetched_at: 2026-11-23 21:40
 - analyzed: false
-- likes: -
-- replies: -
-- reposts: -
-- quotes: -
-- shares: -
-- views: -
+- likes: 1
+- replies: 0
+- reposts: 0
+- quotes: 0
+- shares: 0
+- views: 13
 - comments: []
 
 ### 本文
@@ -128,15 +128,15 @@ Threadsでコメントはもらえるのに相談につながらない人、原�
 - theme: デザイナー8年で気づいた、読まれる文章の「余白」3つ
 - type: ノウハウ：経験×単純化
 - text_head: デザイナーを8年やってきたけど、読まれる文章の「余白」は、この3つしかない。
-- metrics_fetched: false
-- fetched_at: -
+- metrics_fetched: true
+- fetched_at: 2026-11-23 21:40
 - analyzed: false
-- likes: -
-- replies: -
-- reposts: -
-- quotes: -
-- shares: -
-- views: -
+- likes: 1
+- replies: 3
+- reposts: 0
+- quotes: 0
+- shares: 0
+- views: 62
 - comments: []
 
 ### 本文
@@ -511,14 +511,21 @@ Threadsから相談が来ない人の固定投稿には、共通している「�
 - type: 体験：受講生の変化（数字の落差）
 - text_head: Threads投稿1本書くのに、1時間かかっていた。独学でThreadsを4ヶ月
 - metrics_fetched: true
-- fetched_at: 2026-11-17 20:52
+- fetched_at: 2026-11-23 21:40
 - analyzed: false
 - likes: 1
 - replies: 2
 - reposts: 0
 - quotes: 0
 - shares: 0
-- views: 28
+- views: 31
+- likes_1d: 1
+- replies_1d: 2
+- reposts_1d: 0
+- quotes_1d: 0
+- shares_1d: 0
+- views_1d: 28
+- final_fetched: true
 - comments: []
 
 ### 本文
@@ -535,14 +542,21 @@ Threads投稿1本書くのに、1時間かかっていた。
 - type: 昼：常識破壊（1スレッド・強い言い切り）
 - text_head: 有益な投稿だけを続けても、選ばれません。有益な情報は、検索すれば出てきます。AI
 - metrics_fetched: true
-- fetched_at: 2026-11-17 20:52
+- fetched_at: 2026-11-23 21:40
 - analyzed: false
 - likes: 1
 - replies: 0
 - reposts: 0
 - quotes: 0
 - shares: 0
-- views: 7
+- views: 10
+- likes_1d: 1
+- replies_1d: 0
+- reposts_1d: 0
+- quotes_1d: 0
+- shares_1d: 0
+- views_1d: 7
+- final_fetched: true
 - comments: []
 
 ### 本文
@@ -561,14 +575,21 @@ Threads投稿1本書くのに、1時間かかっていた。
 - type: ノウハウ：書き換え例・添削型（1行目の型：❌損してます）
 - text_head: ❌Threads1行目でこれやってる人、損してます・「今日は◯◯についてお話しし
 - metrics_fetched: true
-- fetched_at: 2026-11-17 20:52
+- fetched_at: 2026-11-23 21:40
 - analyzed: false
 - likes: 1
 - replies: 2
 - reposts: 0
 - quotes: 0
 - shares: 0
-- views: 14
+- views: 18
+- likes_1d: 1
+- replies_1d: 2
+- reposts_1d: 0
+- quotes_1d: 0
+- shares_1d: 0
+- views_1d: 14
+- final_fetched: true
 - comments: []
 
 ### 本文
