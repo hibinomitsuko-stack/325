@@ -2,8 +2,17 @@
 
 | 確認日 | アカウント | 投稿日 | 閲覧数 | URL | 使い道 | キューID |
 |---|---|---|---|---|---|---|
+| 2026-11-22 | @licalife_claude | 2026-09-27 | 107K | https://www.threads.com/@licalife_claude/post/Ddyh-NjmU-q | ① | Q-20261123-C01 |
+| 2026-11-07 | @wakabayashi_015 | - | 31,500 | https://www.threads.com/@wakabayashi_015/post/DfWqEctE7yN | ② | Q-20261123-C02 |
+| 2026-11-22 | @kuroe_claude | 2026-10-16 | 594K | https://www.threads.com/@kuroe_claude/post/DeiMjVKis6a | ① | Q-20261123-C04 |
+| 2026-11-09 | @gakikun_claudecode | - | 約28.4万 | 未記録（threads_research_for_claude.md） | ② | Q-20261123-C05 |
+| 2026-11-22 | @mitcho.claude | 2026-10-12 | 55.3K | https://www.threads.com/@mitcho.claude/post/DeZgl4cCRSX | ① | Q-20261123-C07 |
+| 2026-11-09 | @to.am_marke | - | 約3.06万 | 未記録（threads_research_for_claude.md） | ② | Q-20261123-C08 |
+| 2026-11-22 | @koto_witch | 2026-11-15 | 67.6K | https://www.threads.com/@koto_witch/post/Dfv8ZJ4HXvk | ① | Q-20261123-C10 |
+| 2026-11-09 | @toku.film.jp | - | 約64.9万 | 未記録（threads_research_for_claude.md） | ② | Q-20261123-C11 |
+| 2026-11-07 | @shoko_hikaru_kotoba | - | 31,400 | https://www.threads.com/@shoko_hikaru_kotoba/post/DdufyynE-6w | ① | Q-20261123-C13 |
 
-## 候補（閲覧数確認済み・まだ使っていない）2026-11-22 確認
+## 構造メモ（下の4本は 2026-11-23 にすべて使用済み）
 使ったら上の表に移す。文は借りず、構造だけ借りる。
 
 | アカウント | 投稿日 | 閲覧数 | URL | 1スレッド目の型 | 中身の構造 | 注意 |
