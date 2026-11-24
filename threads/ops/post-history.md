@@ -132,15 +132,15 @@ AIの変化のスピードが速くなるほど、「誰が書いたか」で読
 - theme: 「売り込みたくない」の正体
 - type: 体験：過去の自分への毒
 - text_head: 「売り込みたくない」と言っていたけれど、本当は断られるのが怖かっただけです。
-- metrics_fetched: false
-- fetched_at: -
+- metrics_fetched: true
+- fetched_at: 2026-11-24 22:43
 - analyzed: false
-- likes: -
-- replies: -
-- reposts: -
-- quotes: -
-- shares: -
-- views: -
+- likes: 0
+- replies: 3
+- reposts: 0
+- quotes: 0
+- shares: 0
+- views: 20
 - comments: []
 
 ### 本文
@@ -154,15 +154,15 @@ AIの変化のスピードが速くなるほど、「誰が書いたか」で読
 - theme: 資格集めは行動しない理由
 - type: 昼：常識破壊（1スレッド・強い言い切り）
 - text_head: 資格を増やせば自信がつく、は幻想です。資格集めは、行動しない理由になっています。
-- metrics_fetched: false
-- fetched_at: -
+- metrics_fetched: true
+- fetched_at: 2026-11-24 22:43
 - analyzed: false
-- likes: -
-- replies: -
-- reposts: -
-- quotes: -
-- shares: -
-- views: -
+- likes: 0
+- replies: 0
+- reposts: 0
+- quotes: 0
+- shares: 0
+- views: 6
 - comments: []
 
 ### 本文
@@ -180,15 +180,15 @@ AIの変化のスピードが速くなるほど、「誰が書いたか」で読
 - theme: その返信、「ありがとうございます」だけで終わっていませんか（コメント返信の書き換え）
 - type: ノウハウ：書き換え例
 - text_head: Threadsでコメントはもらえるのに相談につながらない人、原因は返信の書き方で
-- metrics_fetched: false
-- fetched_at: -
+- metrics_fetched: true
+- fetched_at: 2026-11-24 22:43
 - analyzed: false
-- likes: -
-- replies: -
-- reposts: -
-- quotes: -
-- shares: -
-- views: -
+- likes: 1
+- replies: 3
+- reposts: 0
+- quotes: 0
+- shares: 0
+- views: 5
 - comments: []
 
 ### 本文
@@ -560,7 +560,7 @@ Threadsから相談が来ない人の固定投稿には、共通している「�
 - type: 体験：過去の自分への毒
 - text_head: あの頃の私は、学んでいたのではありません。失敗しないために、準備へ逃げていただけ
 - metrics_fetched: true
-- fetched_at: 2026-11-18 20:42
+- fetched_at: 2026-11-24 22:43
 - analyzed: false
 - likes: 0
 - replies: 3
@@ -568,6 +568,13 @@ Threadsから相談が来ない人の固定投稿には、共通している「�
 - quotes: 0
 - shares: 0
 - views: 12
+- likes_1d: 0
+- replies_1d: 3
+- reposts_1d: 0
+- quotes_1d: 0
+- shares_1d: 0
+- views_1d: 12
+- final_fetched: true
 - comments: []
 
 ### 本文
@@ -582,7 +589,7 @@ Threadsから相談が来ない人の固定投稿には、共通している「�
 - type: 昼：常識破壊（1スレッド・強い言い切り）
 - text_head: 誰にでも好かれたい「いい子ちゃん投稿」だけしていても、売れません。いい子ちゃんす
 - metrics_fetched: true
-- fetched_at: 2026-11-18 20:42
+- fetched_at: 2026-11-24 22:43
 - analyzed: false
 - likes: 2
 - replies: 0
@@ -590,6 +597,13 @@ Threadsから相談が来ない人の固定投稿には、共通している「�
 - quotes: 0
 - shares: 0
 - views: 12
+- likes_1d: 2
+- replies_1d: 0
+- reposts_1d: 0
+- quotes_1d: 0
+- shares_1d: 0
+- views_1d: 12
+- final_fetched: true
 - comments: []
 
 ### 本文
@@ -609,14 +623,21 @@ Threadsから相談が来ない人の固定投稿には、共通している「�
 - type: ノウハウ：悩み提示→手順→体験→無料個別相談
 - text_head: はっきり言うけど、Threads閲覧が増えても相談が来ないのは、投稿の中身が悪い
 - metrics_fetched: true
-- fetched_at: 2026-11-18 20:42
+- fetched_at: 2026-11-24 22:43
 - analyzed: false
 - likes: 1
 - replies: 5
 - reposts: 0
 - quotes: 0
 - shares: 0
-- views: 12
+- views: 15
+- likes_1d: 1
+- replies_1d: 5
+- reposts_1d: 0
+- quotes_1d: 0
+- shares_1d: 0
+- views_1d: 12
+- final_fetched: true
 - comments:
   - [質問] 2026-11-17T23:13 @business_threads_com: 表示もフォロワーも増えているのに、相談が来ないという話、すごく分かります。自分の実験アカウントも、表示は伸びてもフォローに繋がらないのが一番の課題でした。変えた2つのこと、よかったら教えてもらえませんか？自分のアカウントでも試してみたいです。
 
