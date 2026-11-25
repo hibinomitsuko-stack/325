@@ -135,15 +135,15 @@ AIに1行目を作ってもらうときも、渡す一言は1つで足ります�
 - theme: AIに先に質問させて、自分専用の投稿係に育てる
 - type: AI活用（バズ焼き直し）
 - text_head: ChatGPTに「投稿を作って」、Claudeに「もっとバズる感じに」。頼むたび
-- metrics_fetched: false
-- fetched_at: -
+- metrics_fetched: true
+- fetched_at: 2026-11-25 21:55
 - analyzed: false
-- likes: -
-- replies: -
-- reposts: -
-- quotes: -
-- shares: -
-- views: -
+- likes: 1
+- replies: 4
+- reposts: 0
+- quotes: 0
+- shares: 0
+- views: 10
 - comments: []
 
 ### 本文
@@ -177,15 +177,15 @@ AIに聞かれて、自分で答えた言葉です。
 - theme: 相談につながる投稿は3種類しかない
 - type: ②焼き直し
 - text_head: Threadsで閲覧はあるのに、相談が1件も来ない人。相談につながる投稿は、この
-- metrics_fetched: false
-- fetched_at: -
+- metrics_fetched: true
+- fetched_at: 2026-11-25 21:55
 - analyzed: false
-- likes: -
-- replies: -
-- reposts: -
-- quotes: -
-- shares: -
-- views: -
+- likes: 0
+- replies: 2
+- reposts: 0
+- quotes: 0
+- shares: 0
+- views: 24
 - comments: []
 
 ### 本文
@@ -214,15 +214,15 @@ Threadsで閲覧はあるのに、相談が1件も来ない人。
 - theme: AIの文章を自分の言葉に戻す指示文5つ
 - type: ①体験入り
 - text_head: Threads投稿、AIで書くと「なんか他の人と同じような文章」になる人へ。その
-- metrics_fetched: false
-- fetched_at: -
+- metrics_fetched: true
+- fetched_at: 2026-11-25 21:55
 - analyzed: false
-- likes: -
-- replies: -
-- reposts: -
-- quotes: -
-- shares: -
-- views: -
+- likes: 0
+- replies: 4
+- reposts: 0
+- quotes: 0
+- shares: 0
+- views: 44
 - comments: []
 
 ### 本文
@@ -615,14 +615,21 @@ Threadsでそのまま使える「ネタ切れしない質問」10個まとめ�
 - type: 体験：言われた一言
 - text_head: 「高いなあ。1万円じゃダメ？」3万円の見積もりを出した私に、クライアントが言いま
 - metrics_fetched: true
-- fetched_at: 2026-11-19 20:39
+- fetched_at: 2026-11-25 21:55
 - analyzed: false
 - likes: 0
 - replies: 3
 - reposts: 0
 - quotes: 0
 - shares: 0
-- views: 9
+- views: 13
+- likes_1d: 0
+- replies_1d: 3
+- reposts_1d: 0
+- quotes_1d: 0
+- shares_1d: 0
+- views_1d: 9
+- final_fetched: true
 - comments: []
 
 ### 本文
@@ -638,14 +645,21 @@ Threadsでそのまま使える「ネタ切れしない質問」10個まとめ�
 - type: 昼：常識破壊（1スレッド・強い言い切り）
 - text_head: 閲覧数が少ない原因を、アルゴリズムのせいにしていませんか。アルゴリズムが変わって
 - metrics_fetched: true
-- fetched_at: 2026-11-19 20:39
+- fetched_at: 2026-11-25 21:55
 - analyzed: false
 - likes: 1
 - replies: 0
 - reposts: 0
 - quotes: 0
 - shares: 0
-- views: 12
+- views: 15
+- likes_1d: 1
+- replies_1d: 0
+- reposts_1d: 0
+- quotes_1d: 0
+- shares_1d: 0
+- views_1d: 12
+- final_fetched: true
 - comments: []
 
 ### 本文
@@ -665,14 +679,21 @@ Threadsでそのまま使える「ネタ切れしない質問」10個まとめ�
 - type: ノウハウ：共通点N個
 - text_head: Threadsから相談が来ない人の固定投稿には、共通している「抜け」が3つありま
 - metrics_fetched: true
-- fetched_at: 2026-11-19 20:39
+- fetched_at: 2026-11-25 21:55
 - analyzed: false
 - likes: 0
 - replies: 5
 - reposts: 0
 - quotes: 0
 - shares: 0
-- views: 116
+- views: 119
+- likes_1d: 0
+- replies_1d: 5
+- reposts_1d: 0
+- quotes_1d: 0
+- shares_1d: 0
+- views_1d: 116
+- final_fetched: true
 - comments: []
 
 ### 本文
