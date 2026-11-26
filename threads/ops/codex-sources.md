@@ -21,6 +21,21 @@
 | 2026-11-23 | @licalife_claude | 2026-09-28 | 165,760 | https://www.threads.com/@licalife_claude/post/Ddzp12HgT-G | ①（本人指定） | Q-20261123-D07 |
 | 2026-11-23 | @kuro_mama_cc | 2026-10-04 | 118,626 | https://www.threads.com/@kuro_mama_cc/post/DeEPJpameG7 | ②（本人指定） | Q-20261123-D08 |
 | 2026-11-23 | @miyachi_ai | 2025-10-25 | 401,273 | https://www.threads.com/@miyachi_ai/post/DQOfUzDCazv | 夜AI活用（本人指定） | Q-20261123-D09 |
+| 2026-11-25 | @mitcho.claude | - | 55.3K | 上の行と同じ | ①（2回目・別テーマ） | Q-20261125-E01 |
+| 2026-11-25 | @wakabayashi_015 | - | 31,500 | 上の行と同じ | ②（2回目・別テーマ） | Q-20261125-E02 |
+| 2026-11-25 | @koto_witch | - | 67.6K | 上の行と同じ | ①（2回目・別テーマ） | Q-20261125-E04 |
+| 2026-11-25 | @shoko_hikaru_kotoba | - | 31,400 | 上の行と同じ | ②（2回目・別テーマ） | Q-20261125-E05 |
+| 2026-11-25 | @licalife_claude（7選） | - | 107K | 上の行と同じ | ①（2回目・別テーマ） | Q-20261125-E07 |
+| 2026-11-25 | @kai_claudecode | - | 151,027 | 上の行と同じ | ②（2回目・別テーマ） | Q-20261125-E08 |
+| 2026-11-25 | @hiro_ai_work_one | - | 11,973 | 上の行と同じ | 夜AI活用（2回目・別テーマ） | Q-20261125-E09 |
+| 2026-11-26 | @kuroe_claude（全財産0円） | - | 23,092 | https://www.threads.com/@kuroe_claude/post/DfrlOmDiBdQ | 本人指定 | Q-20261126-F01 |
+| 2026-11-26 | @hisakata_ai | - | 248,665 | https://www.threads.com/@hisakata_ai/post/DenCn4mGmu5 | 本人指定 | Q-20261126-F02 |
+| 2026-11-26 | @otooto_ai_lab | - | 42,907 | https://www.threads.com/@otooto_ai_lab/post/Dau3mgvGjwL | 本人指定 | Q-20261126-F03 |
+| 2026-11-26 | @moto_turuchan | - | 15,145 | https://www.threads.com/@moto_turuchan/post/DegoXtJAiRq | 本人指定 | Q-20261126-F04 |
+| 2026-11-26 | @chatgpt_ai_kazlily | - | 47,358 | https://www.threads.com/@chatgpt_ai_kazlily/post/DfLLA4-gmgr | 本人指定 | Q-20261126-F05 |
+| 2026-11-26 | @dai.aimania | - | 30,382 | https://www.threads.com/@dai.aimania/post/DfZp5RpHRRd | 本人指定 | Q-20261126-F07 |
+| 2026-11-26 | @saborun_ai | - | 21,460 | https://www.threads.com/@saborun_ai/post/Dc-fThPEgSo | 本人指定 | Q-20261126-F08 |
+| 2026-11-26 | @kon_ai01 | - | 96,692 | https://www.threads.com/@kon_ai01/post/Da715pZktsE | 本人指定 | Q-20261126-F09 |
 
 ## 構造メモ（下の4本は 2026-11-23 にすべて使用済み）
 使ったら上の表に移す。文は借りず、構造だけ借りる。
@@ -38,3 +53,13 @@
 | アカウント | 閲覧数 | URL | 構造 | 注意 |
 |---|---|---|---|---|
 | @eriko_aiblog | 1.7M | https://www.threads.com/@eriko_aiblog/post/DgCGxYDExVZ | 「ゾッとさせたらごめん」＋「〜した人、〜しても消えていない」＋「公式にも書いてあって、今すぐ確認してほしいのが、」で切る→手順 | ChatGPTのデータ設定の事実は、公式で確認できるまで書かない |
+
+## 本人指定・未使用（2026-11-26 受け取り）
+| アカウント | 閲覧数 | URL | 使わなかった理由 |
+|---|---|---|---|
+| @kuroe_claude（グレーなスモビジ7選） | 46,321 | https://www.threads.com/@kuroe_claude/post/DftvIwNgtYj | 使わない話題（アダルト・アフィリエイト・グレー） |
+| @osabori_claudecode0 | 29,722 | https://www.threads.com/@osabori_claudecode0/post/DZE-MS4k2F5 | 今回はClaude Codeの仕組みの話が3日に1本ずつ入ったため見送り |
+| @poni_poni2026 | 77,681 | https://www.threads.com/@poni_poni2026/post/DaPw4c3k7ni | 同上（AIチームの話が12/2夜と重なる） |
+| @karasu.claude | 57,646 | https://www.threads.com/@karasu.claude/post/Dc9_Y7ECGKs | 同上 |
+| @yuruo_claude | 15,057 | https://www.threads.com/@yuruo_claude/post/Dd82QIlGape | 道具の仕様を確かめられないため |
+| @kemu_ai | 48,708 | https://www.threads.com/@kemu_ai/post/Db2jg6oE19w | 道具の設定手順を確かめられないため |
