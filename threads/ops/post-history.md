@@ -130,15 +130,15 @@ AIに任せるほど、「何を任せないか」を決めた人だけが、自
 - theme: 閲覧数をAIに貼って次の1本を決める指示文3つ
 - type: AI活用（バズ焼き直し）
 - text_head: Threadsの閲覧数を、見て終わりにしている人。ChatGPTやClaudeに
-- metrics_fetched: false
-- fetched_at: -
+- metrics_fetched: true
+- fetched_at: 2026-11-26 21:33
 - analyzed: false
-- likes: -
-- replies: -
-- reposts: -
-- quotes: -
-- shares: -
-- views: -
+- likes: 0
+- replies: 4
+- reposts: 0
+- quotes: 0
+- shares: 0
+- views: 8
 - comments: []
 
 ### 本文
@@ -176,15 +176,15 @@ ChatGPTやClaudeに貼るだけで、次に伸びる1本が書ける指示文を
 - theme: AIに「投稿を書いて」とだけ頼むのをやめる
 - type: ②焼き直し
 - text_head: ChatGPTに「Threadsのバズる投稿を書いて」とだけ頼んで、閲覧が伸びな
-- metrics_fetched: false
-- fetched_at: -
+- metrics_fetched: true
+- fetched_at: 2026-11-26 21:33
 - analyzed: false
-- likes: -
-- replies: -
-- reposts: -
-- quotes: -
-- shares: -
-- views: -
+- likes: 1
+- replies: 3
+- reposts: 0
+- quotes: 0
+- shares: 0
+- views: 17
 - comments: []
 
 ### 本文
@@ -215,15 +215,15 @@ AIは、材料を作る係ではなく、並べる係です。
 - theme: 最初の1行を変えただけで122件全落ち→翌月19件
 - type: ①体験入り
 - text_head: 122件全部落ちた提案文が、最初の1行を変えただけで、翌月19件決まりました。T
-- metrics_fetched: false
-- fetched_at: -
+- metrics_fetched: true
+- fetched_at: 2026-11-26 21:33
 - analyzed: false
-- likes: -
-- replies: -
-- reposts: -
-- quotes: -
-- shares: -
-- views: -
+- likes: 0
+- replies: 4
+- reposts: 0
+- quotes: 0
+- shares: 0
+- views: 8
 - comments: []
 
 ### 本文
@@ -666,14 +666,21 @@ Threadsの閲覧が伸びない人の投稿には、話題が2つ入っていま
 - type: 体験：受講生の変化（途中経過の数字）
 - text_head: Threadsを始めて、7投稿目。閲覧数は、46万回でした。
 - metrics_fetched: true
-- fetched_at: 2026-11-20 20:39
+- fetched_at: 2026-11-26 21:33
 - analyzed: false
-- likes: 2
+- likes: 3
 - replies: 2
 - reposts: 0
 - quotes: 0
 - shares: 0
-- views: 65
+- views: 70
+- likes_1d: 2
+- replies_1d: 2
+- reposts_1d: 0
+- quotes_1d: 0
+- shares_1d: 0
+- views_1d: 65
+- final_fetched: true
 - comments: []
 
 ### 本文
@@ -689,14 +696,21 @@ Threadsを始めて、7投稿目。
 - type: 昼：常識破壊（1スレッド・強い言い切り）
 - text_head: 「とりあえず投稿」は、発信ではありません。ただの作業です。今日の投稿を、誰に、何
 - metrics_fetched: true
-- fetched_at: 2026-11-20 20:39
+- fetched_at: 2026-11-26 21:33
 - analyzed: false
 - likes: 0
 - replies: 0
 - reposts: 0
 - quotes: 0
 - shares: 0
-- views: 9
+- views: 10
+- likes_1d: 0
+- replies_1d: 0
+- reposts_1d: 0
+- quotes_1d: 0
+- shares_1d: 0
+- views_1d: 9
+- final_fetched: true
 - comments: []
 
 ### 本文
@@ -715,14 +729,21 @@ Threadsを始めて、7投稿目。
 - type: ノウハウ：テンプレ配布
 - text_head: Threadsでそのまま使える「ネタ切れしない質問」10個まとめました。
 - metrics_fetched: true
-- fetched_at: 2026-11-20 20:39
+- fetched_at: 2026-11-26 21:33
 - analyzed: false
 - likes: 0
 - replies: 3
 - reposts: 0
 - quotes: 0
 - shares: 0
-- views: 140
+- views: 141
+- likes_1d: 0
+- replies_1d: 3
+- reposts_1d: 0
+- quotes_1d: 0
+- shares_1d: 0
+- views_1d: 140
+- final_fetched: true
 - comments: []
 
 ### 本文
