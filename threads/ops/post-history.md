@@ -1,13 +1,13 @@
 # 投稿履歴（ポスターが追記／フェッチャーが数字を更新／アナリストが analyzed を更新）
 
-## 2026-11-25 12:08
+## 2026-11-26 20:08
 
-- post_id: 18128751388810202
-- reply_id: 18145965091525959,18211353457375228,18113133638184239
-- queue_id: Q-20261123-C05
-- theme: AIに「投稿を書いて」とだけ頼むのをやめる
-- type: ②焼き直し
-- text_head: ChatGPTに「Threadsのバズる投稿を書いて」とだけ頼んで、閲覧が伸びな
+- post_id: 17971829292226375
+- reply_id: 17953501545057538,18040369208814637,18017150330764019
+- queue_id: Q-20261123-C09
+- theme: 1本60分・成約0件から、1ヶ月で初成約
+- type: 受講生事例
+- text_head: 1本の投稿に、約60分。それでも成約は0件。独学でThreadsを4ヶ月続けてい
 - metrics_fetched: false
 - fetched_at: -
 - analyzed: false
@@ -17,6 +17,174 @@
 - quotes: -
 - shares: -
 - views: -
+- comments: []
+
+### 本文
+1本の投稿に、約60分。それでも成約は0件。
+独学でThreadsを4ヶ月続けていた受講生さんが、1ヶ月で、12分で投稿を作れるようになりました。
+
+### 続き
+時間をかけていなかったわけではありません。
+1本に約1時間。それを4ヶ月続けても、成約はゼロでした。
+1本に時間をかけるほど、ほかのことに使える時間が減っていきました。
+---
+一緒に取り組み始めて、1ヶ月。
+初めての成約がありました。
+投稿を作る時間は、1本約60分から約12分になりました。
+---
+時間をかけた投稿ほど成果が出る、というわけではありません。
+投稿に1時間かかっている人は、書き始める前に、この3つだけ先に決めてみてください。
+・誰に向けて書くか
+・その人のどの悩みに答えるか
+・読み終わったあと、何をしてほしいか
+決まってから書くと、迷う時間が減ります。
+
+## 2026-11-26 12:08
+
+- post_id: 17896523337654225
+- reply_id: 17930790348434301,18181948045396262,17917859028560631
+- queue_id: Q-20261123-C08
+- theme: 同じ型の投稿が増えた今の判断基準
+- type: ②焼き直し
+- text_head: Threads、バズの型どおりに書いても、閲覧が伸びない人。同じ型の投稿が、AI
+- metrics_fetched: false
+- fetched_at: -
+- analyzed: false
+- likes: -
+- replies: -
+- reposts: -
+- quotes: -
+- shares: -
+- views: -
+- comments: []
+
+### 本文
+Threads、バズの型どおりに書いても、閲覧が伸びない人。
+同じ型の投稿が、AIで一気に増えているからです。抜け出す基準は3つあります。
+
+### 続き
+伸びた投稿の型は、すぐに広まります。
+今は、AIに「この投稿と同じ型で書いて」と頼めば、誰でも数分で作れるからです。
+その結果、1行目も、並べ方も、締めの一言も同じ投稿が並びます。
+読む側は、同じ形を何度も見ると、中身を読む前に「知ってる」と判断して、指を進めます。
+---
+投稿する前に、この3つを確認します。
+□同じ型の投稿を、今週すでに見ていないか
+□自分の出来事か数字が、1つ入っているか
+□その1つを消したら、誰の投稿か分からなくなるか
+3つ目が「分からなくなる」なら、その投稿はその人にしか書けない投稿です。
+---
+型は借りていい。でも、中に入れる材料だけは、自分のものを使う。
+保存して、投稿ボタンを押す前の確認に使ってください。
+
+## 2026-11-26 06:34
+
+- post_id: 18362725294168127
+- reply_id: 18096677291180899,18095148236222886,18476183770191943,18098429192665211
+- queue_id: Q-20261123-C07
+- theme: AIに任せていること・任せていないこと
+- type: ①体験入り
+- text_head: Threadsの投稿づくりをAIに任せて、自分の言葉じゃなくなって何度も直してい
+- metrics_fetched: false
+- fetched_at: -
+- analyzed: false
+- likes: -
+- replies: -
+- reposts: -
+- quotes: -
+- shares: -
+- views: -
+- comments: []
+
+### 本文
+Threadsの投稿づくりをAIに任せて、自分の言葉じゃなくなって何度も直している人へ。
+Claude Codeで毎日3本回している私が、任せたこと・任せていないことをまとめました。
+
+### 続き
+《AIに任せていること》
+①競合の投稿を調べて、伸びた構造をまとめる
+②下書きを書く
+③決まった時間に投稿する
+④24時間後と7日後に、閲覧数を集める
+⑤毎朝、全体が止まっていないか点検する
+---
+《任せていないこと》
+①どの体験を書くか決める
+②数字と出来事が本当か確かめる
+③1行目を最後に決める
+④投稿にOKを出す
+---
+《やってみて分かったこと》
+AIは、書いていない出来事や数字を、もっともらしく足してくることがあります。
+私も、実際にはなかった出来事が入った下書きを、何度も直しました。
+だから今は、使っていい数字と使わない数字を、ファイルに書いて渡しています。
+---
+AIに任せるほど、「何を任せないか」を決めた人だけが、自分の言葉を残せます。
+自分の発信のどこをAIに任せられるか知りたい人は、30分の無料個別相談にどうぞ。プロフィールのリンクから受け付けています😊
+
+## 2026-11-25 20:08
+
+- post_id: 18653269177010297
+- reply_id: 18232712698331212,18124188637982392,18146063896610728,17965689399248139
+- queue_id: Q-20261123-C06
+- theme: 閲覧数をAIに貼って次の1本を決める指示文3つ
+- type: AI活用（バズ焼き直し）
+- text_head: Threadsの閲覧数を、見て終わりにしている人。ChatGPTやClaudeに
+- metrics_fetched: true
+- fetched_at: 2026-11-26 21:33
+- analyzed: false
+- likes: 0
+- replies: 4
+- reposts: 0
+- quotes: 0
+- shares: 0
+- views: 8
+- comments: []
+
+### 本文
+Threadsの閲覧数を、見て終わりにしている人。
+ChatGPTやClaudeに貼るだけで、次に伸びる1本が書ける指示文を3つ置きます。
+
+### 続き
+私も、1週間分の投稿の数字をAIに比べてもらって、1行目のルールを決めました。
+ただ、何でも任せると、AIはそれらしい理由を作ってきます。
+だから、指示文には必ず条件を付けます👇
+---
+①伸びた投稿と伸びなかった投稿を並べる指示文
+「下に貼った投稿と閲覧数を、多い順に並べて。上位3本と下位3本の違いを表にして」
+・貼った数字以外は使わないこと
+・違いは、1行目・長さ・テーマの3つで比べること
+・理由が分からないところは「不明」と書くこと
+---
+②1行目だけを比べる指示文
+「上位3本と下位3本の1行目だけを並べて、読む人の悩みが書いてあるかを○×で付けて」
+・○×の理由を1行で書くこと
+・書き直しの案は出さないこと（決めるのは自分）
+③次の1本を決める指示文
+「ここまでの表から、次に試す1行目の形を3つ出して。それぞれ、どの投稿の何をもとにしたか書いて」
+・もとにした投稿を書けない案は出さないこと
+---
+出てきた表は、必ず自分の目で数字と見比べてください。
+数字を眺めて終わる人と、数字から次の1本を決める人では、1週間後の投稿が変わります。
+保存して、週に1回、数字を貼ってみてください。
+
+## 2026-11-25 12:08
+
+- post_id: 18128751388810202
+- reply_id: 18145965091525959,18211353457375228,18113133638184239
+- queue_id: Q-20261123-C05
+- theme: AIに「投稿を書いて」とだけ頼むのをやめる
+- type: ②焼き直し
+- text_head: ChatGPTに「Threadsのバズる投稿を書いて」とだけ頼んで、閲覧が伸びな
+- metrics_fetched: true
+- fetched_at: 2026-11-26 21:33
+- analyzed: false
+- likes: 1
+- replies: 3
+- reposts: 0
+- quotes: 0
+- shares: 0
+- views: 17
 - comments: []
 
 ### 本文
@@ -47,15 +215,15 @@ AIは、材料を作る係ではなく、並べる係です。
 - theme: 最初の1行を変えただけで122件全落ち→翌月19件
 - type: ①体験入り
 - text_head: 122件全部落ちた提案文が、最初の1行を変えただけで、翌月19件決まりました。T
-- metrics_fetched: false
-- fetched_at: -
+- metrics_fetched: true
+- fetched_at: 2026-11-26 21:33
 - analyzed: false
-- likes: -
-- replies: -
-- reposts: -
-- quotes: -
-- shares: -
-- views: -
+- likes: 0
+- replies: 4
+- reposts: 0
+- quotes: 0
+- shares: 0
+- views: 8
 - comments: []
 
 ### 本文
@@ -89,15 +257,15 @@ AIに1行目を作ってもらうときも、渡す一言は1つで足ります�
 - theme: AIに先に質問させて、自分専用の投稿係に育てる
 - type: AI活用（バズ焼き直し）
 - text_head: ChatGPTに「投稿を作って」、Claudeに「もっとバズる感じに」。頼むたび
-- metrics_fetched: false
-- fetched_at: -
+- metrics_fetched: true
+- fetched_at: 2026-11-25 21:55
 - analyzed: false
-- likes: -
-- replies: -
-- reposts: -
-- quotes: -
-- shares: -
-- views: -
+- likes: 1
+- replies: 4
+- reposts: 0
+- quotes: 0
+- shares: 0
+- views: 10
 - comments: []
 
 ### 本文
@@ -131,15 +299,15 @@ AIに聞かれて、自分で答えた言葉です。
 - theme: 相談につながる投稿は3種類しかない
 - type: ②焼き直し
 - text_head: Threadsで閲覧はあるのに、相談が1件も来ない人。相談につながる投稿は、この
-- metrics_fetched: false
-- fetched_at: -
+- metrics_fetched: true
+- fetched_at: 2026-11-25 21:55
 - analyzed: false
-- likes: -
-- replies: -
-- reposts: -
-- quotes: -
-- shares: -
-- views: -
+- likes: 0
+- replies: 2
+- reposts: 0
+- quotes: 0
+- shares: 0
+- views: 24
 - comments: []
 
 ### 本文
@@ -168,15 +336,15 @@ Threadsで閲覧はあるのに、相談が1件も来ない人。
 - theme: AIの文章を自分の言葉に戻す指示文5つ
 - type: ①体験入り
 - text_head: Threads投稿、AIで書くと「なんか他の人と同じような文章」になる人へ。その
-- metrics_fetched: false
-- fetched_at: -
+- metrics_fetched: true
+- fetched_at: 2026-11-25 21:55
 - analyzed: false
-- likes: -
-- replies: -
-- reposts: -
-- quotes: -
-- shares: -
-- views: -
+- likes: 0
+- replies: 4
+- reposts: 0
+- quotes: 0
+- shares: 0
+- views: 44
 - comments: []
 
 ### 本文
@@ -498,14 +666,21 @@ Threadsの閲覧が伸びない人の投稿には、話題が2つ入っていま
 - type: 体験：受講生の変化（途中経過の数字）
 - text_head: Threadsを始めて、7投稿目。閲覧数は、46万回でした。
 - metrics_fetched: true
-- fetched_at: 2026-11-20 20:39
+- fetched_at: 2026-11-26 21:33
 - analyzed: false
-- likes: 2
+- likes: 3
 - replies: 2
 - reposts: 0
 - quotes: 0
 - shares: 0
-- views: 65
+- views: 70
+- likes_1d: 2
+- replies_1d: 2
+- reposts_1d: 0
+- quotes_1d: 0
+- shares_1d: 0
+- views_1d: 65
+- final_fetched: true
 - comments: []
 
 ### 本文
@@ -521,14 +696,21 @@ Threadsを始めて、7投稿目。
 - type: 昼：常識破壊（1スレッド・強い言い切り）
 - text_head: 「とりあえず投稿」は、発信ではありません。ただの作業です。今日の投稿を、誰に、何
 - metrics_fetched: true
-- fetched_at: 2026-11-20 20:39
+- fetched_at: 2026-11-26 21:33
 - analyzed: false
 - likes: 0
 - replies: 0
 - reposts: 0
 - quotes: 0
 - shares: 0
-- views: 9
+- views: 10
+- likes_1d: 0
+- replies_1d: 0
+- reposts_1d: 0
+- quotes_1d: 0
+- shares_1d: 0
+- views_1d: 9
+- final_fetched: true
 - comments: []
 
 ### 本文
@@ -547,14 +729,21 @@ Threadsを始めて、7投稿目。
 - type: ノウハウ：テンプレ配布
 - text_head: Threadsでそのまま使える「ネタ切れしない質問」10個まとめました。
 - metrics_fetched: true
-- fetched_at: 2026-11-20 20:39
+- fetched_at: 2026-11-26 21:33
 - analyzed: false
 - likes: 0
 - replies: 3
 - reposts: 0
 - quotes: 0
 - shares: 0
-- views: 140
+- views: 141
+- likes_1d: 0
+- replies_1d: 3
+- reposts_1d: 0
+- quotes_1d: 0
+- shares_1d: 0
+- views_1d: 140
+- final_fetched: true
 - comments: []
 
 ### 本文
@@ -569,14 +758,21 @@ Threadsでそのまま使える「ネタ切れしない質問」10個まとめ�
 - type: 体験：言われた一言
 - text_head: 「高いなあ。1万円じゃダメ？」3万円の見積もりを出した私に、クライアントが言いま
 - metrics_fetched: true
-- fetched_at: 2026-11-19 20:39
+- fetched_at: 2026-11-25 21:55
 - analyzed: false
 - likes: 0
 - replies: 3
 - reposts: 0
 - quotes: 0
 - shares: 0
-- views: 9
+- views: 13
+- likes_1d: 0
+- replies_1d: 3
+- reposts_1d: 0
+- quotes_1d: 0
+- shares_1d: 0
+- views_1d: 9
+- final_fetched: true
 - comments: []
 
 ### 本文
@@ -592,14 +788,21 @@ Threadsでそのまま使える「ネタ切れしない質問」10個まとめ�
 - type: 昼：常識破壊（1スレッド・強い言い切り）
 - text_head: 閲覧数が少ない原因を、アルゴリズムのせいにしていませんか。アルゴリズムが変わって
 - metrics_fetched: true
-- fetched_at: 2026-11-19 20:39
+- fetched_at: 2026-11-25 21:55
 - analyzed: false
 - likes: 1
 - replies: 0
 - reposts: 0
 - quotes: 0
 - shares: 0
-- views: 12
+- views: 15
+- likes_1d: 1
+- replies_1d: 0
+- reposts_1d: 0
+- quotes_1d: 0
+- shares_1d: 0
+- views_1d: 12
+- final_fetched: true
 - comments: []
 
 ### 本文
@@ -619,14 +822,21 @@ Threadsでそのまま使える「ネタ切れしない質問」10個まとめ�
 - type: ノウハウ：共通点N個
 - text_head: Threadsから相談が来ない人の固定投稿には、共通している「抜け」が3つありま
 - metrics_fetched: true
-- fetched_at: 2026-11-19 20:39
+- fetched_at: 2026-11-25 21:55
 - analyzed: false
 - likes: 0
 - replies: 5
 - reposts: 0
 - quotes: 0
 - shares: 0
-- views: 116
+- views: 119
+- likes_1d: 0
+- replies_1d: 5
+- reposts_1d: 0
+- quotes_1d: 0
+- shares_1d: 0
+- views_1d: 116
+- final_fetched: true
 - comments: []
 
 ### 本文
