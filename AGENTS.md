@@ -1,6 +1,6 @@
 # AGENTS.md（Codex向けの作業ルール）
 
-このリポジトリは、Threadsアカウント「みつこ｜陰キャのThreads集客法」（@mitsukoihle）の投稿を運用しています。
+このリポジトリは、Threadsアカウント「みつこ｜陰キャのAI×Threads集客」（@mitsukoihle）の投稿を運用しています。
 Codexの仕事は、**3日に1回、3日分（1日3本×3日＝9本）の原稿を作り、未承認でキューに追加すること**と、**予約分・投稿済みのチェック**です。
 投稿そのものは、GitHub Actions（threads-bot）がキューの先頭から自動で行います。Codexは投稿しません。
 
