@@ -149,15 +149,15 @@ Claudeに頼んでよかった指示文を、4つ紹介しました。
 - theme: 1本60分・成約0件から、1ヶ月で初成約
 - type: 受講生事例
 - text_head: 1本の投稿に、約60分。それでも成約は0件。独学でThreadsを4ヶ月続けてい
-- metrics_fetched: false
-- fetched_at: -
+- metrics_fetched: true
+- fetched_at: 2026-11-27 21:20
 - analyzed: false
-- likes: -
-- replies: -
-- reposts: -
-- quotes: -
-- shares: -
-- views: -
+- likes: 0
+- replies: 3
+- reposts: 0
+- quotes: 0
+- shares: 0
+- views: 8
 - comments: []
 
 ### 本文
@@ -188,15 +188,15 @@ Claudeに頼んでよかった指示文を、4つ紹介しました。
 - theme: 同じ型の投稿が増えた今の判断基準
 - type: ②焼き直し
 - text_head: Threads、バズの型どおりに書いても、閲覧が伸びない人。同じ型の投稿が、AI
-- metrics_fetched: false
-- fetched_at: -
+- metrics_fetched: true
+- fetched_at: 2026-11-27 21:20
 - analyzed: false
-- likes: -
-- replies: -
-- reposts: -
-- quotes: -
-- shares: -
-- views: -
+- likes: 0
+- replies: 3
+- reposts: 0
+- quotes: 0
+- shares: 0
+- views: 17
 - comments: []
 
 ### 本文
@@ -226,15 +226,15 @@ Threads、バズの型どおりに書いても、閲覧が伸びない人。
 - theme: AIに任せていること・任せていないこと
 - type: ①体験入り
 - text_head: Threadsの投稿づくりをAIに任せて、自分の言葉じゃなくなって何度も直してい
-- metrics_fetched: false
-- fetched_at: -
+- metrics_fetched: true
+- fetched_at: 2026-11-27 21:20
 - analyzed: false
-- likes: -
-- replies: -
-- reposts: -
-- quotes: -
-- shares: -
-- views: -
+- likes: 1
+- replies: 4
+- reposts: 0
+- quotes: 0
+- shares: 0
+- views: 17
 - comments: []
 
 ### 本文
@@ -736,14 +736,21 @@ Threadsでバズっている型を真似しても閲覧が伸びない人、型�
 - type: 体験：意外な告白
 - text_head: 7年で秘書が14人変わった社長の、15人目の秘書になったことがあります。
 - metrics_fetched: true
-- fetched_at: 2026-11-22 20:24
+- fetched_at: 2026-11-27 21:20
 - analyzed: false
 - likes: 0
 - replies: 3
 - reposts: 0
 - quotes: 0
 - shares: 0
-- views: 30
+- views: 31
+- likes_1d: 0
+- replies_1d: 3
+- reposts_1d: 0
+- quotes_1d: 0
+- shares_1d: 0
+- views_1d: 30
+- final_fetched: true
 - comments: []
 
 ### 本文
@@ -758,14 +765,21 @@ Threadsでバズっている型を真似しても閲覧が伸びない人、型�
 - type: 昼：常識破壊（1スレッド・強い言い切り）
 - text_head: AIで時短できない人は、AIを「文章を書く人」として使っています。AIは、「質問
 - metrics_fetched: true
-- fetched_at: 2026-11-21 20:01
+- fetched_at: 2026-11-27 21:20
 - analyzed: false
 - likes: 0
 - replies: 0
 - reposts: 0
 - quotes: 0
 - shares: 0
-- views: 2
+- views: 3
+- likes_1d: 0
+- replies_1d: 0
+- reposts_1d: 0
+- quotes_1d: 0
+- shares_1d: 0
+- views_1d: 2
+- final_fetched: true
 - comments: []
 
 ### 本文
@@ -785,14 +799,21 @@ AIに聞かせる人だけが、自分の言葉を手に入れます。
 - type: ノウハウ：NG断言
 - text_head: Threadsの閲覧が伸びない人の投稿には、話題が2つ入っています。1つに絞るだ
 - metrics_fetched: true
-- fetched_at: 2026-11-21 20:01
+- fetched_at: 2026-11-27 21:20
 - analyzed: false
 - likes: 0
 - replies: 3
 - reposts: 0
 - quotes: 0
 - shares: 0
-- views: 12
+- views: 14
+- likes_1d: 0
+- replies_1d: 3
+- reposts_1d: 0
+- quotes_1d: 0
+- shares_1d: 0
+- views_1d: 12
+- final_fetched: true
 - comments: []
 
 ### 本文
