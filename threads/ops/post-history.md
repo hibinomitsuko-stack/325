@@ -111,15 +111,15 @@ Threads、「投稿ネタがない」と手が止まる人。今日聞かれた�
 - theme: Claude Codeに投稿を任せる前に作る決まり3つ
 - type: AI実演（焼き直し）
 - text_head: Threadsで発信している人、ClaudeCodeに任せると、投稿の予約から閲
-- metrics_fetched: false
-- fetched_at: -
+- metrics_fetched: true
+- fetched_at: 2026-11-28 20:44
 - analyzed: false
-- likes: -
-- replies: -
-- reposts: -
-- quotes: -
-- shares: -
-- views: -
+- likes: 0
+- replies: 3
+- reposts: 0
+- quotes: 0
+- shares: 0
+- views: 25
 - comments: []
 
 ### 本文
@@ -160,15 +160,15 @@ Claude Codeに任せると、投稿の予約から閲覧数の記録まで、全
 - theme: Threadsの投稿づくりでAIを相棒に変える指示文7選
 - type: ②焼き直し
 - text_head: そのまま使ってOKです。ChatGPTとClaudeを、Threadsの投稿づく
-- metrics_fetched: false
-- fetched_at: -
+- metrics_fetched: true
+- fetched_at: 2026-11-28 20:44
 - analyzed: false
-- likes: -
-- replies: -
-- reposts: -
-- quotes: -
-- shares: -
-- views: -
+- likes: 0
+- replies: 3
+- reposts: 0
+- quotes: 0
+- shares: 0
+- views: 19
 - comments: []
 
 ### 本文
@@ -207,15 +207,15 @@ ChatGPTとClaudeを、Threadsの投稿づくりでモンスター級の相棒に
 - theme: Claudeに頼んでよかった指示文4つ
 - type: ①体験入り（焼き直し）
 - text_head: 本当は、あまり教えたくないやつです…！月7桁を達成した私が、Threadsの投稿
-- metrics_fetched: false
-- fetched_at: -
+- metrics_fetched: true
+- fetched_at: 2026-11-28 20:44
 - analyzed: false
-- likes: -
-- replies: -
-- reposts: -
-- quotes: -
-- shares: -
-- views: -
+- likes: 0
+- replies: 3
+- reposts: 0
+- quotes: 0
+- shares: 0
+- views: 6
 - comments: []
 
 ### 本文
@@ -768,7 +768,7 @@ Threadsでコメントはもらえるのに相談につながらない人、原�
 - type: 共感・参加型（質問）
 - text_head: 顔出しなしで発信している人に、聞いてみたいです。顔を出さない理由は、何ですか？
 - metrics_fetched: true
-- fetched_at: 2026-11-22 20:24
+- fetched_at: 2026-11-28 20:44
 - analyzed: false
 - likes: 0
 - replies: 2
@@ -776,6 +776,13 @@ Threadsでコメントはもらえるのに相談につながらない人、原�
 - quotes: 0
 - shares: 0
 - views: 4
+- likes_1d: 0
+- replies_1d: 2
+- reposts_1d: 0
+- quotes_1d: 0
+- shares_1d: 0
+- views_1d: 4
+- final_fetched: true
 - comments: []
 
 ### 本文
@@ -791,7 +798,7 @@ Threadsでコメントはもらえるのに相談につながらない人、原�
 - type: 昼：常識破壊（1スレッド・強い言い切り）
 - text_head: プロンプトを100個集めても、自分の経験が言葉になることはありません。プロンプト
 - metrics_fetched: true
-- fetched_at: 2026-11-22 20:24
+- fetched_at: 2026-11-28 20:44
 - analyzed: false
 - likes: 0
 - replies: 0
@@ -799,6 +806,13 @@ Threadsでコメントはもらえるのに相談につながらない人、原�
 - quotes: 0
 - shares: 0
 - views: 10
+- likes_1d: 0
+- replies_1d: 0
+- reposts_1d: 0
+- quotes_1d: 0
+- shares_1d: 0
+- views_1d: 10
+- final_fetched: true
 - comments: []
 
 ### 本文
@@ -817,7 +831,7 @@ Threadsでコメントはもらえるのに相談につながらない人、原�
 - type: ノウハウ：業界の裏側
 - text_head: Threadsでバズっている型を真似しても閲覧が伸びない人、型は合っています。足
 - metrics_fetched: true
-- fetched_at: 2026-11-22 20:24
+- fetched_at: 2026-11-28 20:44
 - analyzed: false
 - likes: 2
 - replies: 3
@@ -825,6 +839,13 @@ Threadsでコメントはもらえるのに相談につながらない人、原�
 - quotes: 0
 - shares: 0
 - views: 11
+- likes_1d: 2
+- replies_1d: 3
+- reposts_1d: 0
+- quotes_1d: 0
+- shares_1d: 0
+- views_1d: 11
+- final_fetched: true
 - comments: []
 
 ### 本文
